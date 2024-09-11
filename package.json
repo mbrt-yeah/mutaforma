@@ -9,6 +9,7 @@
     "packages/*"
   ],
   "dependencies": {
+    "@changesets/cli": "^2.27.8",
     "turbo": "^2.1.1"
   }
 }

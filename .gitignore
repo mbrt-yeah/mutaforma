@@ -130,5 +130,7 @@ dist
 .pnp.*
 
 # turbo
-
 .turbo/
+
+# changeset
+.changeset/
