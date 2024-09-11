@@ -1,0 +1,292 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body {
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+}
+
+a {
+    color: #228be6;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #1D75C2;
+    text-decoration: underline;
+}
+
+button {
+    background-color: #228be6;
+    border: 1px solid #1D75C2;
+    color: #ffffff;
+}
+
+select {
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 0;
+    height: 30px;
+}
+
+h1, h2 {
+    margin: 0 0 24px 0;
+}
+
+h3 {
+    margin: 48px 0 12px 0;
+}
+
+h4 {
+    margin: 24px 0 12px 0;
+}
+
+h6 {
+    margin: 0;
+}
+
+p {
+    margin-bottom: 12px;
+}
+
+thead {
+    background-color: #ddd;
+}
+
+th, td {
+    text-align: left;
+    padding: 3px 6px;
+}
+
+.page-wrapper {
+    display: flex;
+    height: 100%;
+}
+
+.sidebar {
+    background-color: #EEEEEE;
+    box-sizing: border-box;
+    height: 100%;
+    overflow-y: scroll;
+    padding: 24px;
+    position: fixed;
+    width: 288px;
+}
+
+.sidebar__header {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar__header__logo {
+    margin-bottom: 12px;
+}
+
+.sidebar__header__title {
+    font-size: 16px;
+    text-align: center;
+}
+
+.nav-section {
+    margin: 0 0 24px 0;
+}
+
+.nav-section__header {
+    background-color: #ddd;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 -24px 12px -24px;
+    padding: 6px 24px 6px 0;
+    position: relative;
+}
+
+.nav-section__header__back-link {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border: 0;
+    bottom: 0;
+    cursor: pointer;
+    position: absolute;
+    text-decoration: none;
+    top: 0;
+    width: 30px;
+}
+
+.nav-section__header__back-link:hover {
+    background-color: #cccccc;
+    text-decoration: none;
+}
+
+.nav-section__header__suptitle {
+    font-size: 12px;
+    padding: 0 0 0 38px;
+}
+
+.nav-section__header__title {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 0 0 0 38px;
+}
+
+.nav-subsection {
+    margin: 0 0 12px 0;
+}
+
+.nav-subsection__header__title {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 3px;
+}
+
+.nav-menu {
+    font-size: 14px;
+    list-style-type: square;
+    margin: 0;
+    padding: 0 0 0 13px;
+}
+
+.nav-menu-selector {
+    align-items: center;
+    display: flex;
+    padding: 6px 12px 12px 12px;
+}
+
+.nav-menu-selector > * {
+    margin-right: 6px;
+}
+
+.nav-menu-selector > *:last-child {
+    margin-right: 0px;
+}
+
+.nav-menu-selector button {
+    margin-left: 6px;
+}
+
+.main-content {
+    background-color: #ffffff;
+    font-size: 14px;
+    margin: 0 0 0 288px;
+    padding: 24px 48px 96px 48px;
+    width: 100%;
+}
+
+.page > p,
+.page > table,
+.page__header {
+    max-width: 640px;
+}
+
+.code-example {
+    align-items: center;
+    background-color: #2D2D2D;
+    display: flex;
+    font-size: 12px;
+    flex-direction: row;
+    margin: 0 -48px 12px 0;
+    padding: 24px;
+}
+
+.code-example-io,
+.img-example-io {
+    align-items: center;
+    background-color: #2D2D2D;
+    display: flex;
+    margin: 0 -48px 12px 0;
+    padding: 24px;
+}
+
+.code-example-io .code-example {
+    margin: 0;
+    padding: 0;
+}
+
+.code-example-io__separator,
+.img-example-io__separator {
+    color: #DDDDDD;
+    margin: 0 24px;
+    font-size: 48px;
+}
+
+.code-example-inline {
+    background-color: #eeeeee;
+    border: 1px solid #cccccc;
+    padding: 0 3px;
+}

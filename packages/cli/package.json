@@ -1,0 +1,48 @@
+{
+    "name": "@mtfm/cli",
+    "version": "0.1.0",
+    "description": "",
+    "author": "Matthias Einbrodt",
+    "license": "MIT",
+    "keywords": [],
+    "main": "./dist/index.js",
+    "types": "./dist/types/index.d.ts",
+    "exports": {
+        ".": {
+            "import": {
+                "types": "./dist/types/index.d.ts",
+                "default": "./dist/index.js"
+            }
+        }
+    },
+    "files": [
+        "./dist/**/*"
+    ],
+    "scripts": {
+        "build": "npm run build:cjs",
+        "build:cjs": "npm run delete:buildDir:cjs && tsc --project tsconfig.cjs.json",
+        "delete:buildDir:cjs": "del-cli --force ./dist",
+        "test": "jest"
+    },
+    "devDependencies": {
+        "@jest/globals": "^29.7.0",
+        "@types/fs-extra": "^11.0.4",
+        "@types/node": "^22.4.0",
+        "@types/spinnies": "^0.5.3",
+        "del-cli": "^5.1.0",
+        "jest": "^29.7.0",
+        "ts-jest": "^29.2.4",
+        "ts-node": "^10.9.2",
+        "tslib": "^2.6.3",
+        "typescript": "^5.5.4"
+    },
+    "dependencies": {
+        "@mtfm/docx-to-html": "workspace:^0.1.0",
+        "@swiss-army-knife/utilities": "^3.3.2",
+        "commander": "12.1.0",
+        "fs-extra": "^11.2.0",
+        "picocolors": "^1.0.1",
+        "spinnies": "^0.5.1",
+        "ts-results-es": "^4.2.0"
+    }
+}

@@ -1,0 +1,69 @@
+import { describe, expect, it } from "@jest/globals";
+
+import { ElementDefinition } from "./element-definition.js";
+
+describe(`${ElementDefinition.name}`, () => {
+    describe("#cstr", () => {
+        it(`should instantiate ${ElementDefinition.name} successfully with default props`, () => {
+            const instance = new ElementDefinition();
+            expect(instance).not.toBeUndefined();
+            expect(instance).not.toBeNull();
+            expect(instance).toBeInstanceOf(ElementDefinition);
+            expect(instance.attrs).toEqual({});
+            expect(instance.name).toEqual("p");
+        });
+    });
+
+    describe("#cstr", () => {
+        it(`should instantiate ${ElementDefinition.name} successfully with custom props`, () => {
+            const attrs = {
+                "class": "hello world",
+                "data-type": "heading",
+            };
+
+            const instance = new ElementDefinition({
+                attrs,
+                name: "h1"
+            });
+            expect(instance).not.toBeUndefined();
+            expect(instance).not.toBeNull();
+            expect(instance).toBeInstanceOf(ElementDefinition);
+            expect(instance.attrs).toEqual(attrs);
+            expect(instance.name).toEqual("h1");
+        });
+    });
+
+    describe("#serializeAttrs", () => {
+        it(`given zero attrs it should return an empty string`, () => {
+            const instance = new ElementDefinition();
+            const attrsSerialized = instance.serializeAttrs();
+            expect(attrsSerialized).not.toBeUndefined();
+            expect(attrsSerialized).not.toBeNull();
+            expect(attrsSerialized).toBe("");
+        });
+    });
+
+    describe("#serializeAttrs", () => {
+        it(`given one attr it should return a string in the form of '<name>="<value>"'`, () => {
+            const instance = new ElementDefinition({
+                attrs: { "class": "h1" }
+            });
+            const attrsSerialized = instance.serializeAttrs();
+            expect(attrsSerialized).not.toBeUndefined();
+            expect(attrsSerialized).not.toBeNull();
+            expect(attrsSerialized).toBe('class="h1"');
+        });
+    });
+
+    describe("#serializeAttrs", () => {
+        it(`given more than one attr it should return a string in the form of '<name1>="<value1>" <name2>="<value2>"'`, () => {
+            const instance = new ElementDefinition({
+                attrs: { "class": "h1", "id": "main" }
+            });
+            const attrsSerialized = instance.serializeAttrs();
+            expect(attrsSerialized).not.toBeUndefined();
+            expect(attrsSerialized).not.toBeNull();
+            expect(attrsSerialized).toBe('class="h1" id="main"');
+        });
+    });
+});

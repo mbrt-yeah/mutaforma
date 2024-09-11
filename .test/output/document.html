@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1>Mutaforma Document Conversion</h1>
+    <h2>Inline Styles</h2>
+    <p>Some paragraph text with inline formattings such as Italic, Bold and Underlined.</p>
+    <p>A paragraph that is completely in Italic. Let&rsquo;s see how it is represented in the XML file.</p>
+    <h2>Carriage Returns</h2>
+    <p>A paragraph with carriage return at its endText after a carriage return</p>
+    <h2>Simple Bullet List</h2>
+    <ul>
+        <li>List Item 1</li>
+        <li>List Item 2</li>
+        <li>List Item 3</li>
+        <li>List Item 4</li>
+    </ul>
+    <h2>Simple Numbered List</h2>
+    <ul>
+        <li>List Item 1</li>
+        <li>List Item 2</li>
+        <li>List Item 3</li>
+        <li>List Item 4</li>
+    </ul>
+    <h2>Image #1 without caption</h2>
+    <p><img src="images/image-1.png" width="605" height="208" alt="image-1" /></p>
+    <h2>Image #2 with caption</h2>
+    <p><img src="images/image-3.png" width="469" height="338" alt="Alt text figure 2" /></p>
+    <p>Figure 2: Select peer reviewed</p>
+    <h2>Image #3 with caption</h2>
+    <p><img src="images/image-2.png" width="605" height="151" alt="Alt text figure 3" /></p>
+    <p>Figure 3: Embargo date Fulltext</p>
+    <h2>Symbols</h2>
+    <p>&ge;&ne;&#x2126;Hello World &copy;</p>
+    <h2>Equations</h2>
+    <h3>Simple Table</h3>
+    <table>
+        <tr>
+            <td data-merge="false">
+                <p>Table Header 1</p>
+            </td>
+            <td data-merge="false">
+                <p>Table Header 2</p>
+            </td>
+            <td data-merge="false">
+                <p>Table Header 3</p>
+            </td>
+            <td data-merge="false">
+                <p>Table Header 4</p>
+            </td>
+            <td data-merge="false">
+                <p>Table Header 5</p>
+            </td>
+        </tr>
+        <tr>
+            <td data-merge="false">
+                <p>Table Cell 1</p>
+            </td>
+            <td data-merge="false">
+                <p>Table Cell 2</p>
+            </td>
+            <td data-merge="false">
+                <p>Table Cell 3</p>
+            </td>
+            <td data-merge="false">
+                <p>Table Cell 4</p>
+            </td>
+            <td data-merge="false">
+                <p>Table Cell 5</p>
+            </td>
+        </tr>
+        <tr>
+            <td data-merge="false">
+                <p>Table Cell 6</p>
+            </td>
+            <td data-merge="false">
+                <p>Table Cell 7</p>
+            </td>
+            <td data-merge="false">
+                <p>Table Cell 8</p>
+            </td>
+            <td data-merge="false">
+                <p>Table Cell 9</p>
+            </td>
+            <td data-merge="false">
+                <p>Table Cell 10</p>
+            </td>
+        </tr>
+        <tr>
+            <td data-merge="false">
+                <p>Table Cell 11</p>
+            </td>
+            <td data-merge="false">
+                <p>Table Cell 12</p>
+            </td>
+            <td data-merge="false">
+                <p>Table Cell 13</p>
+            </td>
+            <td data-merge="false">
+                <p>Table Cell 14</p>
+            </td>
+            <td data-merge="false">
+                <p>Table Cell 15</p>
+            </td>
+        </tr>
+    </table>
+    <h2>Table with horizontally merged cells</h2>
+    <table>
+        <tr>
+            <td colspan="5" data-merge="false">
+                <p>Table Header 1/5</p>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" data-merge="false">
+                <p>Table Cell 1/2</p>
+            </td>
+            <td data-merge="false">
+                <p>Table Cell 3</p>
+            </td>
+            <td data-merge="false">
+                <p>Table Cell 4</p>
+            </td>
+            <td data-merge="false">
+                <p>Table Cell 5</p>
+            </td>
+        </tr>
+        <tr>
+            <td data-merge="false">
+                <p>Table Cell 6</p>
+            </td>
+            <td data-merge="false">
+                <p>Table Cell 7</p>
+            </td>
+            <td colspan="2" data-merge="false">
+                <p>Table Cell 8/9</p>
+            </td>
+            <td data-merge="false">
+                <p>Table Cell 10</p>
+            </td>
+        </tr>
+        <tr>
+            <td data-merge="false">
+                <p>Table Cell 11</p>
+            </td>
+            <td data-merge="false">
+                <p>Table Cell 12</p>
+            </td>
+            <td data-merge="false">
+                <p>Table Cell 13</p>
+            </td>
+            <td colspan="2" data-merge="false">
+                <p>Table Cell 14/15</p>
+            </td>
+        </tr>
+    </table>
+    <h2>Table with vertically merged cells</h2>
+    <table>
+        <tr>
+            <td data-merge="false">
+                <p>Table Header 1</p>
+            </td>
+            <td data-merge="false">
+                <p>Table Header 2</p>
+            </td>
+            <td data-merge="false">
+                <p>Table Header 3</p>
+            </td>
+            <td data-merge="false">
+                <p>Table Header 4</p>
+            </td>
+            <td data-merge="false">
+                <p>Table Header 5</p>
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="2" data-merge="false">
+                <p>Table Cell 1/6</p>
+            </td>
+            <td data-merge="false">
+                <p>Table Cell 2</p>
+            </td>
+            <td data-merge="false">
+                <p>Table Cell 3</p>
+            </td>
+            <td data-merge="false">
+                <p>Table Cell 4</p>
+            </td>
+            <td data-merge="false">
+                <p>Table Cell 5</p>
+            </td>
+        </tr>
+        <tr>
+            <td data-merge="false">
+                <p>Table Cell 7</p>
+            </td>
+            <td rowspan="2" data-merge="false">
+                <p>Table Cell 8/13</p>
+            </td>
+            <td data-merge="false">
+                <p>Table Cell 9</p>
+            </td>
+            <td rowspan="2" data-merge="false">
+                <p>Table Cell 10/15</p>
+            </td>
+        </tr>
+        <tr>
+            <td data-merge="false">
+                <p>Table Cell 11</p>
+            </td>
+            <td data-merge="false">
+                <p>Table Cell 12</p>
+            </td>
+            <td data-merge="false">
+                <p>Table Cell 14</p>
+            </td>
+        </tr>
+    </table>
+    <h2>Table with horizontally and vertically merged cells</h2>
+    <table>
+        <tr>
+            <td colspan="5" data-merge="false">
+                <p>Table Header 1/5</p>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" rowspan="2" data-merge="false">
+                <p>Table Cell 1/2/6/7</p>
+            </td>
+            <td data-merge="false">
+                <p>Table Cell 3</p>
+            </td>
+            <td data-merge="false">
+                <p>Table Cell 4</p>
+            </td>
+            <td rowspan="1" data-merge="false">
+                <p>Table Cell 5/10</p>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" data-merge="false">
+                <p>Table Cell 8/9</p>
+            </td>
+        </tr>
+        <tr>
+            <td data-merge="false">
+                <p>Table Cell 11</p>
+            </td>
+            <td data-merge="false">
+                <p>Table Cell 12</p>
+            </td>
+            <td data-merge="false">
+                <p>Table Cell 13</p>
+            </td>
+            <td colspan="2" data-merge="false">
+                <p>Table Cell 14/15</p>
+            </td>
+        </tr>
+        <tr>
+            <td data-merge="false">
+                <p>Table Cell 16</p>
+            </td>
+            <td colspan="2" rowspan="3" data-merge="false">
+                <p>Table Cell 17/18/21/22/25/26</p>
+            </td>
+            <td colspan="2" data-merge="false">
+                <p>Table Cell 19</p>
+            </td>
+        </tr>
+        <tr>
+            <td data-merge="false">
+                <p>Table Cell 20</p>
+            </td>
+            <td colspan="2" data-merge="false">
+                <p>Table Cell 23</p>
+            </td>
+        </tr>
+        <tr>
+            <td data-merge="false">
+                <p>Table Cell 24</p>
+            </td>
+            <td colspan="2" data-merge="false">
+                <p>Table Cell 27</p>
+            </td>
+        </tr>
+    </table>
+    <h2>Footnotes</h2>
+    <p>This is a paragraph with one footnote<sup>1</sup>, another footnote<sup>2</sup> and yet another one<sup>3</sup>.</p>
+    <h2>Endnotes</h2>
+    <p>This is a paragraph with an endnote<sup>1</sup></p>
+    <h2>Empty Paragraphs</h2>
+    <div class="footnotes-section">
+        <h2>Footnotes</h2>
+        <ul>
+            <li>
+                <p> And this is the footnote</p>
+            </li>
+            <li>
+                <p> And yet another footnote</p>
+            </li>
+            <li>
+                <p> The last footnote</p>
+            </li>
+        </ul>
+    </div>
+    <div class="endnotes-section">
+        <h2>Endnotes</h2>
+        <ul>
+            <li>
+                <p> And this is the endnote</p>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,1 @@
+export const figurePattern = "abb[\.]?|abbildung|fig[\.]?|figur[a|e]";

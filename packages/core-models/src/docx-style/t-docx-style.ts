@@ -1,0 +1,1 @@
+export type TDocxStyle = "character" | "paragraph" | "table" | "unknown";

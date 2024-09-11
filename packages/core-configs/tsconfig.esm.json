@@ -1,0 +1,22 @@
+{
+    "extends": "../tsconfig.base.json",
+    "compilerOptions": {
+        "declarationDir": "./dist/esm/types",
+        "lib": ["ESNext", "DOM"],
+        "module": "ESNext",
+        "moduleResolution": "Node",
+        "outDir": "./dist/esm",
+        "strict": true,
+        "target": "ESNext"
+    },
+    "exclude": [
+        "node_modules",
+        "test",
+        "dist",
+        "**/*spec.ts",
+        "**/*test.ts"
+    ],
+    "include": [
+        "./src/index.ts"
+    ]
+}

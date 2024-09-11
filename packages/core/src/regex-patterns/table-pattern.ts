@@ -1,0 +1,1 @@
+export const tablePattern = "tab[\.]?|table|tabell[a|e]";

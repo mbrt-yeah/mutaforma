@@ -1,0 +1,53 @@
+{
+    "name": "@mtfm/core-models",
+    "version": "0.1.0",
+    "description": "",
+    "author": "Matthias Einbrodt",
+    "license": "MIT",
+    "keywords": [],
+    "main": "./dist/cjs/index.js",
+    "types": "./dist/cjs/types/index.d.ts",
+    "exports": {
+        ".": {
+            "import": {
+                "types": "./dist/esm/types/index.d.ts",
+                "default": "./dist/esm/index.js"
+            },
+            "require": {
+                "types": "./dist/cjs/types/index.d.ts",
+                "default": "./dist/cjs/index.js"
+            }
+        }
+    },
+    "files": [
+        "./dist/**/*"
+    ],
+    "scripts": {
+        "build": "npm run build:cjs && npm run build:esm",
+        "build:cjs": "npm run delete:buildDir:cjs && tsc --project tsconfig.cjs.json",
+        "build:esm": "npm run delete:buildDir:esm && tsc --project tsconfig.esm.json",
+        "delete:buildDir:cjs": "del-cli --force ./dist/cjs",
+        "delete:buildDir:esm": "del-cli --force ./dist/esm",
+        "test": "jest"
+    },
+    "devDependencies": {
+        "@jest/globals": "^29.7.0",
+        "@types/node": "^22.4.0",
+        "@types/he": "^1.2.3",
+        "@types/js-beautify": "^1.14.3",
+        "del-cli": "^5.1.0",
+        "jest": "^29.7.0",
+        "ts-jest": "^29.2.4",
+        "ts-node": "^10.9.2",
+        "tslib": "^2.6.3",
+        "typed-emitter": "^2.1.0",
+        "typescript": "^5.5.4"
+    },
+    "dependencies": {
+        "@baileyherbert/events": "^1.0.1",
+        "cheerio": "^1.0.0",
+        "he": "^1.2.0",
+        "js-beautify": "1.15.1",
+        "ts-results-es": "^4.2.0"
+    }
+}

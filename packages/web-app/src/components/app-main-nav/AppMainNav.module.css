@@ -1,0 +1,29 @@
+.mainNav {
+    align-items: center;
+    display: flex;
+    font-size: var(--mantine-font-size-sm);
+    justify-content: center;
+    margin-bottom: 24px;
+    
+}
+
+.mainNavForm {
+    align-items: center;
+    display: flex;
+}
+
+.mainNavFormGoBtn {
+    border-radius: 0;
+    margin-left: 6px;
+}
+
+.nativeSelectRoot {
+    margin: 0 6px;
+}
+
+.nativeSelectInput {
+    background-color: var(--mantine-color-white);
+    border: 1px solid var(--mantine-color-gray-3);
+    border-radius: 0;
+    padding: 0 3px;
+}

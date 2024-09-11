@@ -1,0 +1,89 @@
+{
+    "endnotesWrapper": {
+        "enabled": true,
+        "element": {
+            "name": "div",
+            "attrs": {
+                "class": "endnotes-section"
+            }
+        }
+    },
+    "endnotesHeading": {
+        "enabled": true,
+        "element": {
+            "name": "h2",
+            "content": "Endnotes"
+        }
+    },
+    "endnotesList": {
+        "enabled": true,
+        "element": {
+            "name": "ol"
+        }
+    },
+    "endnotesListItem": {
+        "enabled": true,
+        "element": {
+            "name": "li"
+        }
+    },
+    "footnotesWrapper": {
+        "enabled": true,
+        "element": {
+            "name": "div",
+            "attrs": {
+                "class": "footnotes-section"
+            }
+        }
+    },
+    "footnotesHeading": {
+        "enabled": true,
+        "element": {
+            "name": "h2",
+            "content": "Footnotes"
+        }
+    },
+    "footnotesList": {
+        "enabled": true,
+        "element": {
+            "name": "ol"
+        }
+    },
+    "footnotesListItem": {
+        "enabled": true,
+        "element": {
+            "name": "li"
+        }
+    },
+    "mappings": [
+        {
+            "names": ["Heading 1"],
+            "element": {
+                "name": "h1"
+            }
+        },
+        {
+            "names": ["Normal"],
+            "element": {
+                "name": "p"
+            }
+        }
+    ],
+    "outDocExt": "html",
+    "outDocFileName": "document",
+    "outImgFolderName": "images",
+    "outHtmlEntities": {
+        "enabled": true,
+        "options": {
+            "allowUnsafeSymbols": false,
+            "decimal": false,
+            "encodeEverything": false,
+            "strict": false,
+            "useNamedReferences": true
+        }
+    },
+    "outPrettyPrint": {
+        "enabled": true
+    },
+    "outRemoveEmptyParas": true
+}
