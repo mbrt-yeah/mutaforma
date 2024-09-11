@@ -1,0 +1,14 @@
+{
+  "name": "mtfm-mono",
+  "version": "1.0.0",
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "packageManager": "pnpm@9.2.0",
+  "workspaces": [
+    "packages/*"
+  ],
+  "dependencies": {
+    "turbo": "^2.1.1"
+  }
+}
