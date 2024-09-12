@@ -52,7 +52,7 @@
                     <CodeExampleIO 
                         input-lang="json"
                         :input-code="MappingsOneToOneExample.from"
-                        output-lang="html"
+                        output-lang="xml"
                         :output-code="MappingsOneToOneExample.to"
                     />
                     <p>
@@ -74,7 +74,7 @@
                     <CodeExampleIO 
                         input-lang="json"
                         :input-code="MappingsManyToOneExample.from"
-                        output-lang="html"
+                        output-lang="xml"
                         :output-code="MappingsManyToOneExample.to"
                     />
                 </template>

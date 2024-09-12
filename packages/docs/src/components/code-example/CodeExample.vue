@@ -6,7 +6,6 @@
 </script>
 
 <script lang="ts">
-    import hljs from 'highlight.js/lib/common';
     import hljsVuePlugin from "@highlightjs/vue-plugin";
 
     export default {
