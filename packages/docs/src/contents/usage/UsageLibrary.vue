@@ -1,5 +1,6 @@
 <script setup lang="ts">
     import AppShell from "@/AppShell.vue";
+    import CodeInline from "@/components/CodeInline.vue";
     import NavMain from "@/components/nav-main/NavMain.vue";
     import Page from "@/components/Page.vue";
 </script>
@@ -23,24 +24,44 @@
                             <tr>
                                 <th>Name</th>
                                 <th>Description</th>
-                                <th>Link</th>
+                                <th></th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>core</td>
-                                <td>This module provides core functionalities that are shared across various modules within the Mutaforma ecosystem.</td>
-                                <td><a href="https://github.com/mutaforma/core">https://github.com/mutaforma/core</a></td>
+                                <td><CodeInline>@mtfm/cli</CodeInline></td>
+                                <td>A command line application for converting documents between various formats.</td>
+                                <td><a href="https://github.com/mbrt-yeah/mutaforma/tree/master/packages/cli" title="Go to @mtfm/cli package">Github</a></td>
                             </tr>
                             <tr>
-                                <td>core-models</td>
-                                <td>This module comprises all model classes utilized across various Mutaforma modules.</td>
-                                <td><a href="https://github.com/mutaforma/core">https://github.com/mutaforma/core</a></td>
+                                <td><CodeInline>@mtfm/core</CodeInline></td>
+                                <td>Shared utilities and services that are used across multiple packages.</td>
+                                <td><a href="https://github.com/mbrt-yeah/mutaforma/tree/master/packages/core" title="Go to @mtfm/core package">Github</a></td>
                             </tr>
                             <tr>
-                                <td>docx-to-html</td>
-                                <td>This module provides functionality for converting DOCX documents to HTML format.</td>
-                                <td><a href="https://github.com/mutaforma/core">https://github.com/mutaforma/core</a></td>
+                                <td><CodeInline>@mtfm/core-configs</CodeInline></td>
+                                <td>Default converter configurations</td>
+                                <td><a href="https://github.com/mbrt-yeah/mutaforma/tree/master/packages/core-configs" title="Go to @mtfm/core-configs package">Github</a></td>
+                            </tr>
+                            <tr>
+                                <td><CodeInline>@mtfm/core-models</CodeInline></td>
+                                <td>Shared models that are used across multiple packages.</td>
+                                <td><a href="https://github.com/mbrt-yeah/mutaforma/tree/master/packages/core-models" title="Go to @mtfm/core-models package">Github</a></td>
+                            </tr>
+                            <tr>
+                                <td><CodeInline>@mtfm/docs</CodeInline></td>
+                                <td>The Mutaforma documentation website.</td>
+                                <td><a href="https://github.com/mbrt-yeah/mutaforma/tree/master/packages/docs" title="Go to @mtfm/docs package">Github</a></td>
+                            </tr>
+                            <tr>
+                                <td><CodeInline>@mtfm/docx-to-html</CodeInline></td>
+                                <td>A converter which converts DOCX files to HTML</td>
+                                <td><a href="https://github.com/mbrt-yeah/mutaforma/tree/master/packages/docx-to-html" title="Go to @mtfm/docx-to-html package">Github</a></td>
+                            </tr>
+                            <tr>
+                                <td><CodeInline>@mtfm/web-app</CodeInline></td>
+                                <td>A web application fro converting documents between various formats.</td>
+                                <td><a href="https://github.com/mbrt-yeah/mutaforma/tree/master/packages/web-app" title="Go to @mtfm/web-app">Github</a></td>
                             </tr>
                         </tbody>
                     </table>
