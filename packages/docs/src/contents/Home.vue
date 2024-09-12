@@ -32,7 +32,7 @@
                         will be transformed into <CodeInline>p</CodeInline> elements and all paragraphs with the style "Heading 1" to
                         <CodeInline>h1</CodeInline> elements.
                     </p>
-                    <ImgExampleIO output-lang="html" :output-code="GeneralHtmlOutput">
+                    <ImgExampleIO output-lang="xml" :output-code="GeneralHtmlOutput">
                         <template #input><img src="/img/examples/word-document.png" width="600" height="408" /></template>
                     </ImgExampleIO>
 

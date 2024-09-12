@@ -102,7 +102,7 @@
                     <CodeExampleIO 
                         input-lang="json"
                         :input-code="EndnotesFullExample.from"
-                        output-lang="html"
+                        output-lang="xml"
                         :output-code="EndnotesFullExample.to"
                     />
                     <!-- END FULL EXAMPLE -->
@@ -118,7 +118,7 @@
                     <CodeExampleIO 
                         input-lang="json"
                         :input-code="EndnotesWrapperDefaultExample.from"
-                        output-lang="html"
+                        output-lang="xml"
                         :output-code="EndnotesWrapperDefaultExample.to"
                     />
 
@@ -131,7 +131,7 @@
                     <CodeExampleIO 
                         input-lang="json"
                         :input-code="EndnotesWrapperCustomElementExample.from"
-                        output-lang="html"
+                        output-lang="xml"
                         :output-code="EndnotesWrapperCustomElementExample.to"
                     />
 
@@ -143,7 +143,7 @@
                     <CodeExampleIO 
                         input-lang="json"
                         :input-code="EndnotesWrapperCustomAttrsExample.from"
-                        output-lang="html"
+                        output-lang="xml"
                         :output-code="EndnotesWrapperCustomAttrsExample.to"
                     />
 
@@ -166,7 +166,7 @@
                     <CodeExampleIO 
                         input-lang="json"
                         :input-code="EndnotesHeadingDefaultExample.from"
-                        output-lang="html"
+                        output-lang="xml"
                         :output-code="EndnotesHeadingDefaultExample.to"
                     />
 
@@ -179,7 +179,7 @@
                     <CodeExampleIO 
                         input-lang="json"
                         :input-code="EndnotesHeadingCustomElementExample.from"
-                        output-lang="html"
+                        output-lang="xml"
                         :output-code="EndnotesHeadingCustomElementExample.to"
                     />
 
@@ -191,7 +191,7 @@
                     <CodeExampleIO 
                         input-lang="json"
                         :input-code="EndnotesHeadingCustomAttrsExample.from"
-                        output-lang="html"
+                        output-lang="xml"
                         :output-code="EndnotesHeadingCustomAttrsExample.to"
                     />
 
@@ -203,7 +203,7 @@
                     <CodeExampleIO 
                         input-lang="json"
                         :input-code="EndnotesHeadingCustomContentExample.from"
-                        output-lang="html"
+                        output-lang="xml"
                         :output-code="EndnotesHeadingCustomContentExample.to"
                     />
 
@@ -222,7 +222,7 @@
                     <CodeExampleIO 
                         input-lang="json"
                         :input-code="EndnotesListDefaultExample.from"
-                        output-lang="html"
+                        output-lang="xml"
                         :output-code="EndnotesListDefaultExample.to"
                     />
 
@@ -235,7 +235,7 @@
                     <CodeExampleIO 
                         input-lang="json"
                         :input-code="EndnotesListCustomElementExample.from"
-                        output-lang="html"
+                        output-lang="xml"
                         :output-code="EndnotesListCustomElementExample.to"
                     />
 
@@ -247,7 +247,7 @@
                     <CodeExampleIO 
                         input-lang="json"
                         :input-code="EndnotesListCustomAttrsExample.from"
-                        output-lang="html"
+                        output-lang="xml"
                         :output-code="EndnotesListCustomAttrsExample.to"
                     />
 
@@ -269,7 +269,7 @@
                     <CodeExampleIO 
                         input-lang="json"
                         :input-code="EndnotesListItemDefaultExample.from"
-                        output-lang="html"
+                        output-lang="xml"
                         :output-code="EndnotesListItemDefaultExample.to"
                     />
 
@@ -282,7 +282,7 @@
                     <CodeExampleIO 
                         input-lang="json"
                         :input-code="EndnotesListItemCustomElementExample.from"
-                        output-lang="html"
+                        output-lang="xml"
                         :output-code="EndnotesListItemCustomElementExample.to"
                     />
 
@@ -294,7 +294,7 @@
                     <CodeExampleIO 
                         input-lang="json"
                         :input-code="EndnotesListItemCustomAttrsExample.from"
-                        output-lang="html"
+                        output-lang="xml"
                         :output-code="EndnotesListItemCustomAttrsExample.to"
                     />
 

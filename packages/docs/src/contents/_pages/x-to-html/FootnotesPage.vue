@@ -102,7 +102,7 @@
                     <CodeExampleIO 
                         input-lang="json"
                         :input-code="FootnotesFullExample.from"
-                        output-lang="html"
+                        output-lang="xml"
                         :output-code="FootnotesFullExample.to"
                     />
                     <!-- END FULL EXAMPLE -->
@@ -118,7 +118,7 @@
                     <CodeExampleIO 
                         input-lang="json"
                         :input-code="FootnotesWrapperDefaultExample.from"
-                        output-lang="html"
+                        output-lang="xml"
                         :output-code="FootnotesWrapperDefaultExample.to"
                     />
 
@@ -131,7 +131,7 @@
                     <CodeExampleIO 
                         input-lang="json"
                         :input-code="FootnotesWrapperCustomElementExample.from"
-                        output-lang="html"
+                        output-lang="xml"
                         :output-code="FootnotesWrapperCustomElementExample.to"
                     />
 
@@ -143,7 +143,7 @@
                     <CodeExampleIO 
                         input-lang="json"
                         :input-code="FootnotesWrapperCustomAttrsExample.from"
-                        output-lang="html"
+                        output-lang="xml"
                         :output-code="FootnotesWrapperCustomAttrsExample.to"
                     />
 
@@ -166,7 +166,7 @@
                     <CodeExampleIO 
                         input-lang="json"
                         :input-code="FootnotesHeadingDefaultExample.from"
-                        output-lang="html"
+                        output-lang="xml"
                         :output-code="FootnotesHeadingDefaultExample.to"
                     />
 
@@ -179,7 +179,7 @@
                     <CodeExampleIO 
                         input-lang="json"
                         :input-code="FootnotesHeadingCustomElementExample.from"
-                        output-lang="html"
+                        output-lang="xml"
                         :output-code="FootnotesHeadingCustomElementExample.to"
                     />
 
@@ -191,7 +191,7 @@
                     <CodeExampleIO 
                         input-lang="json"
                         :input-code="FootnotesHeadingCustomAttrsExample.from"
-                        output-lang="html"
+                        output-lang="xml"
                         :output-code="FootnotesHeadingCustomAttrsExample.to"
                     />
 
@@ -203,7 +203,7 @@
                     <CodeExampleIO 
                         input-lang="json"
                         :input-code="FootnotesHeadingCustomContentExample.from"
-                        output-lang="html"
+                        output-lang="xml"
                         :output-code="FootnotesHeadingCustomContentExample.to"
                     />
 
@@ -222,7 +222,7 @@
                     <CodeExampleIO 
                         input-lang="json"
                         :input-code="FootnotesListDefaultExample.from"
-                        output-lang="html"
+                        output-lang="xml"
                         :output-code="FootnotesListDefaultExample.to"
                     />
 
@@ -235,7 +235,7 @@
                     <CodeExampleIO 
                         input-lang="json"
                         :input-code="FootnotesListCustomElementExample.from"
-                        output-lang="html"
+                        output-lang="xml"
                         :output-code="FootnotesListCustomElementExample.to"
                     />
 
@@ -247,7 +247,7 @@
                     <CodeExampleIO 
                         input-lang="json"
                         :input-code="FootnotesListCustomAttrsExample.from"
-                        output-lang="html"
+                        output-lang="xml"
                         :output-code="FootnotesListCustomAttrsExample.to"
                     />
 
@@ -269,7 +269,7 @@
                     <CodeExampleIO 
                         input-lang="json"
                         :input-code="FootnotesListItemDefaultExample.from"
-                        output-lang="html"
+                        output-lang="xml"
                         :output-code="FootnotesListItemDefaultExample.to"
                     />
 
@@ -282,7 +282,7 @@
                     <CodeExampleIO 
                         input-lang="json"
                         :input-code="FootnotesListItemCustomElementExample.from"
-                        output-lang="html"
+                        output-lang="xml"
                         :output-code="FootnotesListItemCustomElementExample.to"
                     />
 
@@ -294,7 +294,7 @@
                     <CodeExampleIO 
                         input-lang="json"
                         :input-code="FootnotesListItemCustomAttrsExample.from"
-                        output-lang="html"
+                        output-lang="xml"
                         :output-code="FootnotesListItemCustomAttrsExample.to"
                     />
 
