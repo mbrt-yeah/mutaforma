@@ -138,14 +138,20 @@ th, td {
     height: 100%;
 }
 
-.sidebar {
+.sidebar-wrapper {
     background-color: #EEEEEE;
     box-sizing: border-box;
     height: 100%;
-    overflow-y: scroll;
-    padding: 24px;
     position: fixed;
     width: 288px;
+}
+
+.sidebar {
+    box-sizing: border-box;
+    position: relative;
+    height: 100%;
+    overflow-y: scroll;
+    padding: 24px;
 }
 
 .sidebar__header {
@@ -161,6 +167,13 @@ th, td {
 .sidebar__header__title {
     font-size: 16px;
     text-align: center;
+}
+
+.sidebar__footer {
+    border-top: 2px solid #ddd;
+    margin: 0 0 0 0;
+    padding: 6px;
+    font-size: 12px;
 }
 
 .nav-section {
