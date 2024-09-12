@@ -4,6 +4,7 @@ import { Ok, Result } from "ts-results-es";
 import { ACoConverter } from "./a-co-converter.js";
 import { CoConverterRegistry } from "../co-converter-registry.js";
 import { createElementFromDefinition } from "../../../utils/create-element-from-definition.js";
+import { convertDecimalTo } from "../../../utils/convert-decimal-to.js";
 
 export class CoNoteConverter extends ACoConverter<CoNote> {
     public constructor(
@@ -19,16 +20,24 @@ export class CoNoteConverter extends ACoConverter<CoNote> {
         if (convertResult.isErr())
             return convertResult;
 
-        // TODO implement footnote numbering
-
+        let num = convertDecimalTo(Number.parseInt(input.id), input.numberingStyle);
         let result = "";
 
-        if (this.config.footnotesListItem.enabled && input.type === "footnote")
-            result = createElementFromDefinition(this.config.footnotesListItem.element, convertResult.value);
-        else if (this.config.endnotesListItem.enabled && input.type === "endnote")
-            result = createElementFromDefinition(this.config.endnotesListItem.element, convertResult.value);
-        else
-            result = `<li>${convertResult.value}</li>`
+        if (input.type === "footnote") {
+            const numElem = createElementFromDefinition(this.config.footnotesNumbering.element, num);
+            result += numElem + convertResult.value;
+
+            if (this.config.footnotesListItem.enabled)
+                result = createElementFromDefinition(this.config.footnotesListItem.element, result);
+        }
+
+        if (input.type === "endnote") {
+            const numElem = createElementFromDefinition(this.config.endnotesNumbering.element, num);
+            result += numElem + convertResult.value;
+
+            if (this.config.endnotesListItem.enabled)
+                result = createElementFromDefinition(this.config.endnotesListItem.element, result);
+        }
 
         return new Ok(result);
     }

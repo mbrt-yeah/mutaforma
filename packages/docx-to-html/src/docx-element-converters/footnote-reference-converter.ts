@@ -20,6 +20,7 @@ export class FootnoteReferenceConverter extends ADocxElementConverter<CoNoteRefe
 
         const noteReference = new CoNoteReference({
             id: $root.attr("w:id") || "",
+            numberingStyle: this.config.footnotesNumbering.style,
             type: "footnote",
         });
 

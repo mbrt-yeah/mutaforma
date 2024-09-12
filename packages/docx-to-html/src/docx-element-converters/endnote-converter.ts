@@ -25,7 +25,11 @@ export class EndnoteConverter extends ADocxElementConverter<CoNote> {
         const $root = $elem(":root", $elem.html());
         const id = $root.attr("w:id") || "";
 
-        const coNote = new CoNote({ id, type: "endnote" });
+        const coNote = new CoNote({ 
+            id,
+            numberingStyle: this.config.endnotesNumbering.style, 
+            type: "endnote"
+        });
         coNote.addChildNodes(createContentsResult.value);
 
         const listCreator = new CoListCreator({ input: coNote });

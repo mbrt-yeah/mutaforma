@@ -25,7 +25,11 @@ export class FootnoteConverter extends ADocxElementConverter<CoNote> {
         const $root = $elem(":root", $elem.html());
         const id = $root.attr("w:id") || "";
 
-        const coNote = new CoNote({ id, type: "footnote" });
+        const coNote = new CoNote({ 
+            id,
+            numberingStyle: this.config.footnotesNumbering.style, 
+            type: "footnote" 
+        });
         coNote.addChildNodes(createContentsResult.value);
 
         const listCreator = new CoListCreator({ input: coNote });
