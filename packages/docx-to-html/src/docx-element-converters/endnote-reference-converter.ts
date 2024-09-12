@@ -20,6 +20,7 @@ export class EndnoteReferenceConverter extends ADocxElementConverter<CoNoteRefer
 
         const noteReference = new CoNoteReference({
             id: $root.attr("w:id") || "",
+            numberingStyle: this.config.endnotesNumbering.style,
             type: "endnote",
         });
 

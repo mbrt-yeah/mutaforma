@@ -16,4 +16,3 @@ export * from "./co-text-run.js";
 export * from "./co-text.js";
 export * from "./co-tree-node.js";
 export * from "./co-tree.js";
-export * from "./t-note-types.js";

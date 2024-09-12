@@ -3,6 +3,7 @@ import {
     ConfigHtmlEntities,
     ConfigNoteList,
     ConfigNoteListItem,
+    ConfigNoteNumbering,
     ConfigNotesHeading,
     ConfigNotesWrapper,
     ConfigPrettyPrint,
@@ -39,6 +40,15 @@ export const DocxToHtmlConfigDefault: IConfig = new Config({
             name: "li",
         })
     }),
+    endnotesNumbering: new ConfigNoteNumbering({
+        style: "lower-roman",
+        element: new ElementDefinition({
+            name: "span",
+            attrs: {
+                class: "endnote-number"
+            }
+        })
+    }),
 
     footnotesWrapper: new ConfigNotesWrapper({
         enabled: true,
@@ -66,6 +76,15 @@ export const DocxToHtmlConfigDefault: IConfig = new Config({
         enabled: true,
         element: new ElementDefinition({
             name: "li",
+        })
+    }),
+    footnotesNumbering: new ConfigNoteNumbering({
+        style: "decimal",
+        element: new ElementDefinition({
+            name: "span",
+            attrs: {
+                class: "footnote-number"
+            }
         })
     }),
 

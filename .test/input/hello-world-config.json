@@ -27,6 +27,15 @@
             "name": "li"
         }
     },
+    "endnotesNumbering": {
+        "style": "lower-roman",
+        "element": {
+            "name": "span",
+            "attrs": {
+                "class": "endnote-number"
+            }
+        }
+    },
     "footnotesWrapper": {
         "enabled": true,
         "element": {
@@ -53,6 +62,15 @@
         "enabled": true,
         "element": {
             "name": "li"
+        }
+    },
+    "footnotesNumbering": {
+        "style": "decimal",
+        "element": {
+            "name": "span",
+            "attrs": {
+                "class": "footnote-number"
+            }
         }
     },
     "mappings": [

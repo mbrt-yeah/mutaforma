@@ -1,6 +1,7 @@
 import { ConfigHtmlEntities } from "../config-html-entities/config-html-entities.js";
 import { ConfigNoteList } from "../config-note-list/config-note-list.js";
 import { ConfigNoteListItem } from "../config-note-list-item/config-note-list-item.js";
+import { ConfigNoteNumbering } from "../config-note-numbering/config-note-numbering.js";
 import { ConfigNotesHeading } from "../config-notes-heading/config-notes-heading.js";
 import { ConfigNotesWrapper } from "../config-notes-wrapper/config-notes-wrapper.js";
 import { ConfigPrettyPrint } from "../config-pretty-print/config-pretty-print.js";
@@ -8,6 +9,7 @@ import { IConfig } from "./i-config.js";
 import { IConfigHtmlEntities } from "../config-html-entities/i-config-html-entities.js";
 import { IConfigNoteList } from "../config-note-list/i-config-note-list.js";
 import { IConfigNoteListItem } from "../config-note-list-item/i-config-note-list-item.js";
+import { IConfigNoteNumbering } from "../config-note-numbering/i-config-note-numbering.js";
 import { IConfigNotesHeading } from "../config-notes-heading/i-config-notes-heading.js";
 import { IConfigNotesWrapper } from "../config-notes-wrapper/i-config-notes-wrapper.js";
 import { IConfigOpts } from "./i-config-opts.js";
@@ -19,10 +21,12 @@ export class Config implements IConfig {
     private __endnotesHeading: IConfigNotesHeading;
     private __endnotesList: IConfigNoteList;
     private __endnotesListItem: IConfigNoteListItem;
+    private __endnotesNumbering: IConfigNoteNumbering;
     private __footnotesWrapper: IConfigNotesWrapper;
     private __footnotesHeading: IConfigNotesHeading;
     private __footnotesList: IConfigNoteList;
     private __footnotesListItem: IConfigNoteListItem;
+    private __footnotesNumbering: IConfigNoteNumbering;
     private __mappings: IStyleMapping[];
     private __outDocExt: string;
     private __outDocFileName: string;
@@ -36,10 +40,12 @@ export class Config implements IConfig {
         this.__endnotesHeading = opts.endnotesHeading || new ConfigNotesHeading();
         this.__endnotesList = opts.endnotesList || new ConfigNoteList();
         this.__endnotesListItem = opts.endnotesListItem || new ConfigNoteListItem();
+        this.__endnotesNumbering = opts.endnotesNumbering || new ConfigNoteNumbering();
         this.__footnotesWrapper = opts.footnotesWrapper || new ConfigNotesWrapper();
         this.__footnotesHeading = opts.footnotesHeading || new ConfigNotesHeading();
         this.__footnotesList = opts.footnotesList || new ConfigNoteList();
         this.__footnotesListItem = opts.footnotesListItem || new ConfigNoteListItem();
+        this.__footnotesNumbering = opts.footnotesNumbering || new ConfigNoteNumbering();
         this.__mappings = opts.mappings || [];
         this.__outDocExt = opts.outDocExt || "html";
         this.__outDocFileName = opts.outDocFileName || "document";
@@ -65,6 +71,10 @@ export class Config implements IConfig {
         return this.__endnotesListItem;
     }
 
+    public get endnotesNumbering(): IConfigNoteNumbering {
+        return this.__endnotesNumbering;
+    }
+
     public get footnotesWrapper(): IConfigNotesWrapper {
         return this.__footnotesWrapper;
     }
@@ -79,6 +89,10 @@ export class Config implements IConfig {
 
     public get footnotesListItem(): IConfigNoteListItem {
         return this.__footnotesListItem;
+    }
+
+    public get footnotesNumbering(): IConfigNoteNumbering {
+        return this.__footnotesNumbering;
     }
 
     public get mappings(): IStyleMapping[] {
