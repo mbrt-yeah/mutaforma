@@ -22,7 +22,7 @@ describe(`${TextRunConverter.name}`, () => {
     });
     describe("#execute", () => {
         it(`should convert w:r element to ${CoTextRun.name} node`, async () => {
-            const $elem = cheerio.load(`<w:r></w:r>`, null, false);
+            const $elem = cheerio.load(`<w:r></w:r>`, { xmlMode: true }, false);
             const instance = new TextRunConverter(config, docxFile, registry);
             const executionResult = await instance.execute($elem);
 
@@ -36,7 +36,7 @@ describe(`${TextRunConverter.name}`, () => {
             expect(textRun.childNodesTotal).toBe(0);
         });
         it(`should convert w:r element to ${CoTextRun.name} node containing one ${CoText.name} node`, async () => {
-            const $elem = cheerio.load(`<w:r><w:t>Hello World</w:t></w:r>`, null, false);
+            const $elem = cheerio.load(`<w:r><w:t>Hello World</w:t></w:r>`, { xmlMode: true }, false);
             const instance = new TextRunConverter(config, docxFile, registry);
             const executionResult = await instance.execute($elem);
 

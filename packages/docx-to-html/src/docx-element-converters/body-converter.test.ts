@@ -21,7 +21,7 @@ describe(`${BodyConverter.name}`, () => {
     });
     describe("#execute", () => {
         it(`should convert w:body element to ${CoBody.name} node`, async () => {
-            const $elem = cheerio.load(`<w:body></w:body>`, null, false);
+            const $elem = cheerio.load(`<w:body></w:body>`, { xmlMode: true }, false);
             const instance = new BodyConverter(config, docxFile, registry);
             const executionResult = await instance.execute($elem);
 
@@ -35,7 +35,7 @@ describe(`${BodyConverter.name}`, () => {
             expect(result.childNodesTotal).toBe(0);
         });
         it(`should convert w:body element to ${CoBody.name} node containing one ${CoParagraph.name} node`, async () => {
-            const $elem = cheerio.load(`<w:body><w:p></w:p></w:body>`, null, false);
+            const $elem = cheerio.load(`<w:body><w:p></w:p></w:body>`, { xmlMode: true }, false);
             const instance = new BodyConverter(config, docxFile, registry);
             const executionResult = await instance.execute($elem);
 

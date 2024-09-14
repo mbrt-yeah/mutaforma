@@ -22,7 +22,7 @@ describe(`${DocumentConverter.name}`, () => {
     });
     describe("#execute", () => {
         it(`should convert w:document element to ${CoDocument.name} node`, async () => {
-            const $elem = cheerio.load(`<w:document></w:document>`, null, false);
+            const $elem = cheerio.load(`<w:document></w:document>`, { xmlMode: true }, false);
             const instance = new DocumentConverter(config, docxFile, registry);
             const executionResult = await instance.execute($elem);
 
@@ -36,7 +36,7 @@ describe(`${DocumentConverter.name}`, () => {
             expect(result.childNodesTotal).toBe(0);
         });
         it(`should convert w:document element to ${CoDocument.name} node containing one ${CoBody.name} node`, async () => {
-            const $elem = cheerio.load(`<w:document><w:body></w:body></w:document>`, null, false);
+            const $elem = cheerio.load(`<w:document><w:body></w:body></w:document>`, { xmlMode: true }, false);
             const instance = new DocumentConverter(config, docxFile, registry);
             const executionResult = await instance.execute($elem);
 

@@ -22,7 +22,7 @@ describe(`${TextConverter.name}`, () => {
     });
     describe("#execute", () => {
         it(`should convert w:t element to ${CoText.name} node`, async () => {
-            const $elem = cheerio.load(`<w:t>Hello World</w:t>`, null, false);
+            const $elem = cheerio.load(`<w:t>Hello World</w:t>`, { xmlMode: true }, false);
             const instance = new TextConverter(config, docxFile, registry);
             const executionResult = await instance.execute($elem);
 

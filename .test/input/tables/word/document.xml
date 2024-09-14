@@ -1,0 +1,2064 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<w:document xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas"
+    xmlns:cx="http://schemas.microsoft.com/office/drawing/2014/chartex"
+    xmlns:cx1="http://schemas.microsoft.com/office/drawing/2015/9/8/chartex"
+    xmlns:cx2="http://schemas.microsoft.com/office/drawing/2015/10/21/chartex"
+    xmlns:cx3="http://schemas.microsoft.com/office/drawing/2016/5/9/chartex"
+    xmlns:cx4="http://schemas.microsoft.com/office/drawing/2016/5/10/chartex"
+    xmlns:cx5="http://schemas.microsoft.com/office/drawing/2016/5/11/chartex"
+    xmlns:cx6="http://schemas.microsoft.com/office/drawing/2016/5/12/chartex"
+    xmlns:cx7="http://schemas.microsoft.com/office/drawing/2016/5/13/chartex"
+    xmlns:cx8="http://schemas.microsoft.com/office/drawing/2016/5/14/chartex"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:aink="http://schemas.microsoft.com/office/drawing/2016/ink"
+    xmlns:am3d="http://schemas.microsoft.com/office/drawing/2017/model3d"
+    xmlns:o="urn:schemas-microsoft-com:office:office"
+    xmlns:oel="http://schemas.microsoft.com/office/2019/extlst"
+    xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"
+    xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math"
+    xmlns:v="urn:schemas-microsoft-com:vml"
+    xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing"
+    xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing"
+    xmlns:w10="urn:schemas-microsoft-com:office:word"
+    xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"
+    xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml"
+    xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml"
+    xmlns:w16cex="http://schemas.microsoft.com/office/word/2018/wordml/cex"
+    xmlns:w16cid="http://schemas.microsoft.com/office/word/2016/wordml/cid"
+    xmlns:w16="http://schemas.microsoft.com/office/word/2018/wordml"
+    xmlns:w16du="http://schemas.microsoft.com/office/word/2023/wordml/word16du"
+    xmlns:w16sdtdh="http://schemas.microsoft.com/office/word/2020/wordml/sdtdatahash"
+    xmlns:w16se="http://schemas.microsoft.com/office/word/2015/wordml/symex"
+    xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup"
+    xmlns:wpi="http://schemas.microsoft.com/office/word/2010/wordprocessingInk"
+    xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml"
+    xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape" mc:Ignorable="w14 w15 w16se w16cid w16 w16cex w16sdtdh w16du wp14">
+    <w:body>
+        <w:p w14:paraId="412DB573" w14:textId="7AC02D34" w:rsidR="00040B4D" w:rsidRPr="00ED1CC5" w:rsidRDefault="00891553" w:rsidP="00040B4D">
+            <w:pPr>
+                <w:pStyle w:val="Heading1"/>
+                <w:rPr>
+                    <w:lang w:val="en-US"/>
+                </w:rPr>
+            </w:pPr>
+            <w:r>
+                <w:rPr>
+                    <w:lang w:val="en-US"/>
+                </w:rPr>
+                <w:t>Tables</w:t>
+            </w:r>
+        </w:p>
+        <w:p w14:paraId="4D17D7A8" w14:textId="317BDC5F" w:rsidR="00B317D6" w:rsidRDefault="00B317D6" w:rsidP="00292549">
+            <w:pPr>
+                <w:pStyle w:val="Heading2"/>
+                <w:rPr>
+                    <w:rFonts w:eastAsiaTheme="minorEastAsia"/>
+                    <w:lang w:val="en-US"/>
+                </w:rPr>
+            </w:pPr>
+            <w:r>
+                <w:rPr>
+                    <w:rFonts w:eastAsiaTheme="minorEastAsia"/>
+                    <w:lang w:val="en-US"/>
+                </w:rPr>
+                <w:t xml:space="preserve">Simple </w:t>
+            </w:r>
+            <w:r w:rsidR="00292549">
+                <w:rPr>
+                    <w:rFonts w:eastAsiaTheme="minorEastAsia"/>
+                    <w:lang w:val="en-US"/>
+                </w:rPr>
+                <w:t>t</w:t>
+            </w:r>
+            <w:r>
+                <w:rPr>
+                    <w:rFonts w:eastAsiaTheme="minorEastAsia"/>
+                    <w:lang w:val="en-US"/>
+                </w:rPr>
+                <w:t>able</w:t>
+            </w:r>
+        </w:p>
+        <w:tbl>
+            <w:tblPr>
+                <w:tblStyle w:val="TableGrid"/>
+                <w:tblW w:w="0" w:type="auto"/>
+                <w:tblLook w:val="0680" w:firstRow="0" w:lastRow="0" w:firstColumn="1" w:lastColumn="0" w:noHBand="1" w:noVBand="1"/>
+            </w:tblPr>
+            <w:tblGrid>
+                <w:gridCol w:w="1812"/>
+                <w:gridCol w:w="1812"/>
+                <w:gridCol w:w="1812"/>
+                <w:gridCol w:w="1813"/>
+                <w:gridCol w:w="1813"/>
+            </w:tblGrid>
+            <w:tr w:rsidR="00B317D6" w14:paraId="288D0350" w14:textId="77777777" w:rsidTr="00B62ACF">
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="1812" w:type="dxa"/>
+                    </w:tcPr>
+                    <w:p w14:paraId="02092FD8" w14:textId="0B6CDB66" w:rsidR="00B317D6" w:rsidRPr="00B317D6" w:rsidRDefault="00B317D6" w:rsidP="00B317D6">
+                        <w:pPr>
+                            <w:jc w:val="center"/>
+                            <w:rPr>
+                                <w:b/>
+                                <w:bCs/>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r w:rsidRPr="00B317D6">
+                            <w:rPr>
+                                <w:b/>
+                                <w:bCs/>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                            <w:t>Table Header 1</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="1812" w:type="dxa"/>
+                    </w:tcPr>
+                    <w:p w14:paraId="357D2206" w14:textId="542D77BD" w:rsidR="00B317D6" w:rsidRPr="00B317D6" w:rsidRDefault="00B317D6" w:rsidP="00B317D6">
+                        <w:pPr>
+                            <w:jc w:val="center"/>
+                            <w:rPr>
+                                <w:b/>
+                                <w:bCs/>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r w:rsidRPr="00B317D6">
+                            <w:rPr>
+                                <w:b/>
+                                <w:bCs/>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                            <w:t>Table Header 2</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="1812" w:type="dxa"/>
+                    </w:tcPr>
+                    <w:p w14:paraId="1C8F0EA2" w14:textId="075F5BF0" w:rsidR="00B317D6" w:rsidRPr="00B317D6" w:rsidRDefault="00B317D6" w:rsidP="00B317D6">
+                        <w:pPr>
+                            <w:jc w:val="center"/>
+                            <w:rPr>
+                                <w:b/>
+                                <w:bCs/>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r w:rsidRPr="00B317D6">
+                            <w:rPr>
+                                <w:b/>
+                                <w:bCs/>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                            <w:t>Table Header 3</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="1813" w:type="dxa"/>
+                    </w:tcPr>
+                    <w:p w14:paraId="37312E26" w14:textId="2137641D" w:rsidR="00B317D6" w:rsidRPr="00B317D6" w:rsidRDefault="00B317D6" w:rsidP="00B317D6">
+                        <w:pPr>
+                            <w:jc w:val="center"/>
+                            <w:rPr>
+                                <w:b/>
+                                <w:bCs/>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r w:rsidRPr="00B317D6">
+                            <w:rPr>
+                                <w:b/>
+                                <w:bCs/>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                            <w:t>Table Header 4</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="1813" w:type="dxa"/>
+                    </w:tcPr>
+                    <w:p w14:paraId="74C444B6" w14:textId="32F2106C" w:rsidR="00B317D6" w:rsidRPr="00B317D6" w:rsidRDefault="00B317D6" w:rsidP="00B317D6">
+                        <w:pPr>
+                            <w:jc w:val="center"/>
+                            <w:rPr>
+                                <w:b/>
+                                <w:bCs/>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r w:rsidRPr="00B317D6">
+                            <w:rPr>
+                                <w:b/>
+                                <w:bCs/>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                            <w:t>Table Header 5</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+            </w:tr>
+            <w:tr w:rsidR="00B317D6" w14:paraId="5FFFE8F5" w14:textId="77777777" w:rsidTr="00B62ACF">
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="1812" w:type="dxa"/>
+                    </w:tcPr>
+                    <w:p w14:paraId="5DF97989" w14:textId="2947A57D" w:rsidR="00B317D6" w:rsidRDefault="00B317D6" w:rsidP="00B317D6">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                            <w:t>Table Cell 1</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="1812" w:type="dxa"/>
+                    </w:tcPr>
+                    <w:p w14:paraId="46B85E1A" w14:textId="64D55325" w:rsidR="00B317D6" w:rsidRDefault="00B317D6" w:rsidP="00B317D6">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                            <w:t>Table Cell 2</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="1812" w:type="dxa"/>
+                    </w:tcPr>
+                    <w:p w14:paraId="29FEE36A" w14:textId="0178D2C0" w:rsidR="00B317D6" w:rsidRDefault="00B317D6" w:rsidP="00B317D6">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                            <w:t>Table Cell 3</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="1813" w:type="dxa"/>
+                    </w:tcPr>
+                    <w:p w14:paraId="3267166D" w14:textId="5FB9AC3F" w:rsidR="00B317D6" w:rsidRDefault="00B317D6" w:rsidP="00B317D6">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                            <w:t>Table Cell 4</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="1813" w:type="dxa"/>
+                    </w:tcPr>
+                    <w:p w14:paraId="37D420ED" w14:textId="458D445D" w:rsidR="00B317D6" w:rsidRDefault="00B317D6" w:rsidP="00B317D6">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                            <w:t>Table Cell 5</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+            </w:tr>
+            <w:tr w:rsidR="00B317D6" w14:paraId="5EC08EE8" w14:textId="77777777" w:rsidTr="00B62ACF">
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="1812" w:type="dxa"/>
+                    </w:tcPr>
+                    <w:p w14:paraId="1C6FF9B7" w14:textId="5C9A7C0B" w:rsidR="00B317D6" w:rsidRDefault="00B317D6" w:rsidP="00B317D6">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                            <w:t>Table Cell 6</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="1812" w:type="dxa"/>
+                    </w:tcPr>
+                    <w:p w14:paraId="0ECBA6DE" w14:textId="2145395E" w:rsidR="00B317D6" w:rsidRDefault="00B317D6" w:rsidP="00B317D6">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                            <w:t>Table Cell 7</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="1812" w:type="dxa"/>
+                    </w:tcPr>
+                    <w:p w14:paraId="35CD4DC5" w14:textId="288A174F" w:rsidR="00B317D6" w:rsidRDefault="00B317D6" w:rsidP="00B317D6">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                            <w:t>Table Cell 8</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="1813" w:type="dxa"/>
+                    </w:tcPr>
+                    <w:p w14:paraId="202D3E1C" w14:textId="33217E34" w:rsidR="00B317D6" w:rsidRDefault="00B317D6" w:rsidP="00B317D6">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                            <w:t>Table Cell 9</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="1813" w:type="dxa"/>
+                    </w:tcPr>
+                    <w:p w14:paraId="02B46CDA" w14:textId="57B9D3BA" w:rsidR="00B317D6" w:rsidRDefault="00B317D6" w:rsidP="00B317D6">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                            <w:t>Table Cell 10</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+            </w:tr>
+            <w:tr w:rsidR="00B317D6" w14:paraId="4CD25113" w14:textId="77777777" w:rsidTr="00B62ACF">
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="1812" w:type="dxa"/>
+                    </w:tcPr>
+                    <w:p w14:paraId="1C373E77" w14:textId="3CB37818" w:rsidR="00B317D6" w:rsidRDefault="00B317D6" w:rsidP="00B317D6">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                            <w:t>Table Cell 11</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="1812" w:type="dxa"/>
+                    </w:tcPr>
+                    <w:p w14:paraId="0E642018" w14:textId="485376CD" w:rsidR="00B317D6" w:rsidRDefault="00B317D6" w:rsidP="00B317D6">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                            <w:t>Table Cell 12</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="1812" w:type="dxa"/>
+                    </w:tcPr>
+                    <w:p w14:paraId="322FE96C" w14:textId="4786A895" w:rsidR="00B317D6" w:rsidRDefault="00B317D6" w:rsidP="00B317D6">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                            <w:t>Table Cell 13</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="1813" w:type="dxa"/>
+                    </w:tcPr>
+                    <w:p w14:paraId="731AB09E" w14:textId="40CBDEF6" w:rsidR="00B317D6" w:rsidRDefault="00B317D6" w:rsidP="00B317D6">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                            <w:t>Table Cell 14</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="1813" w:type="dxa"/>
+                    </w:tcPr>
+                    <w:p w14:paraId="61F69C2D" w14:textId="4830E394" w:rsidR="00B317D6" w:rsidRDefault="00B317D6" w:rsidP="00B317D6">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                            <w:t>Table Cell 15</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+            </w:tr>
+        </w:tbl>
+        <w:p w14:paraId="355D17A5" w14:textId="52F21530" w:rsidR="00B317D6" w:rsidRDefault="00292549" w:rsidP="00961C46">
+            <w:pPr>
+                <w:pStyle w:val="Heading2"/>
+                <w:rPr>
+                    <w:lang w:val="en-US"/>
+                </w:rPr>
+            </w:pPr>
+            <w:r>
+                <w:rPr>
+                    <w:lang w:val="en-US"/>
+                </w:rPr>
+                <w:t>Simple table</w:t>
+            </w:r>
+            <w:r w:rsidR="00961C46">
+                <w:rPr>
+                    <w:lang w:val="en-US"/>
+                </w:rPr>
+                <w:t xml:space="preserve"> with horizontally merged cells</w:t>
+            </w:r>
+        </w:p>
+        <w:tbl>
+            <w:tblPr>
+                <w:tblStyle w:val="TableGrid"/>
+                <w:tblW w:w="0" w:type="auto"/>
+                <w:tblLook w:val="0600" w:firstRow="0" w:lastRow="0" w:firstColumn="0" w:lastColumn="0" w:noHBand="1" w:noVBand="1"/>
+            </w:tblPr>
+            <w:tblGrid>
+                <w:gridCol w:w="1812"/>
+                <w:gridCol w:w="1812"/>
+                <w:gridCol w:w="1812"/>
+                <w:gridCol w:w="1813"/>
+                <w:gridCol w:w="1813"/>
+            </w:tblGrid>
+            <w:tr w:rsidR="00961C46" w14:paraId="097B8183" w14:textId="77777777" w:rsidTr="00B62ACF">
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="9062" w:type="dxa"/>
+                        <w:gridSpan w:val="5"/>
+                    </w:tcPr>
+                    <w:p w14:paraId="050770B5" w14:textId="1A8C8518" w:rsidR="00961C46" w:rsidRPr="00B317D6" w:rsidRDefault="00961C46" w:rsidP="00961C46">
+                        <w:pPr>
+                            <w:jc w:val="center"/>
+                            <w:rPr>
+                                <w:b/>
+                                <w:bCs/>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r w:rsidRPr="00B317D6">
+                            <w:rPr>
+                                <w:b/>
+                                <w:bCs/>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                            <w:t>Table Header 1</w:t>
+                        </w:r>
+                        <w:r>
+                            <w:rPr>
+                                <w:b/>
+                                <w:bCs/>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                            <w:t>/5</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+            </w:tr>
+            <w:tr w:rsidR="00961C46" w14:paraId="164C8575" w14:textId="77777777" w:rsidTr="00B62ACF">
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="3624" w:type="dxa"/>
+                        <w:gridSpan w:val="2"/>
+                    </w:tcPr>
+                    <w:p w14:paraId="1F62A1B7" w14:textId="695BAFD5" w:rsidR="00961C46" w:rsidRDefault="00961C46" w:rsidP="00961C46">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                            <w:t>Table Cell 1/2</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="1812" w:type="dxa"/>
+                    </w:tcPr>
+                    <w:p w14:paraId="25E2AF17" w14:textId="77777777" w:rsidR="00961C46" w:rsidRDefault="00961C46" w:rsidP="00D75362">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                            <w:t>Table Cell 3</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="1813" w:type="dxa"/>
+                    </w:tcPr>
+                    <w:p w14:paraId="0463D562" w14:textId="77777777" w:rsidR="00961C46" w:rsidRDefault="00961C46" w:rsidP="00D75362">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                            <w:t>Table Cell 4</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="1813" w:type="dxa"/>
+                    </w:tcPr>
+                    <w:p w14:paraId="04FDC3C8" w14:textId="77777777" w:rsidR="00961C46" w:rsidRDefault="00961C46" w:rsidP="00D75362">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                            <w:t>Table Cell 5</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+            </w:tr>
+            <w:tr w:rsidR="00961C46" w14:paraId="2404BB5B" w14:textId="77777777" w:rsidTr="00B62ACF">
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="1812" w:type="dxa"/>
+                    </w:tcPr>
+                    <w:p w14:paraId="10A89D04" w14:textId="77777777" w:rsidR="00961C46" w:rsidRDefault="00961C46" w:rsidP="00D75362">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                            <w:t>Table Cell 6</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="1812" w:type="dxa"/>
+                    </w:tcPr>
+                    <w:p w14:paraId="2F9C6F2E" w14:textId="77777777" w:rsidR="00961C46" w:rsidRDefault="00961C46" w:rsidP="00D75362">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                            <w:t>Table Cell 7</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="3625" w:type="dxa"/>
+                        <w:gridSpan w:val="2"/>
+                    </w:tcPr>
+                    <w:p w14:paraId="10481FE6" w14:textId="57418CBE" w:rsidR="00961C46" w:rsidRDefault="00961C46" w:rsidP="00961C46">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                            <w:t>Table Cell 8/9</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="1813" w:type="dxa"/>
+                    </w:tcPr>
+                    <w:p w14:paraId="39FC6D95" w14:textId="77777777" w:rsidR="00961C46" w:rsidRDefault="00961C46" w:rsidP="00D75362">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                            <w:t>Table Cell 10</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+            </w:tr>
+            <w:tr w:rsidR="00961C46" w14:paraId="0B3B9E87" w14:textId="77777777" w:rsidTr="00B62ACF">
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="1812" w:type="dxa"/>
+                    </w:tcPr>
+                    <w:p w14:paraId="64945DCF" w14:textId="77777777" w:rsidR="00961C46" w:rsidRDefault="00961C46" w:rsidP="00D75362">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                            <w:t>Table Cell 11</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="1812" w:type="dxa"/>
+                    </w:tcPr>
+                    <w:p w14:paraId="2ADFC08B" w14:textId="77777777" w:rsidR="00961C46" w:rsidRDefault="00961C46" w:rsidP="00D75362">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                            <w:t>Table Cell 12</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="1812" w:type="dxa"/>
+                    </w:tcPr>
+                    <w:p w14:paraId="64EA4F03" w14:textId="77777777" w:rsidR="00961C46" w:rsidRDefault="00961C46" w:rsidP="00D75362">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                            <w:t>Table Cell 13</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="3626" w:type="dxa"/>
+                        <w:gridSpan w:val="2"/>
+                    </w:tcPr>
+                    <w:p w14:paraId="168BC61A" w14:textId="49AB7F87" w:rsidR="00961C46" w:rsidRDefault="00961C46" w:rsidP="00961C46">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                            <w:t>Table Cell 14/15</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+            </w:tr>
+        </w:tbl>
+        <w:p w14:paraId="53AF3A6A" w14:textId="254C0D80" w:rsidR="00961C46" w:rsidRDefault="00292549" w:rsidP="00F06AF9">
+            <w:pPr>
+                <w:pStyle w:val="Heading2"/>
+                <w:rPr>
+                    <w:lang w:val="en-US"/>
+                </w:rPr>
+            </w:pPr>
+            <w:r>
+                <w:rPr>
+                    <w:lang w:val="en-US"/>
+                </w:rPr>
+                <w:t>Simple t</w:t>
+            </w:r>
+            <w:r w:rsidR="00F06AF9">
+                <w:rPr>
+                    <w:lang w:val="en-US"/>
+                </w:rPr>
+                <w:t>able with vertically merged cells</w:t>
+            </w:r>
+        </w:p>
+        <w:tbl>
+            <w:tblPr>
+                <w:tblStyle w:val="TableGrid"/>
+                <w:tblW w:w="0" w:type="auto"/>
+                <w:tblLook w:val="0600" w:firstRow="0" w:lastRow="0" w:firstColumn="0" w:lastColumn="0" w:noHBand="1" w:noVBand="1"/>
+            </w:tblPr>
+            <w:tblGrid>
+                <w:gridCol w:w="1812"/>
+                <w:gridCol w:w="1812"/>
+                <w:gridCol w:w="1812"/>
+                <w:gridCol w:w="1813"/>
+                <w:gridCol w:w="1813"/>
+            </w:tblGrid>
+            <w:tr w:rsidR="00F06AF9" w14:paraId="4A340AAE" w14:textId="77777777" w:rsidTr="00B62ACF">
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="1812" w:type="dxa"/>
+                    </w:tcPr>
+                    <w:p w14:paraId="260B6BB8" w14:textId="77777777" w:rsidR="00F06AF9" w:rsidRPr="00B317D6" w:rsidRDefault="00F06AF9" w:rsidP="00D75362">
+                        <w:pPr>
+                            <w:jc w:val="center"/>
+                            <w:rPr>
+                                <w:b/>
+                                <w:bCs/>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r w:rsidRPr="00B317D6">
+                            <w:rPr>
+                                <w:b/>
+                                <w:bCs/>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                            <w:t>Table Header 1</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="1812" w:type="dxa"/>
+                    </w:tcPr>
+                    <w:p w14:paraId="1F30379B" w14:textId="77777777" w:rsidR="00F06AF9" w:rsidRPr="00B317D6" w:rsidRDefault="00F06AF9" w:rsidP="00D75362">
+                        <w:pPr>
+                            <w:jc w:val="center"/>
+                            <w:rPr>
+                                <w:b/>
+                                <w:bCs/>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r w:rsidRPr="00B317D6">
+                            <w:rPr>
+                                <w:b/>
+                                <w:bCs/>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                            <w:t>Table Header 2</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="1812" w:type="dxa"/>
+                    </w:tcPr>
+                    <w:p w14:paraId="17D1ECE8" w14:textId="77777777" w:rsidR="00F06AF9" w:rsidRPr="00B317D6" w:rsidRDefault="00F06AF9" w:rsidP="00D75362">
+                        <w:pPr>
+                            <w:jc w:val="center"/>
+                            <w:rPr>
+                                <w:b/>
+                                <w:bCs/>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r w:rsidRPr="00B317D6">
+                            <w:rPr>
+                                <w:b/>
+                                <w:bCs/>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                            <w:t>Table Header 3</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="1813" w:type="dxa"/>
+                    </w:tcPr>
+                    <w:p w14:paraId="6B7A5193" w14:textId="77777777" w:rsidR="00F06AF9" w:rsidRPr="00B317D6" w:rsidRDefault="00F06AF9" w:rsidP="00D75362">
+                        <w:pPr>
+                            <w:jc w:val="center"/>
+                            <w:rPr>
+                                <w:b/>
+                                <w:bCs/>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r w:rsidRPr="00B317D6">
+                            <w:rPr>
+                                <w:b/>
+                                <w:bCs/>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                            <w:t>Table Header 4</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="1813" w:type="dxa"/>
+                    </w:tcPr>
+                    <w:p w14:paraId="4E9877AD" w14:textId="77777777" w:rsidR="00F06AF9" w:rsidRPr="00B317D6" w:rsidRDefault="00F06AF9" w:rsidP="00D75362">
+                        <w:pPr>
+                            <w:jc w:val="center"/>
+                            <w:rPr>
+                                <w:b/>
+                                <w:bCs/>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r w:rsidRPr="00B317D6">
+                            <w:rPr>
+                                <w:b/>
+                                <w:bCs/>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                            <w:t>Table Header 5</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+            </w:tr>
+            <w:tr w:rsidR="00F06AF9" w14:paraId="7E7044F7" w14:textId="77777777" w:rsidTr="00B62ACF">
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="1812" w:type="dxa"/>
+                        <w:vMerge w:val="restart"/>
+                    </w:tcPr>
+                    <w:p w14:paraId="498A7F17" w14:textId="4464C610" w:rsidR="00F06AF9" w:rsidRDefault="00F06AF9" w:rsidP="00F06AF9">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                            <w:t>Table Cell 1/6</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="1812" w:type="dxa"/>
+                    </w:tcPr>
+                    <w:p w14:paraId="613A72F0" w14:textId="77777777" w:rsidR="00F06AF9" w:rsidRDefault="00F06AF9" w:rsidP="00D75362">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                            <w:t>Table Cell 2</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="1812" w:type="dxa"/>
+                    </w:tcPr>
+                    <w:p w14:paraId="1A585C5F" w14:textId="77777777" w:rsidR="00F06AF9" w:rsidRDefault="00F06AF9" w:rsidP="00D75362">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                            <w:t>Table Cell 3</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="1813" w:type="dxa"/>
+                    </w:tcPr>
+                    <w:p w14:paraId="4ADC73AA" w14:textId="77777777" w:rsidR="00F06AF9" w:rsidRDefault="00F06AF9" w:rsidP="00D75362">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                            <w:t>Table Cell 4</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="1813" w:type="dxa"/>
+                    </w:tcPr>
+                    <w:p w14:paraId="064E21B8" w14:textId="77777777" w:rsidR="00F06AF9" w:rsidRDefault="00F06AF9" w:rsidP="00D75362">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                            <w:t>Table Cell 5</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+            </w:tr>
+            <w:tr w:rsidR="00D828E3" w14:paraId="20DEBEA7" w14:textId="77777777" w:rsidTr="00B62ACF">
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="1812" w:type="dxa"/>
+                        <w:vMerge/>
+                    </w:tcPr>
+                    <w:p w14:paraId="3412AF9E" w14:textId="26197437" w:rsidR="00D828E3" w:rsidRDefault="00D828E3" w:rsidP="00D75362">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                        </w:pPr>
+                    </w:p>
+                </w:tc>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="1812" w:type="dxa"/>
+                    </w:tcPr>
+                    <w:p w14:paraId="4BE80BDA" w14:textId="77777777" w:rsidR="00D828E3" w:rsidRDefault="00D828E3" w:rsidP="00D75362">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                            <w:t>Table Cell 7</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="1812" w:type="dxa"/>
+                        <w:vMerge w:val="restart"/>
+                    </w:tcPr>
+                    <w:p w14:paraId="201B80AA" w14:textId="465DD203" w:rsidR="00D828E3" w:rsidRDefault="00D828E3" w:rsidP="00F06AF9">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                            <w:t>Table Cell 8/13</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="1813" w:type="dxa"/>
+                    </w:tcPr>
+                    <w:p w14:paraId="5A23C4C2" w14:textId="77777777" w:rsidR="00D828E3" w:rsidRDefault="00D828E3" w:rsidP="00D75362">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                            <w:t>Table Cell 9</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="1813" w:type="dxa"/>
+                        <w:vMerge w:val="restart"/>
+                    </w:tcPr>
+                    <w:p w14:paraId="29403FDD" w14:textId="512BA6BD" w:rsidR="00D828E3" w:rsidRDefault="00D828E3" w:rsidP="00D828E3">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                            <w:t>Table Cell 10/15</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+            </w:tr>
+            <w:tr w:rsidR="00D828E3" w14:paraId="187333AE" w14:textId="77777777" w:rsidTr="00B62ACF">
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="1812" w:type="dxa"/>
+                    </w:tcPr>
+                    <w:p w14:paraId="1C44DD71" w14:textId="77777777" w:rsidR="00D828E3" w:rsidRDefault="00D828E3" w:rsidP="00D75362">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                            <w:t>Table Cell 11</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="1812" w:type="dxa"/>
+                    </w:tcPr>
+                    <w:p w14:paraId="18F00A8D" w14:textId="77777777" w:rsidR="00D828E3" w:rsidRDefault="00D828E3" w:rsidP="00D75362">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                            <w:t>Table Cell 12</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="1812" w:type="dxa"/>
+                        <w:vMerge/>
+                    </w:tcPr>
+                    <w:p w14:paraId="4BD1762C" w14:textId="3C4A8C4B" w:rsidR="00D828E3" w:rsidRDefault="00D828E3" w:rsidP="00D75362">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                        </w:pPr>
+                    </w:p>
+                </w:tc>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="1813" w:type="dxa"/>
+                    </w:tcPr>
+                    <w:p w14:paraId="3DAF639B" w14:textId="77777777" w:rsidR="00D828E3" w:rsidRDefault="00D828E3" w:rsidP="00D75362">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                            <w:t>Table Cell 14</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="1813" w:type="dxa"/>
+                        <w:vMerge/>
+                    </w:tcPr>
+                    <w:p w14:paraId="0C8D0130" w14:textId="052B6C08" w:rsidR="00D828E3" w:rsidRDefault="00D828E3" w:rsidP="00D75362">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                        </w:pPr>
+                    </w:p>
+                </w:tc>
+            </w:tr>
+        </w:tbl>
+        <w:p w14:paraId="1C4534E8" w14:textId="0F6CADAE" w:rsidR="00F06AF9" w:rsidRDefault="00292549" w:rsidP="00ED1CC5">
+            <w:pPr>
+                <w:pStyle w:val="Heading2"/>
+                <w:rPr>
+                    <w:lang w:val="en-US"/>
+                </w:rPr>
+            </w:pPr>
+            <w:r>
+                <w:rPr>
+                    <w:lang w:val="en-US"/>
+                </w:rPr>
+                <w:t>Simple t</w:t>
+            </w:r>
+            <w:r w:rsidR="00ED1CC5">
+                <w:rPr>
+                    <w:lang w:val="en-US"/>
+                </w:rPr>
+                <w:t>able with horizontally and vertically merged cells</w:t>
+            </w:r>
+        </w:p>
+        <w:tbl>
+            <w:tblPr>
+                <w:tblStyle w:val="TableGrid"/>
+                <w:tblW w:w="0" w:type="auto"/>
+                <w:tblLook w:val="0600" w:firstRow="0" w:lastRow="0" w:firstColumn="0" w:lastColumn="0" w:noHBand="1" w:noVBand="1"/>
+            </w:tblPr>
+            <w:tblGrid>
+                <w:gridCol w:w="1812"/>
+                <w:gridCol w:w="1812"/>
+                <w:gridCol w:w="1812"/>
+                <w:gridCol w:w="1813"/>
+                <w:gridCol w:w="1813"/>
+            </w:tblGrid>
+            <w:tr w:rsidR="00ED1CC5" w14:paraId="2E25A1F1" w14:textId="77777777" w:rsidTr="00B62ACF">
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="9062" w:type="dxa"/>
+                        <w:gridSpan w:val="5"/>
+                    </w:tcPr>
+                    <w:p w14:paraId="187DD373" w14:textId="77777777" w:rsidR="00ED1CC5" w:rsidRPr="00B317D6" w:rsidRDefault="00ED1CC5" w:rsidP="00F56586">
+                        <w:pPr>
+                            <w:jc w:val="center"/>
+                            <w:rPr>
+                                <w:b/>
+                                <w:bCs/>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r w:rsidRPr="00B317D6">
+                            <w:rPr>
+                                <w:b/>
+                                <w:bCs/>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                            <w:t>Table Header 1</w:t>
+                        </w:r>
+                        <w:r>
+                            <w:rPr>
+                                <w:b/>
+                                <w:bCs/>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                            <w:t>/5</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+            </w:tr>
+            <w:tr w:rsidR="00ED1CC5" w14:paraId="5E44FA7A" w14:textId="77777777" w:rsidTr="00B62ACF">
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="3624" w:type="dxa"/>
+                        <w:gridSpan w:val="2"/>
+                        <w:vMerge w:val="restart"/>
+                    </w:tcPr>
+                    <w:p w14:paraId="74C2791B" w14:textId="1E755097" w:rsidR="00ED1CC5" w:rsidRDefault="00ED1CC5" w:rsidP="00ED1CC5">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                            <w:t>Table Cell 1/2/6/7</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="1812" w:type="dxa"/>
+                    </w:tcPr>
+                    <w:p w14:paraId="63AD09DA" w14:textId="77777777" w:rsidR="00ED1CC5" w:rsidRDefault="00ED1CC5" w:rsidP="00F56586">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                            <w:t>Table Cell 3</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="1813" w:type="dxa"/>
+                    </w:tcPr>
+                    <w:p w14:paraId="005FD295" w14:textId="77777777" w:rsidR="00ED1CC5" w:rsidRDefault="00ED1CC5" w:rsidP="00F56586">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                            <w:t>Table Cell 4</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="1813" w:type="dxa"/>
+                        <w:vMerge w:val="restart"/>
+                    </w:tcPr>
+                    <w:p w14:paraId="771E3E32" w14:textId="691E098C" w:rsidR="00ED1CC5" w:rsidRDefault="00ED1CC5" w:rsidP="00ED1CC5">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                            <w:t>Table Cell 5/10</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+            </w:tr>
+            <w:tr w:rsidR="00ED1CC5" w14:paraId="52E1E698" w14:textId="77777777" w:rsidTr="00B62ACF">
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="3624" w:type="dxa"/>
+                        <w:gridSpan w:val="2"/>
+                        <w:vMerge/>
+                    </w:tcPr>
+                    <w:p w14:paraId="0C3C8E28" w14:textId="14F61806" w:rsidR="00ED1CC5" w:rsidRDefault="00ED1CC5" w:rsidP="00F56586">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                        </w:pPr>
+                    </w:p>
+                </w:tc>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="3625" w:type="dxa"/>
+                        <w:gridSpan w:val="2"/>
+                    </w:tcPr>
+                    <w:p w14:paraId="0A263B93" w14:textId="77777777" w:rsidR="00ED1CC5" w:rsidRDefault="00ED1CC5" w:rsidP="00F56586">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                            <w:t>Table Cell 8/9</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="1813" w:type="dxa"/>
+                        <w:vMerge/>
+                    </w:tcPr>
+                    <w:p w14:paraId="77C81BDD" w14:textId="22F631E3" w:rsidR="00ED1CC5" w:rsidRDefault="00ED1CC5" w:rsidP="00F56586">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                        </w:pPr>
+                    </w:p>
+                </w:tc>
+            </w:tr>
+            <w:tr w:rsidR="00ED1CC5" w14:paraId="2CC369B5" w14:textId="77777777" w:rsidTr="00B62ACF">
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="1812" w:type="dxa"/>
+                    </w:tcPr>
+                    <w:p w14:paraId="3F58320E" w14:textId="77777777" w:rsidR="00ED1CC5" w:rsidRDefault="00ED1CC5" w:rsidP="00F56586">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                            <w:t>Table Cell 11</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="1812" w:type="dxa"/>
+                    </w:tcPr>
+                    <w:p w14:paraId="35851EF3" w14:textId="77777777" w:rsidR="00ED1CC5" w:rsidRDefault="00ED1CC5" w:rsidP="00F56586">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                            <w:t>Table Cell 12</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="1812" w:type="dxa"/>
+                    </w:tcPr>
+                    <w:p w14:paraId="4F011E47" w14:textId="77777777" w:rsidR="00ED1CC5" w:rsidRDefault="00ED1CC5" w:rsidP="00F56586">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                            <w:t>Table Cell 13</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="3626" w:type="dxa"/>
+                        <w:gridSpan w:val="2"/>
+                    </w:tcPr>
+                    <w:p w14:paraId="78F36700" w14:textId="77777777" w:rsidR="00ED1CC5" w:rsidRDefault="00ED1CC5" w:rsidP="00F56586">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                            <w:t>Table Cell 14/15</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+            </w:tr>
+            <w:tr w:rsidR="00BB0E92" w14:paraId="508659FA" w14:textId="77777777" w:rsidTr="00B62ACF">
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="1812" w:type="dxa"/>
+                    </w:tcPr>
+                    <w:p w14:paraId="14FDF87B" w14:textId="1E7257BB" w:rsidR="00BB0E92" w:rsidRDefault="00BB0E92" w:rsidP="00F56586">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                            <w:t>Table Cell 16</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="3624" w:type="dxa"/>
+                        <w:gridSpan w:val="2"/>
+                        <w:vMerge w:val="restart"/>
+                    </w:tcPr>
+                    <w:p w14:paraId="17419054" w14:textId="291060D9" w:rsidR="00BB0E92" w:rsidRDefault="00BB0E92" w:rsidP="00BB0E92">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                            <w:t>Table Cell 17/18/21/22/25/26</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="3626" w:type="dxa"/>
+                        <w:gridSpan w:val="2"/>
+                    </w:tcPr>
+                    <w:p w14:paraId="494AAAC6" w14:textId="635DFD18" w:rsidR="00BB0E92" w:rsidRDefault="00BB0E92" w:rsidP="00F56586">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                            <w:t>Table Cell 19</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+            </w:tr>
+            <w:tr w:rsidR="00BB0E92" w14:paraId="3ACD8AA3" w14:textId="77777777" w:rsidTr="00B62ACF">
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="1812" w:type="dxa"/>
+                    </w:tcPr>
+                    <w:p w14:paraId="0C5894A7" w14:textId="7518E35B" w:rsidR="00BB0E92" w:rsidRDefault="00BB0E92" w:rsidP="00F56586">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                            <w:t>Table Cell 20</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="3624" w:type="dxa"/>
+                        <w:gridSpan w:val="2"/>
+                        <w:vMerge/>
+                    </w:tcPr>
+                    <w:p w14:paraId="147B16E0" w14:textId="28FF04E9" w:rsidR="00BB0E92" w:rsidRDefault="00BB0E92" w:rsidP="00F56586">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                        </w:pPr>
+                    </w:p>
+                </w:tc>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="3626" w:type="dxa"/>
+                        <w:gridSpan w:val="2"/>
+                    </w:tcPr>
+                    <w:p w14:paraId="51295C7A" w14:textId="6EB4A03C" w:rsidR="00BB0E92" w:rsidRDefault="00BB0E92" w:rsidP="00F56586">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                            <w:t>Table Cell 23</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+            </w:tr>
+            <w:tr w:rsidR="00BB0E92" w14:paraId="2D370CA9" w14:textId="77777777" w:rsidTr="00B62ACF">
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="1812" w:type="dxa"/>
+                    </w:tcPr>
+                    <w:p w14:paraId="5CB33824" w14:textId="59165F86" w:rsidR="00BB0E92" w:rsidRDefault="00BB0E92" w:rsidP="00F56586">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                            <w:t>Table Cell 24</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="3624" w:type="dxa"/>
+                        <w:gridSpan w:val="2"/>
+                        <w:vMerge/>
+                    </w:tcPr>
+                    <w:p w14:paraId="068C6D20" w14:textId="267BF449" w:rsidR="00BB0E92" w:rsidRDefault="00BB0E92" w:rsidP="00F56586">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                        </w:pPr>
+                    </w:p>
+                </w:tc>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="3626" w:type="dxa"/>
+                        <w:gridSpan w:val="2"/>
+                    </w:tcPr>
+                    <w:p w14:paraId="54431986" w14:textId="31B7B4A1" w:rsidR="00BB0E92" w:rsidRDefault="00BB0E92" w:rsidP="00F56586">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                            <w:t>Table Cell 27</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+            </w:tr>
+        </w:tbl>
+        <w:p w14:paraId="01BA8FBE" w14:textId="378F5F91" w:rsidR="003D724F" w:rsidRDefault="009B18A3" w:rsidP="009B18A3">
+            <w:pPr>
+                <w:pStyle w:val="Heading2"/>
+                <w:rPr>
+                    <w:lang w:val="en-US"/>
+                </w:rPr>
+            </w:pPr>
+            <w:r>
+                <w:rPr>
+                    <w:lang w:val="en-US"/>
+                </w:rPr>
+                <w:t>Table with Header Row</w:t>
+            </w:r>
+        </w:p>
+        <w:tbl>
+            <w:tblPr>
+                <w:tblStyle w:val="TableGrid"/>
+                <w:tblW w:w="0" w:type="auto"/>
+                <w:tblLook w:val="0620" w:firstRow="1" w:lastRow="0" w:firstColumn="0" w:lastColumn="0" w:noHBand="1" w:noVBand="1"/>
+            </w:tblPr>
+            <w:tblGrid>
+                <w:gridCol w:w="1812"/>
+                <w:gridCol w:w="1812"/>
+                <w:gridCol w:w="1812"/>
+                <w:gridCol w:w="1813"/>
+                <w:gridCol w:w="1813"/>
+            </w:tblGrid>
+            <w:tr w:rsidR="009B18A3" w14:paraId="5C76E0E1" w14:textId="77777777" w:rsidTr="009B18A3">
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="1812" w:type="dxa"/>
+                    </w:tcPr>
+                    <w:p w14:paraId="637237AE" w14:textId="77777777" w:rsidR="009B18A3" w:rsidRPr="00B317D6" w:rsidRDefault="009B18A3" w:rsidP="00441E52">
+                        <w:pPr>
+                            <w:jc w:val="center"/>
+                            <w:rPr>
+                                <w:b/>
+                                <w:bCs/>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r w:rsidRPr="00B317D6">
+                            <w:rPr>
+                                <w:b/>
+                                <w:bCs/>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                            <w:t>Table Header 1</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="1812" w:type="dxa"/>
+                    </w:tcPr>
+                    <w:p w14:paraId="2FCEFB75" w14:textId="77777777" w:rsidR="009B18A3" w:rsidRPr="00B317D6" w:rsidRDefault="009B18A3" w:rsidP="00441E52">
+                        <w:pPr>
+                            <w:jc w:val="center"/>
+                            <w:rPr>
+                                <w:b/>
+                                <w:bCs/>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r w:rsidRPr="00B317D6">
+                            <w:rPr>
+                                <w:b/>
+                                <w:bCs/>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                            <w:t>Table Header 2</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="1812" w:type="dxa"/>
+                    </w:tcPr>
+                    <w:p w14:paraId="32918AE6" w14:textId="77777777" w:rsidR="009B18A3" w:rsidRPr="00B317D6" w:rsidRDefault="009B18A3" w:rsidP="00441E52">
+                        <w:pPr>
+                            <w:jc w:val="center"/>
+                            <w:rPr>
+                                <w:b/>
+                                <w:bCs/>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r w:rsidRPr="00B317D6">
+                            <w:rPr>
+                                <w:b/>
+                                <w:bCs/>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                            <w:t>Table Header 3</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="1813" w:type="dxa"/>
+                    </w:tcPr>
+                    <w:p w14:paraId="148A79C4" w14:textId="77777777" w:rsidR="009B18A3" w:rsidRPr="00B317D6" w:rsidRDefault="009B18A3" w:rsidP="00441E52">
+                        <w:pPr>
+                            <w:jc w:val="center"/>
+                            <w:rPr>
+                                <w:b/>
+                                <w:bCs/>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r w:rsidRPr="00B317D6">
+                            <w:rPr>
+                                <w:b/>
+                                <w:bCs/>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                            <w:t>Table Header 4</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="1813" w:type="dxa"/>
+                    </w:tcPr>
+                    <w:p w14:paraId="1F6E105F" w14:textId="77777777" w:rsidR="009B18A3" w:rsidRPr="00B317D6" w:rsidRDefault="009B18A3" w:rsidP="00441E52">
+                        <w:pPr>
+                            <w:jc w:val="center"/>
+                            <w:rPr>
+                                <w:b/>
+                                <w:bCs/>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r w:rsidRPr="00B317D6">
+                            <w:rPr>
+                                <w:b/>
+                                <w:bCs/>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                            <w:t>Table Header 5</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+            </w:tr>
+            <w:tr w:rsidR="009B18A3" w14:paraId="1A6FDBD6" w14:textId="77777777" w:rsidTr="009B18A3">
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="1812" w:type="dxa"/>
+                    </w:tcPr>
+                    <w:p w14:paraId="579E05CF" w14:textId="77777777" w:rsidR="009B18A3" w:rsidRDefault="009B18A3" w:rsidP="00441E52">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                            <w:t>Table Cell 1</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="1812" w:type="dxa"/>
+                    </w:tcPr>
+                    <w:p w14:paraId="6451A985" w14:textId="77777777" w:rsidR="009B18A3" w:rsidRDefault="009B18A3" w:rsidP="00441E52">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                            <w:t>Table Cell 2</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="1812" w:type="dxa"/>
+                    </w:tcPr>
+                    <w:p w14:paraId="2BE12C8F" w14:textId="77777777" w:rsidR="009B18A3" w:rsidRDefault="009B18A3" w:rsidP="00441E52">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                            <w:t>Table Cell 3</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="1813" w:type="dxa"/>
+                    </w:tcPr>
+                    <w:p w14:paraId="78772A3C" w14:textId="77777777" w:rsidR="009B18A3" w:rsidRDefault="009B18A3" w:rsidP="00441E52">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                            <w:t>Table Cell 4</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="1813" w:type="dxa"/>
+                    </w:tcPr>
+                    <w:p w14:paraId="0E9C3A28" w14:textId="77777777" w:rsidR="009B18A3" w:rsidRDefault="009B18A3" w:rsidP="00441E52">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                            <w:t>Table Cell 5</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+            </w:tr>
+            <w:tr w:rsidR="009B18A3" w14:paraId="60CF7D8E" w14:textId="77777777" w:rsidTr="009B18A3">
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="1812" w:type="dxa"/>
+                    </w:tcPr>
+                    <w:p w14:paraId="50516946" w14:textId="77777777" w:rsidR="009B18A3" w:rsidRDefault="009B18A3" w:rsidP="00441E52">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                            <w:t>Table Cell 6</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="1812" w:type="dxa"/>
+                    </w:tcPr>
+                    <w:p w14:paraId="5E4075AC" w14:textId="77777777" w:rsidR="009B18A3" w:rsidRDefault="009B18A3" w:rsidP="00441E52">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                            <w:t>Table Cell 7</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="1812" w:type="dxa"/>
+                    </w:tcPr>
+                    <w:p w14:paraId="69EF401E" w14:textId="77777777" w:rsidR="009B18A3" w:rsidRDefault="009B18A3" w:rsidP="00441E52">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                            <w:t>Table Cell 8</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="1813" w:type="dxa"/>
+                    </w:tcPr>
+                    <w:p w14:paraId="1A7BA9AD" w14:textId="77777777" w:rsidR="009B18A3" w:rsidRDefault="009B18A3" w:rsidP="00441E52">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                            <w:t>Table Cell 9</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="1813" w:type="dxa"/>
+                    </w:tcPr>
+                    <w:p w14:paraId="1528FF1B" w14:textId="77777777" w:rsidR="009B18A3" w:rsidRDefault="009B18A3" w:rsidP="00441E52">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                            <w:t>Table Cell 10</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+            </w:tr>
+            <w:tr w:rsidR="009B18A3" w14:paraId="60CFA1E4" w14:textId="77777777" w:rsidTr="009B18A3">
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="1812" w:type="dxa"/>
+                    </w:tcPr>
+                    <w:p w14:paraId="1310AD1F" w14:textId="77777777" w:rsidR="009B18A3" w:rsidRDefault="009B18A3" w:rsidP="00441E52">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                            <w:t>Table Cell 11</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="1812" w:type="dxa"/>
+                    </w:tcPr>
+                    <w:p w14:paraId="01CE2D65" w14:textId="77777777" w:rsidR="009B18A3" w:rsidRDefault="009B18A3" w:rsidP="00441E52">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                            <w:t>Table Cell 12</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="1812" w:type="dxa"/>
+                    </w:tcPr>
+                    <w:p w14:paraId="5DB038D5" w14:textId="77777777" w:rsidR="009B18A3" w:rsidRDefault="009B18A3" w:rsidP="00441E52">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                            <w:t>Table Cell 13</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="1813" w:type="dxa"/>
+                    </w:tcPr>
+                    <w:p w14:paraId="4C81259D" w14:textId="77777777" w:rsidR="009B18A3" w:rsidRDefault="009B18A3" w:rsidP="00441E52">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                            <w:t>Table Cell 14</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="1813" w:type="dxa"/>
+                    </w:tcPr>
+                    <w:p w14:paraId="118CC78A" w14:textId="77777777" w:rsidR="009B18A3" w:rsidRDefault="009B18A3" w:rsidP="00441E52">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                            <w:t>Table Cell 15</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+            </w:tr>
+        </w:tbl>
+        <w:p w14:paraId="04F62067" w14:textId="77777777" w:rsidR="009B18A3" w:rsidRPr="009B18A3" w:rsidRDefault="009B18A3" w:rsidP="009B18A3">
+            <w:pPr>
+                <w:rPr>
+                    <w:lang w:val="en-US"/>
+                </w:rPr>
+            </w:pPr>
+        </w:p>
+        <w:sectPr w:rsidR="009B18A3" w:rsidRPr="009B18A3">
+            <w:pgSz w:w="11906" w:h="16838"/>
+            <w:pgMar w:top="1417" w:right="1417" w:bottom="1134" w:left="1417" w:header="708" w:footer="708" w:gutter="0"/>
+            <w:cols w:space="708"/>
+            <w:docGrid w:linePitch="360"/>
+        </w:sectPr>
+    </w:body>
+</w:document>
