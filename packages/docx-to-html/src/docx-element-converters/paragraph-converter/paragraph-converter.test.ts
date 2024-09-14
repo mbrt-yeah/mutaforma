@@ -40,7 +40,7 @@ describe(`${ParagraphConverter.name}`, () => {
     });
     describe("#execute", () => {
         it(`should convert w:p element to ${CoParagraph.name} node`, async () => {
-            const $elem = cheerio.load(`<w:p></w:p>`, null, false);
+            const $elem = cheerio.load(`<w:p></w:p>`, { xmlMode: true }, false);
             const instance = new ParagraphConverter(config, docxFile, registry);
             const executionResult = await instance.execute($elem);
 
@@ -54,7 +54,7 @@ describe(`${ParagraphConverter.name}`, () => {
             expect(result.childNodesTotal).toBe(0);
         });
         it(`should convert w:p element to ${CoParagraph.name} node containing one ${CoTextRun.name} node`, async () => {
-            const $elem = cheerio.load(`<w:p><w:r></w:r></w:p>`, null, false);
+            const $elem = cheerio.load(`<w:p><w:r></w:r></w:p>`, { xmlMode: true }, false);
             const instance = new ParagraphConverter(config, docxFile, registry);
             const executionResult = await instance.execute($elem);
 
@@ -69,7 +69,8 @@ describe(`${ParagraphConverter.name}`, () => {
             expect(result.childNodes[0]).toBeInstanceOf(CoTextRun);
         });
         it(`should convert w:p element with properties to ${CoParagraph.name} which contains all extracted properties`, async () => {
-            const $elem = cheerio.load(`<w:p w14:paraId="52B751E6" w14:textId="1E521E85" w:rsidR="00187371" w:rsidRPr="00187371" w:rsidRDefault="0075236E" w:rsidP="009055DC"><w:pPr><w:pStyle w:val="Heading1" /><w:numPr><w:ilvl w:val="0" /><w:numId w:val="5" /></w:numPr><w:rPr><w:lang w:val="en-US" /></w:rPr></w:pPr><w:r><w:rPr><w:lang w:val="en-US" /></w:rPr><w:t>Heading 1 numbered</w:t></w:r></w:p>`, null, false);
+            const xml = `<w:p w14:paraId="52B751E6" w14:textId="1E521E85" w:rsidR="00187371" w:rsidRPr="00187371" w:rsidRDefault="0075236E" w:rsidP="009055DC"><w:pPr><w:pStyle w:val="Heading1" /><w:numPr><w:ilvl w:val="0" /><w:numId w:val="5" /></w:numPr><w:rPr><w:lang w:val="en-US" /></w:rPr></w:pPr><w:r><w:rPr><w:lang w:val="en-US" /></w:rPr><w:t>Heading 1 numbered</w:t></w:r></w:p>`;
+            const $elem = cheerio.load(xml, { xmlMode: true }, false);
             const instance = new ParagraphConverter(config, docxFile, registry);
             const executionResult = await instance.execute($elem);
 

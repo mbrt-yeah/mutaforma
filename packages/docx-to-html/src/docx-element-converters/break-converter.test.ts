@@ -21,7 +21,7 @@ describe(`${BreakConverter.name}`, () => {
     });
     describe("#execute", () => {
         it(`should convert w:br element to ${CoBreak.name} node`, async () => {
-            const $elem = cheerio.load(`<w:br w:type="page" />`, null, false);
+            const $elem = cheerio.load(`<w:br w:type="page" />`, { xmlMode: true }, false);
             const instance = new BreakConverter(config, docxFile, registry);
             const executionResult = await instance.execute($elem);
 

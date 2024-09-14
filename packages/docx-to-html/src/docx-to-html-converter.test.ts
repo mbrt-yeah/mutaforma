@@ -22,7 +22,7 @@ describe(`${DocxToHtmlConverter.name}`, () => {
     describe("#execute", () => {
         it(`should execute ${DocxToHtmlConverter.name} successfully and return valid HTML string instance`, async () => {
             const instance = new DocxToHtmlConverter({
-                input: join(inputPath, "hello-world.docx"),
+                input: join(inputPath, "notes.docx"),
                 outputPath,
                 config: DocxToHtmlConfigDefault
             });

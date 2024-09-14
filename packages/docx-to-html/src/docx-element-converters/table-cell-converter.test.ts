@@ -21,7 +21,7 @@ describe(`${TableCellConverter.name}`, () => {
     });
     describe("#execute", () => {
         it(`should convert w:tc element to ${CoTableCell.name} node`, async () => {
-            const $elem = cheerio.load(`<w:tc><w:tcPr><w:tcW w:w="3624" w:type="dxa" /></w:tcPr></w:tc>`, null, false);
+            const $elem = cheerio.load(`<w:tc><w:tcPr><w:tcW w:w="3624" w:type="dxa" /></w:tcPr></w:tc>`, { xmlMode: true }, false);
             const instance = new TableCellConverter(config, docxFile, registry);
             const executionResult = await instance.execute($elem);
 
@@ -39,7 +39,7 @@ describe(`${TableCellConverter.name}`, () => {
             expect(tableCell.childNodesTotal).toBe(0);
         });
         it(`should convert w:tc element with <w:gridSpan w:val="2" /> to ${CoTableCell.name} node`, async () => {
-            const $elem = cheerio.load(`<w:tc><w:tcPr><w:tcW w:w="3624" w:type="dxa" /><w:gridSpan w:val="2" /></w:tcPr></w:tc>`, null, false);
+            const $elem = cheerio.load(`<w:tc><w:tcPr><w:tcW w:w="3624" w:type="dxa" /><w:gridSpan w:val="2" /></w:tcPr></w:tc>`, { xmlMode: true }, false);
             const instance = new TableCellConverter(config, docxFile, registry);
             const executionResult = await instance.execute($elem);
 
@@ -58,7 +58,7 @@ describe(`${TableCellConverter.name}`, () => {
         });
 
         it(`should convert w:tc element with <w:gridSpan w:val="2" /> and <w:vMerge /> to ${CoTableCell.name} node`, async () => {
-            const $elem = cheerio.load(`<w:tc><w:tcPr><w:tcW w:w="3624" w:type="dxa" /><w:gridSpan w:val="2" /><w:vMerge /></w:tcPr></w:tc>`, null, false);
+            const $elem = cheerio.load(`<w:tc><w:tcPr><w:tcW w:w="3624" w:type="dxa" /><w:gridSpan w:val="2" /><w:vMerge /></w:tcPr></w:tc>`, { xmlMode: true }, false);
             const instance = new TableCellConverter(config, docxFile, registry);
             const executionResult = await instance.execute($elem);
 
@@ -77,7 +77,7 @@ describe(`${TableCellConverter.name}`, () => {
         });
 
         it(`should convert w:tc element with <w:gridSpan w:val="2" /> and <w:vMerge w:val="restart" /> to ${CoTableCell.name} node`, async () => {
-            const $elem = cheerio.load(`<w:tc><w:tcPr><w:tcW w:w="3624" w:type="dxa" /><w:gridSpan w:val="2" /><w:vMerge w:val="restart" /></w:tcPr></w:tc>`, null, false);
+            const $elem = cheerio.load(`<w:tc><w:tcPr><w:tcW w:w="3624" w:type="dxa" /><w:gridSpan w:val="2" /><w:vMerge w:val="restart" /></w:tcPr></w:tc>`, { xmlMode: true }, false);
             const instance = new TableCellConverter(config, docxFile, registry);
             const executionResult = await instance.execute($elem);
 
@@ -96,7 +96,8 @@ describe(`${TableCellConverter.name}`, () => {
         });
 
         it(`should convert w:tc element to ${CoTableCell.name} node`, async () => {
-            const $elem = cheerio.load(`<w:tc><w:tcPr><w:tcW w:w="1812" w:type="dxa" /></w:tcPr><w:p w14:paraId="0C5894A7" w14:textId="7518E35B" w:rsidR="00BB0E92" w:rsidRDefault="00BB0E92" w:rsidP="00F56586"><w:pPr><w:rPr><w:lang w:val="en-US" /></w:rPr></w:pPr><w:r><w:rPr><w:lang w:val="en-US" /></w:rPr><w:t>Table Cell 20</w:t></w:r></w:p></w:tc>`, null, false);
+            const xml = `<w:tc><w:tcPr><w:tcW w:w="1812" w:type="dxa" /></w:tcPr><w:p w14:paraId="0C5894A7" w14:textId="7518E35B" w:rsidR="00BB0E92" w:rsidRDefault="00BB0E92" w:rsidP="00F56586"><w:pPr><w:rPr><w:lang w:val="en-US" /></w:rPr></w:pPr><w:r><w:rPr><w:lang w:val="en-US" /></w:rPr><w:t>Table Cell 20</w:t></w:r></w:p></w:tc>`;
+            const $elem = cheerio.load(xml, { xmlMode: true }, false);
             const instance = new TableCellConverter(config, docxFile, registry);
             const executionResult = await instance.execute($elem);
 

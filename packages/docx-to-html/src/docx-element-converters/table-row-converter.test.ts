@@ -22,7 +22,8 @@ describe(`${TableRowConverter.name}`, () => {
 
     describe("#execute", () => {
         it(`should convert w:tc element to ${CoTableRow.name} node`, async () => {
-            const $elem = cheerio.load(`<w:tr w:rsidR="00ED1CC5" w14:paraId="52E1E698" w14:textId="77777777" w:rsidTr="003B40FB"><w:tc><w:tcPr><w:tcW w:w="3624" w:type="dxa" /><w:gridSpan w:val="2" /><w:vMerge /></w:tcPr></w:tc><w:tc><w:tcPr><w:tcW w:w="3625" w:type="dxa" /><w:gridSpan w:val="2" /></w:tcPr></w:tc><w:tc><w:tcPr><w:tcW w:w="1813" w:type="dxa" /><w:vMerge /></w:tcPr></w:tc></w:tr>`, null, false);
+            const xml = `<w:tr w:rsidR="00ED1CC5" w14:paraId="52E1E698" w14:textId="77777777" w:rsidTr="003B40FB"><w:tc><w:tcPr><w:tcW w:w="3624" w:type="dxa" /><w:gridSpan w:val="2" /><w:vMerge /></w:tcPr></w:tc><w:tc><w:tcPr><w:tcW w:w="3625" w:type="dxa" /><w:gridSpan w:val="2" /></w:tcPr></w:tc><w:tc><w:tcPr><w:tcW w:w="1813" w:type="dxa" /><w:vMerge /></w:tcPr></w:tc></w:tr>`;
+            const $elem = cheerio.load(xml, { xmlMode: true }, false);
             const instance = new TableRowConverter(config, docxFile, registry);
             const executionResult = await instance.execute($elem);
 
