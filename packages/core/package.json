@@ -1,6 +1,6 @@
 {
     "name": "@mtfm/core",
-    "version": "0.1.1",
+    "version": "1.0.0",
     "description": "Shared utilities and services that are used across multiple packages of the Mutaforma universe.",
     "author": "mbrt-yeah",
     "license": "MIT",
