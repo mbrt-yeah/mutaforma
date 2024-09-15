@@ -73,6 +73,38 @@
             }
         }
     },
+    "inlineFormatting": {
+        "bold": {
+            "enabled": true,
+            "element": {
+                "name": "strong"
+            }
+        },
+        "italic": {
+            "enabled": true,
+            "element": {
+                "name": "em"
+            }
+        },
+        "underline": {
+            "enabled": true,
+            "element": {
+                "name": "u"
+            }
+        },
+        "subscript": {
+            "enabled": true,
+            "element": {
+                "name": "sub"
+            }
+        },
+        "superscript": {
+            "enabled": true,
+            "element": {
+                "name": "sup"
+            }
+        }
+    },
     "mappings": [
         {
             "names": ["Heading 1"],

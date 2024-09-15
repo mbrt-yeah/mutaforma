@@ -45,7 +45,22 @@ export class TextRunConverter extends ADocxElementConverter<CoTextRun> {
         if (createContentsResult.isErr())
             return createContentsResult;
 
-        const coTextRun = new CoTextRun();
+        const $root = $elem(":root", $elem.html());
+        const $wpPr = $root.find("w\\:rPr");
+        const $wb = $wpPr.find("w\\:b");
+        const $wi = $wpPr.find("w\\:i");
+        const $wu = $wpPr.find("w\\:u");
+        const $wStrike = $wpPr.find("w\\:strike");
+        const $wVertAlign = $wpPr.find("w\\:vertAlign")
+
+        const coTextRun = new CoTextRun({
+            isBold: $wb.length > 0,
+            isItalic: $wi.length > 0,
+            isUnderline: $wu.length > 0,
+            isStrikethrough: $wStrike.length > 0,
+            isSubscript: $wVertAlign.length > 0 && $wVertAlign.attr("w:val") === "subscript",
+            isSuperscript: $wVertAlign.length > 0 && $wVertAlign.attr("w:val") === "superscript",
+        });
         coTextRun.addChildNodes(createContentsResult.value);
         return new Ok(coTextRun);
     }
