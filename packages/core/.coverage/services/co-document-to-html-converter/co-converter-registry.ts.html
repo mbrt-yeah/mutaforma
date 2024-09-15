@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">61.11% </span>
+                <span class="strong">66.66% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>22/36</span>
+                <span class='fraction'>24/36</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">100% </span>
+                <span class="quiet">Branches</span>
+                <span class='fraction'>3/3</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">25% </span>
+                <span class="quiet">Functions</span>
+                <span class='fraction'>4/16</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">66.66% </span>
-                <span class="quiet">Branches</span>
-                <span class='fraction'>2/3</span>
-            </div>
-        
-            
-            <div class='fl pad1y space-right2'>
-                <span class="strong">18.75% </span>
-                <span class="quiet">Functions</span>
-                <span class='fraction'>3/16</span>
-            </div>
-        
-            
-            <div class='fl pad1y space-right2'>
-                <span class="strong">61.11% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>22/36</span>
+                <span class='fraction'>24/36</span>
             </div>
         
             
@@ -335,24 +335,24 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">7x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-yes">7x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-yes">15x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">8x</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">15x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-yes">14x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { 
@@ -477,11 +477,11 @@ export class CoConverterRegistry extends AElementConverterRegistry&lt;CoTreeNode
             ): CoTableRowConverter =&gt; {
 <span class="cstat-no" title="statement not covered" >                return new CoTableRowConverter(config, registry)</span>
             },
-            [CoTextRun.name]: <span class="fstat-no" title="function not covered" >(</span>
+            [CoTextRun.name]: (
                 config: IConfig,
                 registry: CoConverterRegistry
             ): CoTextRunConverter =&gt; {
-<span class="cstat-no" title="statement not covered" >                return new CoTextRunConverter(config, registry)</span>
+                return new CoTextRunConverter(config, registry)
             },
             [CoText.name]: (
                 config: IConfig,
@@ -495,8 +495,8 @@ export class CoConverterRegistry extends AElementConverterRegistry&lt;CoTreeNode
     public getConverter(coTreeNode: CoTreeNode): ACoConverter&lt;CoTreeNode&gt; | undefined {
         const elementConverterFn = this.__elementConverters[coTreeNode.nodeName];
 &nbsp;
-        <span class="missing-if-branch" title="if path not taken" >I</span>if (!elementConverterFn || typeof elementConverterFn !== "function")
-<span class="cstat-no" title="statement not covered" >            return undefined;</span>
+        if (!elementConverterFn || typeof elementConverterFn !== "function")
+            return undefined;
 &nbsp;
         return elementConverterFn(this.config, this);
     }
@@ -508,7 +508,7 @@ export class CoConverterRegistry extends AElementConverterRegistry&lt;CoTreeNode
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2024-09-15T09:58:14.193Z
+                at 2024-09-15T14:58:30.288Z
             </div>
         <script src="../../prettify.js"></script>
         <script>

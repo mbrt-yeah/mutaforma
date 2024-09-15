@@ -23,16 +23,16 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">95.45% </span>
+                <span class="strong">77.27% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>21/22</span>
+                <span class='fraction'>17/22</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">94.73% </span>
+                <span class="strong">52.63% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>18/19</span>
+                <span class='fraction'>10/19</span>
             </div>
         
             
@@ -44,9 +44,9 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">95.45% </span>
+                <span class="strong">77.27% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>21/22</span>
+                <span class='fraction'>17/22</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line high'></div>
+    <div class='status-line medium'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -119,36 +119,36 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-yes">7x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">7x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">7x</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">7x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">9x</span>
-<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">9x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">9x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">9x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">9x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">7x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">7x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { CoTextRun, IConfig } from "@mtfm/core-models";
@@ -180,17 +180,17 @@ export class CoTextRunConverter extends ACoConverter&lt;CoTextRun&gt; {
         if (input.isItalic &amp;&amp; this.config.inlineFormatting.italic.enabled)
             result = createElementFromDefinition(this.config.inlineFormatting.italic.element, result);
 &nbsp;
-        if (input.isUnderline &amp;&amp; this.config.inlineFormatting.underline.enabled)
-            result = createElementFromDefinition(this.config.inlineFormatting.underline.element, result);
+        <span class="missing-if-branch" title="if path not taken" >I</span>if (input.isUnderline &amp;&amp; <span class="branch-1 cbranch-no" title="branch not covered" >this.config.inlineFormatting.underline.enabled)</span>
+<span class="cstat-no" title="statement not covered" >            result = createElementFromDefinition(this.config.inlineFormatting.underline.element, result);</span>
 &nbsp;
-        if (input.isStrikethrough &amp;&amp; this.config.inlineFormatting.strikethrough.enabled)
-            result = createElementFromDefinition(this.config.inlineFormatting.strikethrough.element, result);
+        <span class="missing-if-branch" title="if path not taken" >I</span>if (input.isStrikethrough &amp;&amp; <span class="branch-1 cbranch-no" title="branch not covered" >this.config.inlineFormatting.strikethrough.enabled)</span>
+<span class="cstat-no" title="statement not covered" >            result = createElementFromDefinition(this.config.inlineFormatting.strikethrough.element, result);</span>
 &nbsp;
-        if (input.isSubscript &amp;&amp; this.config.inlineFormatting.subscript.enabled)
-            result = createElementFromDefinition(this.config.inlineFormatting.subscript.element, result);
+        <span class="missing-if-branch" title="if path not taken" >I</span>if (input.isSubscript &amp;&amp; <span class="branch-1 cbranch-no" title="branch not covered" >this.config.inlineFormatting.subscript.enabled)</span>
+<span class="cstat-no" title="statement not covered" >            result = createElementFromDefinition(this.config.inlineFormatting.subscript.element, result);</span>
 &nbsp;
-        if (input.isSuperscript &amp;&amp; this.config.inlineFormatting.superscript.enabled)
-            result = createElementFromDefinition(this.config.inlineFormatting.superscript.element, result);
+        <span class="missing-if-branch" title="if path not taken" >I</span>if (input.isSuperscript &amp;&amp; <span class="branch-1 cbranch-no" title="branch not covered" >this.config.inlineFormatting.superscript.enabled)</span>
+<span class="cstat-no" title="statement not covered" >            result = createElementFromDefinition(this.config.inlineFormatting.superscript.element, result);</span>
 &nbsp;
         return new Ok(result);
     }
@@ -202,7 +202,7 @@ export class CoTextRunConverter extends ACoConverter&lt;CoTextRun&gt; {
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2024-09-15T09:58:14.193Z
+                at 2024-09-15T14:58:30.288Z
             </div>
         <script src="../../../prettify.js"></script>
         <script>

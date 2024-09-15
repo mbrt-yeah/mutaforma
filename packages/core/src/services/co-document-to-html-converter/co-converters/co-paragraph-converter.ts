@@ -17,6 +17,8 @@ export class CoParagraphConverter extends ACoConverter<CoParagraph> {
         if (this.config.outRemoveEmptyParas && this.__isEmpty(input))
             return new Ok("");
 
+        input = this.__collapseTextRuns(input);
+
         const convertResult = await this._convertChildNodes(input);
 
         if (convertResult.isErr())
@@ -26,6 +28,25 @@ export class CoParagraphConverter extends ACoConverter<CoParagraph> {
             return new Ok(createElementFromDefinition(input.mapping.element, convertResult.value));
 
         return new Ok(`<p>${convertResult.value}</p>`);
+    }
+
+    private __collapseTextRuns(input: CoParagraph): CoParagraph {
+        let childPrev = input.childNodes[0];
+        let childNodesToRemove: number[] = [];
+
+        for (let i = 1; i < input.childNodesTotal; i++) {
+            const child = input.childNodes[i];
+
+            if (childPrev instanceof CoTextRun && child instanceof CoTextRun && childPrev.hasEqualInlineFormatting(child)) {
+                childPrev.addChildNodes(child.childNodes);
+                childNodesToRemove.push(i);
+            }
+
+            childPrev = child;
+        }
+
+        input.removeChildNodesAtManyPos(childNodesToRemove);
+        return input;
     }
 
     private __isEmpty(input: CoParagraph): boolean {
