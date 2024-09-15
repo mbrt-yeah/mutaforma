@@ -245,14 +245,14 @@ importers:
   packages/docx-to-html:
     dependencies:
       '@mtfm/core':
-        specifier: workspace:^0.1.1
-        version: link:../core
+        specifier: ^1.0.0
+        version: 1.0.0
       '@mtfm/core-configs':
-        specifier: workspace:^1.0.0
-        version: link:../core-configs
+        specifier: ^1.0.0
+        version: 1.0.0
       '@mtfm/core-models':
-        specifier: workspace:^1.0.0
-        version: link:../core-models
+        specifier: ^1.0.0
+        version: 1.0.0
       '@swiss-army-knife/models':
         specifier: ^2.0.4
         version: 2.0.4
@@ -1068,8 +1068,14 @@ packages:
   '@manypkg/get-packages@1.1.3':
     resolution: {integrity: sha512-fo+QhuU3qE/2TQMQmbVMqaQ6EWbMhi4ABWP+O4AM1NqPBuy0OrApV5LO6BrrgnhtAHS2NH6RrVk9OL181tTi8A==}
 
+  '@mtfm/core-configs@1.0.0':
+    resolution: {integrity: sha512-V5cLuvHyHiBq6oioChchY+cOVfA8EiCbSr/OMt4C21QZhJyJsBNASTFilNBNxAKzjaSvKsNXrN+xyiuKvvbXbA==}
+
   '@mtfm/core-models@1.0.0':
     resolution: {integrity: sha512-qPQsCGRtKCAQwdR9QYBZxSv4sA6lCVM3ybG69zrNuuEvnLd/FB3zdERzM221Pv2zYox8A62vkjaaY0tovKSHuw==}
+
+  '@mtfm/core@1.0.0':
+    resolution: {integrity: sha512-O/ccM6jUApQy7mGbXfZwhTYxa5gZp2xKNaN6jOujluuOaaF8gQDj1R7j83oLv/VD+t+BgqzWjBzpWG467r20dg==}
 
   '@nodelib/fs.scandir@2.1.5':
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
@@ -4763,10 +4769,28 @@ snapshots:
       globby: 11.1.0
       read-yaml-file: 1.1.0
 
+  '@mtfm/core-configs@1.0.0':
+    dependencies:
+      '@mtfm/core-models': 1.0.0
+      ts-results-es: 4.2.0
+
   '@mtfm/core-models@1.0.0':
     dependencies:
       '@baileyherbert/events': 1.0.1
       cheerio: 1.0.0
+      he: 1.2.0
+      js-beautify: 1.15.1
+      ts-results-es: 4.2.0
+
+  '@mtfm/core@1.0.0':
+    dependencies:
+      '@mtfm/core-models': 1.0.0
+      '@swiss-army-knife/models': 2.0.4
+      '@swiss-army-knife/utilities': 3.3.2
+      await-to-js: 3.0.0
+      cheerio: 1.0.0
+      fflate: 0.8.2
+      fs-extra: 11.2.0
       he: 1.2.0
       js-beautify: 1.15.1
       ts-results-es: 4.2.0
