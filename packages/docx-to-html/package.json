@@ -1,6 +1,6 @@
 {
     "name": "@mtfm/docx-to-html",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "description": "",
     "author": "Matthias Einbrodt",
     "license": "MIT",
@@ -45,7 +45,7 @@
     },
     "dependencies": {
         "@mtfm/core": "workspace:^0.1.1",
-        "@mtfm/core-configs": "workspace:^0.1.1",
+        "@mtfm/core-configs": "workspace:^1.0.0",
         "@mtfm/core-models": "workspace:^1.0.0",
         "@swiss-army-knife/models": "^2.0.4",
         "cheerio": "^1.0.0",
