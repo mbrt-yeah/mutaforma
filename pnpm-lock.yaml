@@ -73,8 +73,8 @@ importers:
   packages/core:
     dependencies:
       '@mtfm/core-models':
-        specifier: workspace:^1.0.0
-        version: link:../core-models
+        specifier: ^1.0.0
+        version: 1.0.0
       '@swiss-army-knife/models':
         specifier: ^2.0.4
         version: 2.0.4
@@ -229,7 +229,7 @@ importers:
   packages/docs:
     dependencies:
       '@mtfm/core-configs':
-        specifier: workspace:^0.1.1
+        specifier: workspace:^1.0.0
         version: link:../core-configs
       '@mtfm/core-models':
         specifier: workspace:^1.0.0
@@ -248,7 +248,7 @@ importers:
         specifier: workspace:^0.1.1
         version: link:../core
       '@mtfm/core-configs':
-        specifier: workspace:^0.1.1
+        specifier: workspace:^1.0.0
         version: link:../core-configs
       '@mtfm/core-models':
         specifier: workspace:^1.0.0

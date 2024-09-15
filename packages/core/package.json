@@ -1,10 +1,17 @@
 {
     "name": "@mtfm/core",
     "version": "0.1.1",
-    "description": "",
-    "author": "Matthias Einbrodt",
+    "description": "Shared utilities and services that are used across multiple packages of the Mutaforma universe.",
+    "author": "mbrt-yeah",
     "license": "MIT",
-    "keywords": [],
+    "keywords": [
+        "mutaforma",
+        "docx",
+        "html",
+        "converter",
+        "utilities",
+        "services"
+    ],
     "main": "./dist/cjs/index.js",
     "types": "./dist/cjs/types/index.d.ts",
     "exports": {
@@ -47,7 +54,7 @@
     "dependencies": {
         "@swiss-army-knife/models": "^2.0.4",
         "@swiss-army-knife/utilities": "^3.3.2",
-        "@mtfm/core-models": "workspace:^1.0.0",
+        "@mtfm/core-models": "^1.0.0",
         "await-to-js": "3.0.0",
         "cheerio": "^1.0.0",
         "fflate": "^0.8.2",
