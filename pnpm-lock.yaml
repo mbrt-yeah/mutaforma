@@ -229,11 +229,11 @@ importers:
   packages/docs:
     dependencies:
       '@mtfm/core-configs':
-        specifier: workspace:^1.0.0
-        version: link:../core-configs
+        specifier: ^1.0.0
+        version: 1.0.0
       '@mtfm/core-models':
-        specifier: workspace:^1.0.0
-        version: link:../core-models
+        specifier: ^1.0.0
+        version: 1.0.0
       highlight.js:
         specifier: ^11.10.0
         version: 11.10.0
