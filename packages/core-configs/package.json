@@ -1,10 +1,10 @@
 {
     "name": "@mtfm/core-configs",
     "version": "0.1.1",
-    "description": "",
-    "author": "Matthias Einbrodt",
+    "description": "Default converter configurations for the Mutaforma universe.",
+    "author": "mbrt-yeah",
     "license": "MIT",
-    "keywords": [],
+    "keywords": ["mutaforma", "docx", "html", "converter", "configurations"],
     "main": "./dist/cjs/index.js",
     "types": "./dist/cjs/types/index.d.ts",
     "exports": {
@@ -41,7 +41,7 @@
         "typescript": "^5.5.4"
     },
     "dependencies": {
-        "@mtfm/core-models": "workspace:^1.0.0",
+        "@mtfm/core-models": "^1.0.0",
         "ts-results-es": "^4.2.0"
     }
 }
