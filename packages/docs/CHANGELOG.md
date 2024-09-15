@@ -1,5 +1,11 @@
 # @mtfm/docs-new
 
+## 1.0.0
+
+### Major Changes
+
+- First stable version
+
 ## 0.1.2
 
 ### Patch Changes

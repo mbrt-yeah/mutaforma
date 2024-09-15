@@ -1,9 +1,15 @@
 {
     "name": "@mtfm/docs",
-    "version": "0.1.2",
+    "version": "1.0.0",
     "description": "The Mutaforma documentation website",
     "author": "mbrt-yeah",
-    "keywords": ["mutaforma", "docx", "html", "converter", "documentation"],
+    "keywords": [
+        "mutaforma",
+        "docx",
+        "html",
+        "converter",
+        "documentation"
+    ],
     "license": "MIT",
     "scripts": {
         "dev": "vitepress dev ./src/contents",
