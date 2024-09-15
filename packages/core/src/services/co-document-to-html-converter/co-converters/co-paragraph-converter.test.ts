@@ -95,5 +95,67 @@ describe(`${CoParagraphConverter.name}`, () => {
             expect(result).not.toBeUndefined();
             expect(result).toBe("<p>Hello World</p>");
         });
+        it(`should collapse ${CoTextRun.name} child nodes of ${CoParagraph.name} node when they have the same formatting"`, async () => {
+            const coParagraphNode = new CoParagraph();
+
+            const coTextRunNode1 = new CoTextRun({
+                isBold: true
+            });
+            const coTextNode1 = new CoText("Hello");
+
+            const coTextRunNode2 = new CoTextRun({
+                isBold: true
+            });
+            const coTextNode2 = new CoText(" World");
+
+            coTextRunNode1.addChildNodes(coTextNode1);
+            coTextRunNode2.addChildNodes(coTextNode2)
+            coParagraphNode.addChildNodes([coTextRunNode1, coTextRunNode2]);
+
+            const converter = new CoParagraphConverter(config, registry);
+            const converterResult = await converter.execute(coParagraphNode);
+
+            expect(converterResult.isOk()).toBe(true);
+
+            const result = converterResult.unwrap();
+
+            expect(result).not.toBeNull();
+            expect(result).not.toBeUndefined();
+            expect(result).toBe("<p><strong>Hello World</strong></p>");
+        });
+        it(`should not collapse ${CoTextRun.name} child nodes of ${CoParagraph.name} node when they have the different formatting"`, async () => {
+            const coParagraphNode = new CoParagraph();
+
+            const coTextRunNode1 = new CoTextRun({
+                isBold: true
+            });
+            const coTextNode1 = new CoText("Hello");
+
+            const coTextRunNode2 = new CoTextRun({
+                isItalic: true
+            });
+            const coTextNode2 = new CoText(" Bello");
+
+            const coTextRunNode3 = new CoTextRun({
+                isBold: true
+            });
+            const coTextNode3 = new CoText(" World");
+
+            coTextRunNode1.addChildNodes(coTextNode1);
+            coTextRunNode2.addChildNodes(coTextNode2);
+            coTextRunNode3.addChildNodes(coTextNode3);
+            coParagraphNode.addChildNodes([coTextRunNode1, coTextRunNode2, coTextRunNode3]);
+
+            const converter = new CoParagraphConverter(config, registry);
+            const converterResult = await converter.execute(coParagraphNode);
+
+            expect(converterResult.isOk()).toBe(true);
+
+            const result = converterResult.unwrap();
+
+            expect(result).not.toBeNull();
+            expect(result).not.toBeUndefined();
+            expect(result).toBe("<p><strong>Hello</strong><em> Bello</em><strong> World</strong></p>");
+        });
     });
 });

@@ -20,6 +20,15 @@ export class CoTextRun extends CoTreeNode implements ICoTextRun {
         this.__isSuperscript = (options.isSuperscript === undefined) ? false : options.isSuperscript;
     }
 
+    public hasEqualInlineFormatting(textRun: ICoTextRun): boolean {
+        return this.isBold === textRun.isBold
+            && this.isItalic === textRun.isItalic
+            && this.isUnderline === textRun.isUnderline
+            && this.isStrikethrough === textRun.isStrikethrough
+            && this.isSubscript === textRun.isSubscript
+            && this.isSuperscript === textRun.isSuperscript;
+    }
+
     public get isBold(): boolean {
         return this.__isBold;
     }
