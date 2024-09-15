@@ -1,10 +1,10 @@
 {
     "name": "@mtfm/core-models",
     "version": "1.0.0",
-    "description": "",
-    "author": "Matthias Einbrodt",
+    "description": "Shared models that are used across multiple packages of the Mutaforma universe.",
+    "author": "mbrt-yeah",
     "license": "MIT",
-    "keywords": [],
+    "keywords": ["mutaforma", "docx", "html", "converter", "models"],
     "main": "./dist/cjs/index.js",
     "types": "./dist/cjs/types/index.d.ts",
     "exports": {
