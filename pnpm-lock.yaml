@@ -18,8 +18,8 @@ importers:
   packages/cli:
     dependencies:
       '@mtfm/docx-to-html':
-        specifier: workspace:^0.1.0
-        version: link:../docx-to-html
+        specifier: ^1.0.0
+        version: 1.0.0
       '@swiss-army-knife/utilities':
         specifier: ^3.3.2
         version: 3.3.2
@@ -1076,6 +1076,9 @@ packages:
 
   '@mtfm/core@1.0.0':
     resolution: {integrity: sha512-O/ccM6jUApQy7mGbXfZwhTYxa5gZp2xKNaN6jOujluuOaaF8gQDj1R7j83oLv/VD+t+BgqzWjBzpWG467r20dg==}
+
+  '@mtfm/docx-to-html@1.0.0':
+    resolution: {integrity: sha512-9uDZHwlkcLeZmrnu8Iqm4Mzq1WdY9C5HS87XlH/EqSQreUziJc0j95LzULvyYGYzbZmDYW5uE99MnJRxYFvJkA==}
 
   '@nodelib/fs.scandir@2.1.5':
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
@@ -4794,6 +4797,22 @@ snapshots:
       he: 1.2.0
       js-beautify: 1.15.1
       ts-results-es: 4.2.0
+
+  '@mtfm/docx-to-html@1.0.0':
+    dependencies:
+      '@mtfm/core': 1.0.0
+      '@mtfm/core-configs': 1.0.0
+      '@mtfm/core-models': 1.0.0
+      '@swiss-army-knife/models': 2.0.4
+      cheerio: 1.0.0
+      js-beautify: 1.15.1
+      jsdom: 24.1.1
+      ts-results-es: 4.2.0
+    transitivePeerDependencies:
+      - bufferutil
+      - canvas
+      - supports-color
+      - utf-8-validate
 
   '@nodelib/fs.scandir@2.1.5':
     dependencies:
