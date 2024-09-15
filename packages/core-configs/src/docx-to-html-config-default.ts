@@ -1,6 +1,7 @@
 import { 
     Config,
     ConfigHtmlEntities,
+    ConfigInlineFormatting,
     ConfigNoteList,
     ConfigNoteListItem,
     ConfigNoteNumbering,
@@ -86,6 +87,45 @@ export const DocxToHtmlConfigDefault: IConfig = new Config({
                 class: "footnote-number"
             }
         })
+    }),
+
+    inlineFormatting: new ConfigInlineFormatting({
+        bold: {
+            enabled: true,
+            element: new ElementDefinition({
+                name: "strong",
+            })
+        },
+        italic: {
+            enabled: true,
+            element: new ElementDefinition({
+                name: "em",
+            })
+        },
+        underline: {
+            enabled: true,
+            element: new ElementDefinition({
+                name: "u",
+            })
+        },
+        strikethrough: {
+            enabled: true,
+            element: new ElementDefinition({
+                name: "s",
+            })
+        },
+        subscript: {
+            enabled: true,
+            element: new ElementDefinition({
+                name: "sub",
+            })
+        },
+        superscript: {
+            enabled: true,
+            element: new ElementDefinition({
+                name: "sup",
+            })
+        },
     }),
 
     mappings: [

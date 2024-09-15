@@ -1,6 +1,7 @@
 export * from "./albero/index.js";
 export * from "./asset/index.js";
 export * from "./config-html-entities/index.js";
+export * from "./config-inline-formatting/index.js";
 export * from "./config-note-list-item/index.js";
 export * from "./config-note-list/index.js";
 export * from "./config-note-numbering/index.js";

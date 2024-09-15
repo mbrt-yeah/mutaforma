@@ -1,4 +1,5 @@
 import { ConfigHtmlEntities } from "../config-html-entities/config-html-entities.js";
+import { ConfigInlineFormatting } from "../config-inline-formatting/config-inline-formatting.js";
 import { ConfigNoteList } from "../config-note-list/config-note-list.js";
 import { ConfigNoteListItem } from "../config-note-list-item/config-note-list-item.js";
 import { ConfigNoteNumbering } from "../config-note-numbering/config-note-numbering.js";
@@ -7,6 +8,7 @@ import { ConfigNotesWrapper } from "../config-notes-wrapper/config-notes-wrapper
 import { ConfigPrettyPrint } from "../config-pretty-print/config-pretty-print.js";
 import { IConfig } from "./i-config.js";
 import { IConfigHtmlEntities } from "../config-html-entities/i-config-html-entities.js";
+import { IConfigInlineFormatting } from "../config-inline-formatting/i-config-inline-formatting.js";
 import { IConfigNoteList } from "../config-note-list/i-config-note-list.js";
 import { IConfigNoteListItem } from "../config-note-list-item/i-config-note-list-item.js";
 import { IConfigNoteNumbering } from "../config-note-numbering/i-config-note-numbering.js";
@@ -27,6 +29,7 @@ export class Config implements IConfig {
     private __footnotesList: IConfigNoteList;
     private __footnotesListItem: IConfigNoteListItem;
     private __footnotesNumbering: IConfigNoteNumbering;
+    private __inlineFormatting: IConfigInlineFormatting
     private __mappings: IStyleMapping[];
     private __outDocExt: string;
     private __outDocFileName: string;
@@ -46,6 +49,7 @@ export class Config implements IConfig {
         this.__footnotesList = opts.footnotesList || new ConfigNoteList();
         this.__footnotesListItem = opts.footnotesListItem || new ConfigNoteListItem();
         this.__footnotesNumbering = opts.footnotesNumbering || new ConfigNoteNumbering();
+        this.__inlineFormatting = opts.inlineFormatting || new ConfigInlineFormatting();
         this.__mappings = opts.mappings || [];
         this.__outDocExt = opts.outDocExt || "html";
         this.__outDocFileName = opts.outDocFileName || "document";
@@ -93,6 +97,10 @@ export class Config implements IConfig {
 
     public get footnotesNumbering(): IConfigNoteNumbering {
         return this.__footnotesNumbering;
+    }
+
+    public get inlineFormatting(): IConfigInlineFormatting {
+        return this.__inlineFormatting;
     }
 
     public get mappings(): IStyleMapping[] {
