@@ -1,5 +1,11 @@
 # @mtfm/docx-to-html
 
+## 1.0.0
+
+### Major Changes
+
+- First stable version
+
 ## 0.1.3
 
 ### Patch Changes

@@ -1,6 +1,6 @@
 {
     "name": "@mtfm/cli",
-    "version": "0.2.0",
+    "version": "0.2.1",
     "description": "",
     "author": "Matthias Einbrodt",
     "license": "MIT",
@@ -40,7 +40,7 @@
         "typescript": "^5.5.4"
     },
     "dependencies": {
-        "@mtfm/docx-to-html": "workspace:^0.1.0",
+        "@mtfm/docx-to-html": "workspace:^1.0.0",
         "@swiss-army-knife/utilities": "^3.3.2",
         "commander": "12.1.0",
         "fs-extra": "^11.2.0",
