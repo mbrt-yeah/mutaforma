@@ -1,6 +1,6 @@
 {
     "name": "@mtfm/core",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "",
     "author": "Matthias Einbrodt",
     "license": "MIT",
@@ -47,7 +47,7 @@
     "dependencies": {
         "@swiss-army-knife/models": "^2.0.4",
         "@swiss-army-knife/utilities": "^3.3.2",
-        "@mtfm/core-models": "workspace:^0.1.0",
+        "@mtfm/core-models": "workspace:^1.0.0",
         "await-to-js": "3.0.0",
         "cheerio": "^1.0.0",
         "fflate": "^0.8.2",
