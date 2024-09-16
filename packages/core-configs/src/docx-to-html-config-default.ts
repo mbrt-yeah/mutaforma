@@ -1,152 +1,142 @@
-import { 
-    Config,
-    ConfigHtmlEntities,
-    ConfigInlineFormatting,
-    ConfigNoteList,
-    ConfigNoteListItem,
-    ConfigNoteNumbering,
-    ConfigNotesHeading,
-    ConfigNotesWrapper,
-    ConfigPrettyPrint,
-    ElementDefinition,
+import {
     IConfig,
 } from "@mtfm/core-models";
 
-export const DocxToHtmlConfigDefault: IConfig = new Config({
-    endnotesWrapper: new ConfigNotesWrapper({
+export const DocxToHtmlConfigDefault: IConfig = {
+    endnotesWrapper: {
         enabled: true,
-        element: new ElementDefinition({
+        element: {
             name: "div",
             attrs: {
                 class: "endnotes-section"
             }
-        })
-    }),
-    endnotesHeading: new ConfigNotesHeading({
+        }
+    },
+    endnotesHeading: {
         enabled: true,
-        element: new ElementDefinition({
+        element: {
             name: "h2",
             content: "Endnotes",
-        })
-    }),
-    endnotesList: new ConfigNoteList({
+        }
+    },
+    endnotesList: {
         enabled: true,
-        element: new ElementDefinition({
+        element: {
             name: "ul",
-        })
-    }),
-    endnotesListItem: new ConfigNoteListItem({
+        }
+    },
+    endnotesListItem: {
         enabled: true,
-        element: new ElementDefinition({
+        element: {
             name: "li",
-        })
-    }),
-    endnotesNumbering: new ConfigNoteNumbering({
+        }
+    },
+    endnotesNumbering: {
         style: "lower-roman",
-        element: new ElementDefinition({
+        element: {
             name: "span",
             attrs: {
                 class: "endnote-number"
             }
-        })
-    }),
+        }
+    },
 
-    footnotesWrapper: new ConfigNotesWrapper({
+    footnotesWrapper: {
         enabled: true,
-        element: new ElementDefinition({
+        element: {
             name: "div",
             attrs: {
                 class: "footnotes-section"
             }
-        })
-    }),
-    footnotesHeading: new ConfigNotesHeading({
+        }
+    },
+    footnotesHeading: {
         enabled: true,
-        element: new ElementDefinition({
+        element: {
             name: "h2",
             content: "Footnotes",
-        })
-    }),
-    footnotesList: new ConfigNoteList({
+        }
+    },
+    footnotesList: {
         enabled: true,
-        element: new ElementDefinition({
+        element: {
             name: "ul",
-        })
-    }),
-    footnotesListItem: new ConfigNoteListItem({
+        }
+    },
+    footnotesListItem: {
         enabled: true,
-        element: new ElementDefinition({
+        element: {
             name: "li",
-        })
-    }),
-    footnotesNumbering: new ConfigNoteNumbering({
+        }
+    },
+    footnotesNumbering: {
         style: "decimal",
-        element: new ElementDefinition({
+        element: {
             name: "span",
             attrs: {
                 class: "footnote-number"
             }
-        })
-    }),
+        }
+    },
 
-    inlineFormatting: new ConfigInlineFormatting({
+    inlineFormatting: {
         bold: {
             enabled: true,
-            element: new ElementDefinition({
+            element: {
                 name: "strong",
-            })
+            }
         },
         italic: {
             enabled: true,
-            element: new ElementDefinition({
+            element: {
                 name: "em",
-            })
+            }
         },
         underline: {
             enabled: true,
-            element: new ElementDefinition({
+            element: {
                 name: "u",
-            })
+            }
         },
         strikethrough: {
             enabled: true,
-            element: new ElementDefinition({
+            element: {
                 name: "s",
-            })
+            }
         },
         subscript: {
             enabled: true,
-            element: new ElementDefinition({
+            element: {
                 name: "sub",
-            })
+            }
         },
         superscript: {
             enabled: true,
-            element: new ElementDefinition({
+            element: {
                 name: "sup",
-            })
+            }
         },
-    }),
+    },
 
     mappings: [
         {
             names: ["Heading 1"],
-            element: new ElementDefinition({
+            element: {
                 name: "h1",
-            }),
+            },
         },
         {
             names: ["Normal"],
-            element: new ElementDefinition({
+            element: {
                 name: "p",
-            }),
+            },
         },
     ],
 
     outDocExt: "html",
     outDocFileName: "document",
     outImgFolderName: "images",
-    outHtmlEntities: new ConfigHtmlEntities({
+    outHtmlEntities: {
         enabled: true,
         options: {
             allowUnsafeSymbols: false,
@@ -155,9 +145,10 @@ export const DocxToHtmlConfigDefault: IConfig = new Config({
             strict: false,
             useNamedReferences: true,
         }
-    }),
-    outPrettyPrint: new ConfigPrettyPrint({
+    },
+    outPrettyPrint: {
         enabled: true,
-    }),
+        options: {}
+    },
     outRemoveEmptyParas: true,
-});
+};

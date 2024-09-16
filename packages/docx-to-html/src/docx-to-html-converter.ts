@@ -2,12 +2,10 @@ import {
     ADocumentConverter,
     Asset,
     CoDocument,
-    Config,
     CoNote,
     CoTreeNode,
     DocumentConverterResult,
     IConfig,
-    IDocumentConverterOpts,
     IDocumentConverterResult,
     IDocxFile,
 } from "@mtfm/core-models";
@@ -19,12 +17,14 @@ import {
 } from "@mtfm/core";
 
 import { CheerioAPI } from "cheerio";
+import { deepmerge } from "deepmerge-ts";
 import { DocxToHtmlConfigDefault } from "@mtfm/core-configs";
 import { Err, Ok, Result } from "ts-results-es";
 import { html_beautify } from "js-beautify";
 import * as cheerio from "cheerio";
 
 import { DocxElementConverterRegistry } from "./docx-element-converter-registry.js";
+import { IDocxToHtmlConverterOpts } from "./i-docx-to-html-converter-opts.js";
 
 /**
  * Converts a DOCX file to HTML.
@@ -38,32 +38,17 @@ export class DocxToHtmlConverter extends ADocumentConverter<string | Buffer, IDo
      *
      * @param {IDocumentConverterOpts<string | Buffer>} opts - The options for the conversion process.
      */
-    public constructor(opts: IDocumentConverterOpts<string | Buffer>) {
-        if (!opts.config) {
-            opts.config = DocxToHtmlConfigDefault;
-        } else {
-            opts.config = new Config({
-                endnotesWrapper: opts.config.endnotesWrapper ?? DocxToHtmlConfigDefault.endnotesWrapper,
-                endnotesHeading: opts.config.endnotesHeading ?? DocxToHtmlConfigDefault.endnotesHeading,
-                endnotesList: opts.config.endnotesList ?? DocxToHtmlConfigDefault.endnotesList,
-                endnotesListItem: opts.config.endnotesListItem ?? DocxToHtmlConfigDefault.endnotesListItem,
-                endnotesNumbering: opts.config.endnotesNumbering ?? DocxToHtmlConfigDefault.endnotesNumbering,
-                footnotesWrapper: opts.config.footnotesWrapper ?? DocxToHtmlConfigDefault.footnotesWrapper,
-                footnotesHeading: opts.config.footnotesHeading ?? DocxToHtmlConfigDefault.footnotesHeading,
-                footnotesList: opts.config.footnotesList ?? DocxToHtmlConfigDefault.footnotesList,
-                footnotesListItem: opts.config.footnotesListItem ?? DocxToHtmlConfigDefault.footnotesListItem,
-                footnotesNumbering: opts.config.footnotesNumbering ?? DocxToHtmlConfigDefault.footnotesNumbering,
-                mappings: opts.config.mappings ?? DocxToHtmlConfigDefault.mappings,
-                outDocExt: opts.config.outDocExt ?? DocxToHtmlConfigDefault.outDocExt,
-                outDocFileName: opts.config.outDocFileName ?? DocxToHtmlConfigDefault.outDocFileName,
-                outImgFolderName: opts.config.outImgFolderName ?? DocxToHtmlConfigDefault.outImgFolderName,
-                outHtmlEntities: opts.config.outHtmlEntities ?? DocxToHtmlConfigDefault.outHtmlEntities,
-                outPrettyPrint: opts.config.outPrettyPrint ?? DocxToHtmlConfigDefault.outPrettyPrint,
-                outRemoveEmptyParas: (opts.config.outRemoveEmptyParas !== undefined) ? opts.config.outRemoveEmptyParas :DocxToHtmlConfigDefault.outRemoveEmptyParas,
-            });
-        }
+    public constructor(opts: IDocxToHtmlConverterOpts<string | Buffer>) {
+        let finalConfig: IConfig = DocxToHtmlConfigDefault;
 
-        super(opts);
+        if (opts.config)
+            finalConfig = deepmerge(DocxToHtmlConfigDefault, opts.config) as IConfig;
+
+        super({
+            input: opts.input,
+            outputPath: opts.outputPath,
+            config: finalConfig,
+        });
     }
 
     /**

@@ -1,3 +1,6 @@
-import { IConfigHtmlEntitiesProps } from "./i-config-html-entities-props";
+import { EncodeOptions } from "he";
 
-export interface IConfigHtmlEntitiesOpts extends Partial<IConfigHtmlEntitiesProps> {};
+export interface IConfigHtmlEntitiesOpts {
+    enabled?: boolean;
+    options?: EncodeOptions;
+};

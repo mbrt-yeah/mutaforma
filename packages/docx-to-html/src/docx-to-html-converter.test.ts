@@ -18,6 +18,26 @@ describe(`${DocxToHtmlConverter.name}`, () => {
             expect(instance).not.toBeNull();
             expect(instance).toBeInstanceOf(DocxToHtmlConverter);
         });
+        it(`should instantiate ${DocxToHtmlConverter.name} with custom config successfully`, () => {
+            const instance = new DocxToHtmlConverter({
+                input: "",
+                config: {
+                    endnotesWrapper: {
+                        enabled: false,
+                        element: {
+                            attrs: {
+                                "class": "test"
+                            }
+                        }
+                    },
+                }
+            });
+            expect(instance).not.toBeUndefined();
+            expect(instance).not.toBeNull();
+            expect(instance).toBeInstanceOf(DocxToHtmlConverter);
+            expect(instance.config.endnotesWrapper.enabled).toBe(false);
+            expect(instance.config.endnotesWrapper.element.attrs).toStrictEqual({ "class": "test" });
+        });
     });
     describe("#execute", () => {
         it(`should execute ${DocxToHtmlConverter.name} successfully and return valid HTML string instance`, async () => {

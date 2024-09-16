@@ -1,3 +1,6 @@
-import { IConfigNotesHeadingProps } from "./i-config-notes-heading-props.js";
+import { IElementDefinitionOpts } from "../element-definition/i-element-definition-opts.js";
 
-export interface IConfigNotesHeadingOpts extends Partial<IConfigNotesHeadingProps> {};
+export interface IConfigNotesHeadingOpts {
+    enabled?: boolean;
+    element?: IElementDefinitionOpts;
+};

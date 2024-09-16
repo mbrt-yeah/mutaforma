@@ -1,3 +1,7 @@
-import { IConfigNoteNumberingProps } from "./i-config-note-numbering-props.js";
+import { IElementDefinition } from "../element-definition/i-element-definition.js";
+import { TNoteNumberingStyles } from "../t-note-numbering-styles.js";
 
-export interface IConfigNoteNumbering extends IConfigNoteNumberingProps {};
+export interface IConfigNoteNumbering {
+    element: IElementDefinition;
+    style: TNoteNumberingStyles;
+};
