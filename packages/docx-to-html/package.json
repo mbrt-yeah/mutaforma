@@ -1,6 +1,6 @@
 {
     "name": "@mtfm/docx-to-html",
-    "version": "1.0.1",
+    "version": "1.1.0",
     "description": "A converter which converts DOCX files to HTML",
     "author": "mbrt-yeah",
     "license": "MIT",
@@ -49,9 +49,9 @@
         "typescript": "^5.5.4"
     },
     "dependencies": {
-        "@mtfm/core": "^1.0.0",
-        "@mtfm/core-configs": "workspace:^1.0.0",
-        "@mtfm/core-models": "workspace:^1.0.0",
+        "@mtfm/core": "^1.1.0",
+        "@mtfm/core-configs": "^1.1.0",
+        "@mtfm/core-models": "^1.1.0",
         "@swiss-army-knife/models": "^2.0.4",
         "cheerio": "^1.0.0",
         "deepmerge-ts": "^7.1.0",
