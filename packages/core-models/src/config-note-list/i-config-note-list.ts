@@ -1,3 +1,6 @@
-import { IConfigNoteListProps } from "./i-config-note-list-props.js";
+import { IElementDefinition } from "../element-definition/i-element-definition.js";
 
-export interface IConfigNoteList extends IConfigNoteListProps {};
+export interface IConfigNoteList {
+    enabled: boolean;
+    element: IElementDefinition;
+};

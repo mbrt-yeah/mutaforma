@@ -1,3 +1,30 @@
-import { IConfigProps } from "./i-config-props.js";
+import { IConfigHtmlEntitiesOpts } from "../config-html-entities/i-config-html-entities-opts.js";
+import { IConfigInlineFormattingOpts } from "../config-inline-formatting/i-config-inline-formatting-opts.js";
+import { IConfigNoteListItemOpts } from "../config-note-list-item/i-config-note-list-item-opts.js";
+import { IConfigNoteListOpts } from "../config-note-list/i-config-note-list-opts.js";
+import { IConfigNoteNumberingOpts } from "../config-note-numbering/i-config-note-numbering-opts.js";
+import { IConfigNotesHeadingOpts } from "../config-notes-heading/i-config-notes-heading-opts.js";
+import { IConfigNotesWrapperOpts } from "../config-notes-wrapper/i-config-notes-wrapper-opts.js";
+import { IConfigPrettyPrintOpts } from "../config-pretty-print/i-config-pretty-print-opts.js";
+import { IStyleMappingOpts } from "../style-mapping/i-style-mapping-opts.js";
 
-export interface IConfigOpts extends Partial<IConfigProps> {};
+export interface IConfigOpts {
+    endnotesHeading?: IConfigNotesHeadingOpts;
+    endnotesList?: IConfigNoteListOpts;
+    endnotesListItem?: IConfigNoteListItemOpts;
+    endnotesNumbering?: IConfigNoteNumberingOpts;
+    endnotesWrapper?: IConfigNotesWrapperOpts;
+    footnotesHeading?: IConfigNotesHeadingOpts;
+    footnotesList?: IConfigNoteListOpts;
+    footnotesListItem?: IConfigNoteListItemOpts;
+    footnotesNumbering?: IConfigNoteNumberingOpts;
+    footnotesWrapper?: IConfigNotesWrapperOpts;
+    inlineFormatting?: IConfigInlineFormattingOpts;
+    mappings?: IStyleMappingOpts[];
+    outDocExt?: string;
+    outDocFileName?: string;
+    outHtmlEntities?: IConfigHtmlEntitiesOpts;
+    outImgFolderName?: string;
+    outPrettyPrint?: IConfigPrettyPrintOpts;
+    outRemoveEmptyParas?: boolean;
+};

@@ -1,5 +1,6 @@
-import { IConfigPrettyPrintProps } from "./i-config-pretty-print-props";
+import { HTMLBeautifyOptions } from "js-beautify";
 
-export interface IConfigPrettyPrint extends IConfigPrettyPrintProps {
-
+export interface IConfigPrettyPrint {
+    enabled: boolean;
+    options: HTMLBeautifyOptions;
 };

@@ -1,7 +1,6 @@
 import { EventEmitter } from "@baileyherbert/events"
 import { Result } from "ts-results-es";
 
-import { Config } from "../config/config.js";
 import { IConfig } from "../config/i-config.js";
 import { IDocumentConverter } from "./i-document-converter.js";
 import { IDocumentConverterOpts } from "./i-document-converter-opts.js";
@@ -17,7 +16,7 @@ export abstract class ADocumentConverter<TInput, TOutput> extends EventEmitter<T
         super();
         this.__input = opts.input;
         this.__outputPath = opts.outputPath;
-        this.__config = opts.config || new Config();
+        this.__config = opts.config;
     }
 
     public abstract execute(): Promise<Result<TOutput, Error>>;

@@ -1,3 +1,6 @@
-import { IConfigNotesWrapperProps } from "./i-config-notes-wrapper-props.js";
+import { IElementDefinitionOpts } from "../element-definition/i-element-definition-opts.js";
 
-export interface IConfigNotesWrapperOpts extends Partial<IConfigNotesWrapperProps> {};
+export interface IConfigNotesWrapperOpts {
+    enabled?: boolean;
+    element?: IElementDefinitionOpts;
+};

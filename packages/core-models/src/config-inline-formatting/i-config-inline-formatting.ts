@@ -1,3 +1,28 @@
-import { IConfigInlineFormattingProps } from "./i-config-inline-formatting-props.js";
+import { IElementDefinition } from "../element-definition/i-element-definition.js";
 
-export interface IConfigInlineFormatting extends IConfigInlineFormattingProps {};
+export interface IConfigInlineFormatting {
+    bold: {
+        enabled: boolean;
+        element: IElementDefinition;
+    },
+    italic: {
+        enabled: boolean;
+        element: IElementDefinition;
+    },
+    underline: {
+        enabled: boolean;
+        element: IElementDefinition;
+    },
+    strikethrough: {
+        enabled: boolean;
+        element: IElementDefinition;
+    }
+    subscript: {
+        enabled: boolean;
+        element: IElementDefinition;
+    },
+    superscript: {
+        enabled: boolean;
+        element: IElementDefinition;
+    }
+};
