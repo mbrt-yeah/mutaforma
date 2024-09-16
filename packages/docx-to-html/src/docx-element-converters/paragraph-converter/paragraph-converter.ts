@@ -2,6 +2,7 @@ import {
     CoParagraph,
     IConfig,
     IDocxFile,
+    IStyleMapping,
 } from "@mtfm/core-models";
 import { CheerioAPI } from "cheerio";
 import { Ok, Result } from "ts-results-es";
@@ -61,12 +62,19 @@ export class ParagraphConverter extends ADocxElementConverter<CoParagraph> {
 
         const para = determineParagraphSubType(styleId, indentationLevel);
         para.addChildNodes(createContentsResult.value);
-        para.mapping = this.config.getStyleMappingByName(style?.name);
+        para.mapping = this.__getStyleMappingByName(style?.name);
         para.numberingFormat = this.docxFile.getNumberingFormat(numberingId, indentationLevel);
 
         if (indentationLevel)
             para.indentationLevel = Number.parseInt(indentationLevel);
 
         return new Ok(para);
+    }
+
+    private __getStyleMappingByName(name: string | undefined): IStyleMapping | undefined {
+        if (!name)
+            return undefined;
+
+        return this.config.mappings.find(m => m.names.indexOf(name) !== -1);
     }
 };
