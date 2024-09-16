@@ -1,5 +1,13 @@
 # @mtfm/docx-to-html
 
+## 1.1.1
+
+### Patch Changes
+
+- Fixes regression errors introduced in 1.1.0
+- Updated dependencies
+  - @mtfm/core@1.1.1
+
 ## 1.1.0
 
 ### Minor Changes
