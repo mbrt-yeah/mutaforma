@@ -1,5 +1,12 @@
 # @mtfm/cli
 
+## 1.1.1
+
+### Patch Changes
+
+- Updated dependencies
+  - @mtfm/docx-to-html@1.1.1
+
 ## 1.1.0
 
 ### Minor Changes

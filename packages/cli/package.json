@@ -1,6 +1,6 @@
 {
     "name": "@mtfm/cli",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "description": "A command line application for converting documents between various formats",
     "author": "mbrt-yeah",
     "license": "MIT",
@@ -47,7 +47,7 @@
         "typescript": "^5.5.4"
     },
     "dependencies": {
-        "@mtfm/docx-to-html": "^1.1.0",
+        "@mtfm/docx-to-html": "^1.1.1",
         "@swiss-army-knife/utilities": "^3.3.2",
         "commander": "12.1.0",
         "fs-extra": "^11.2.0",

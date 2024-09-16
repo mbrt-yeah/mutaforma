@@ -18,8 +18,8 @@ importers:
   packages/cli:
     dependencies:
       '@mtfm/docx-to-html':
-        specifier: ^1.1.0
-        version: 1.1.0
+        specifier: ^1.1.1
+        version: 1.1.1
       '@swiss-army-knife/utilities':
         specifier: ^3.3.2
         version: 3.3.2
@@ -248,8 +248,8 @@ importers:
   packages/docx-to-html:
     dependencies:
       '@mtfm/core':
-        specifier: ^1.1.0
-        version: 1.1.0
+        specifier: ^1.1.1
+        version: 1.1.1
       '@mtfm/core-configs':
         specifier: ^1.1.0
         version: 1.1.0
@@ -1080,11 +1080,11 @@ packages:
   '@mtfm/core-models@1.1.0':
     resolution: {integrity: sha512-apJ9hf6uJqPZVsir8Sza844XlMGnz0NV+IvkV6Q6Wes/yNtKetilynQ7XVxz1XTjQZpM4XNW0lWlwjrjOdMVfQ==}
 
-  '@mtfm/core@1.1.0':
-    resolution: {integrity: sha512-C0YFb7EDSy8vAEAtuDirBrqCmHACGYZZ7CG97JRyCPbx+5QL2ji/EQffmK2ndfrsnI6hP7tKGxNh89InSssgmg==}
+  '@mtfm/core@1.1.1':
+    resolution: {integrity: sha512-4GJ/IcuoRPv/iJwT9vrw8Bm/TxxV9urfYmoQoButz6UYIQ3i6uQKw4rU94RflKQajtqkH4piIeL5bbJ1SHWYHg==}
 
-  '@mtfm/docx-to-html@1.1.0':
-    resolution: {integrity: sha512-1zHO96Fz3M9lr3j/r4Qyh/vR36YW+iUzYPd07K0/Xqzlbov4qq1b0aor1wretNkGf70BbGSTkmEndcyTlQUIQg==}
+  '@mtfm/docx-to-html@1.1.1':
+    resolution: {integrity: sha512-9o2oa+6gn1hf+MWChlnBKZGi3j8i692dra4QKxMd9eEfKsqYmLADQjWfqgb9D04fD6/AR+kTE/QGsdHOcY0QgQ==}
 
   '@nodelib/fs.scandir@2.1.5':
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
@@ -4795,8 +4795,9 @@ snapshots:
       js-beautify: 1.15.1
       ts-results-es: 4.2.0
 
-  '@mtfm/core@1.1.0':
+  '@mtfm/core@1.1.1':
     dependencies:
+      '@mtfm/core-configs': 1.1.0
       '@mtfm/core-models': 1.1.0
       '@swiss-army-knife/models': 2.0.4
       '@swiss-army-knife/utilities': 3.3.2
@@ -4808,9 +4809,9 @@ snapshots:
       js-beautify: 1.15.1
       ts-results-es: 4.2.0
 
-  '@mtfm/docx-to-html@1.1.0':
+  '@mtfm/docx-to-html@1.1.1':
     dependencies:
-      '@mtfm/core': 1.1.0
+      '@mtfm/core': 1.1.1
       '@mtfm/core-configs': 1.1.0
       '@mtfm/core-models': 1.1.0
       '@swiss-army-knife/models': 2.0.4
