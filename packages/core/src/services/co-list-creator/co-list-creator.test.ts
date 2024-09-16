@@ -1,4 +1,4 @@
-import { CoBody, CoDocument, CoList, CoListItem, CoParagraph } from "@mtfm/core-models";
+import { CoBody, CoList, CoListItem, CoParagraph } from "@mtfm/core-models";
 import { describe, expect, it } from "@jest/globals";
 
 import { CoListCreator } from "./co-list-creator.js";

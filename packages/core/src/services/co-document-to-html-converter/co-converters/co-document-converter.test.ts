@@ -1,10 +1,11 @@
 import { describe, expect, it } from "@jest/globals";
 
-import { Config, CoBody, CoDocument } from "@mtfm/core-models";
+import { CoBody, CoDocument } from "@mtfm/core-models";
 import { CoConverterRegistry } from "../co-converter-registry.js";
 import { CoDocumentConverter } from "./co-document-converter.js";
+import { DocxToHtmlConfigDefault } from "@mtfm/core-configs";
 
-const config = new Config();
+const config = DocxToHtmlConfigDefault;
 const registry = new CoConverterRegistry(config);
 
 describe(`${CoDocumentConverter.name}`, () => {

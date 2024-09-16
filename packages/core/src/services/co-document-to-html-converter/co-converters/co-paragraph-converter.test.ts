@@ -1,10 +1,11 @@
-import { Config, CoBreak, CoParagraph, CoText, CoTextRun, StyleMapping } from "@mtfm/core-models";
+import { CoBreak, CoParagraph, CoText, CoTextRun, StyleMapping } from "@mtfm/core-models";
 import { describe, expect, it } from "@jest/globals";
+import { DocxToHtmlConfigDefault } from "@mtfm/core-configs";
 
 import { CoConverterRegistry } from "../co-converter-registry.js";
 import { CoParagraphConverter } from "./co-paragraph-converter.js";
 
-const config = new Config();
+const config = DocxToHtmlConfigDefault;
 const registry = new CoConverterRegistry(config);
 
 describe(`${CoParagraphConverter.name}`, () => {

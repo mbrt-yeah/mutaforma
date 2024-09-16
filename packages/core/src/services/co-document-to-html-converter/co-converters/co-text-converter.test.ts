@@ -1,10 +1,11 @@
-import { Config, ConfigHtmlEntities, CoText } from "@mtfm/core-models";
+import { CoText, IConfig } from "@mtfm/core-models";
 import { describe, expect, it } from "@jest/globals";
+import { DocxToHtmlConfigDefault } from "@mtfm/core-configs";
 
 import { CoConverterRegistry } from "../co-converter-registry.js";
 import { CoTextConverter } from "./co-text-converter.js";
 
-const config = new Config();
+const config = DocxToHtmlConfigDefault;
 const registry = new CoConverterRegistry(config);
 
 describe(`${CoTextConverter.name}`, () => {
@@ -44,11 +45,9 @@ describe(`${CoTextConverter.name}`, () => {
             expect(result).toBe("Hello World");
         });
         it(`should convert ${CoText.name} node with contents "äöü" to "äöü" when config.outHtmlEntities.enabled = false`, async () => {
-            const configNew = new Config({
-                outHtmlEntities: new ConfigHtmlEntities({
-                    enabled: false,
-                }), 
-            });
+            const configNew = Object.assign({}, DocxToHtmlConfigDefault);
+            configNew.outHtmlEntities.enabled = false;
+
             const coTextNode = new CoText("äöü");
             const converter = new CoTextConverter(configNew, registry);
             const converterResult = await converter.execute(coTextNode);
@@ -62,18 +61,17 @@ describe(`${CoTextConverter.name}`, () => {
             expect(result).toBe("äöü");
         });
         it(`should convert ${CoText.name} node with contents "äöü" to "&auml;&ouml;&uuml;" when config.outHtmlEntities.enabled = true`, async () => {
-            const configNew = new Config({
-                outHtmlEntities: new ConfigHtmlEntities({
-                    enabled: true,
-                    options: {
-                        allowUnsafeSymbols: false,
-                        decimal: false,
-                        encodeEverything: false,
-                        strict: false,
-                        useNamedReferences: true,
-                    }
-                })
-            });
+            const configNew = Object.assign({}, DocxToHtmlConfigDefault);
+            configNew.outHtmlEntities = {
+                enabled: true,
+                options: {
+                    allowUnsafeSymbols: false,
+                    decimal: false,
+                    encodeEverything: false,
+                    strict: false,
+                    useNamedReferences: true,
+                }
+            };
             const coTextNode = new CoText("äöü");
             const converter = new CoTextConverter(configNew, registry);
             const converterResult = await converter.execute(coTextNode);

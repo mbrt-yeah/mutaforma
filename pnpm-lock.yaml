@@ -18,8 +18,8 @@ importers:
   packages/cli:
     dependencies:
       '@mtfm/docx-to-html':
-        specifier: ^1.0.0
-        version: 1.0.0
+        specifier: ^1.1.0
+        version: 1.1.0
       '@swiss-army-knife/utilities':
         specifier: ^3.3.2
         version: 3.3.2
@@ -72,9 +72,12 @@ importers:
 
   packages/core:
     dependencies:
+      '@mtfm/core-configs':
+        specifier: ^1.1.0
+        version: 1.1.0
       '@mtfm/core-models':
-        specifier: ^1.0.0
-        version: 1.0.0
+        specifier: ^1.1.0
+        version: 1.1.0
       '@swiss-army-knife/models':
         specifier: ^2.0.4
         version: 2.0.4
@@ -143,8 +146,8 @@ importers:
   packages/core-configs:
     dependencies:
       '@mtfm/core-models':
-        specifier: workspace:^1.0.0
-        version: link:../core-models
+        specifier: ^1.1.0
+        version: 1.1.0
       ts-results-es:
         specifier: ^4.2.0
         version: 4.2.0
@@ -229,11 +232,11 @@ importers:
   packages/docs:
     dependencies:
       '@mtfm/core-configs':
-        specifier: ^1.0.0
-        version: 1.0.0
+        specifier: ^1.1.0
+        version: 1.1.0
       '@mtfm/core-models':
-        specifier: ^1.0.0
-        version: 1.0.0
+        specifier: ^1.1.0
+        version: 1.1.0
       highlight.js:
         specifier: ^11.10.0
         version: 11.10.0
@@ -245,14 +248,14 @@ importers:
   packages/docx-to-html:
     dependencies:
       '@mtfm/core':
-        specifier: ^1.0.0
-        version: 1.0.0
+        specifier: ^1.1.0
+        version: 1.1.0
       '@mtfm/core-configs':
-        specifier: workspace:^1.0.0
-        version: link:../core-configs
+        specifier: ^1.1.0
+        version: 1.1.0
       '@mtfm/core-models':
-        specifier: workspace:^1.0.0
-        version: link:../core-models
+        specifier: ^1.1.0
+        version: 1.1.0
       '@swiss-army-knife/models':
         specifier: ^2.0.4
         version: 2.0.4
@@ -321,7 +324,7 @@ importers:
         specifier: ^7.12.1
         version: 7.12.1(react@18.3.1)
       '@mtfm/core-models':
-        specifier: workspace:^1.0.0
+        specifier: workspace:^1.1.0
         version: link:../core-models
       '@tabler/icons-react':
         specifier: ^3.14.0
@@ -1071,17 +1074,17 @@ packages:
   '@manypkg/get-packages@1.1.3':
     resolution: {integrity: sha512-fo+QhuU3qE/2TQMQmbVMqaQ6EWbMhi4ABWP+O4AM1NqPBuy0OrApV5LO6BrrgnhtAHS2NH6RrVk9OL181tTi8A==}
 
-  '@mtfm/core-configs@1.0.0':
-    resolution: {integrity: sha512-V5cLuvHyHiBq6oioChchY+cOVfA8EiCbSr/OMt4C21QZhJyJsBNASTFilNBNxAKzjaSvKsNXrN+xyiuKvvbXbA==}
+  '@mtfm/core-configs@1.1.0':
+    resolution: {integrity: sha512-8n+tgSudGVLEAInSsCLPSMjx9jk1WGwHPfN2cVMCnjVLB75bX/Nr/DNJAbac/LXfhta2vVW/37FWCX1q8+zHSw==}
 
-  '@mtfm/core-models@1.0.0':
-    resolution: {integrity: sha512-qPQsCGRtKCAQwdR9QYBZxSv4sA6lCVM3ybG69zrNuuEvnLd/FB3zdERzM221Pv2zYox8A62vkjaaY0tovKSHuw==}
+  '@mtfm/core-models@1.1.0':
+    resolution: {integrity: sha512-apJ9hf6uJqPZVsir8Sza844XlMGnz0NV+IvkV6Q6Wes/yNtKetilynQ7XVxz1XTjQZpM4XNW0lWlwjrjOdMVfQ==}
 
-  '@mtfm/core@1.0.0':
-    resolution: {integrity: sha512-O/ccM6jUApQy7mGbXfZwhTYxa5gZp2xKNaN6jOujluuOaaF8gQDj1R7j83oLv/VD+t+BgqzWjBzpWG467r20dg==}
+  '@mtfm/core@1.1.0':
+    resolution: {integrity: sha512-C0YFb7EDSy8vAEAtuDirBrqCmHACGYZZ7CG97JRyCPbx+5QL2ji/EQffmK2ndfrsnI6hP7tKGxNh89InSssgmg==}
 
-  '@mtfm/docx-to-html@1.0.0':
-    resolution: {integrity: sha512-9uDZHwlkcLeZmrnu8Iqm4Mzq1WdY9C5HS87XlH/EqSQreUziJc0j95LzULvyYGYzbZmDYW5uE99MnJRxYFvJkA==}
+  '@mtfm/docx-to-html@1.1.0':
+    resolution: {integrity: sha512-1zHO96Fz3M9lr3j/r4Qyh/vR36YW+iUzYPd07K0/Xqzlbov4qq1b0aor1wretNkGf70BbGSTkmEndcyTlQUIQg==}
 
   '@nodelib/fs.scandir@2.1.5':
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
@@ -4779,12 +4782,12 @@ snapshots:
       globby: 11.1.0
       read-yaml-file: 1.1.0
 
-  '@mtfm/core-configs@1.0.0':
+  '@mtfm/core-configs@1.1.0':
     dependencies:
-      '@mtfm/core-models': 1.0.0
+      '@mtfm/core-models': 1.1.0
       ts-results-es: 4.2.0
 
-  '@mtfm/core-models@1.0.0':
+  '@mtfm/core-models@1.1.0':
     dependencies:
       '@baileyherbert/events': 1.0.1
       cheerio: 1.0.0
@@ -4792,9 +4795,9 @@ snapshots:
       js-beautify: 1.15.1
       ts-results-es: 4.2.0
 
-  '@mtfm/core@1.0.0':
+  '@mtfm/core@1.1.0':
     dependencies:
-      '@mtfm/core-models': 1.0.0
+      '@mtfm/core-models': 1.1.0
       '@swiss-army-knife/models': 2.0.4
       '@swiss-army-knife/utilities': 3.3.2
       await-to-js: 3.0.0
@@ -4805,13 +4808,14 @@ snapshots:
       js-beautify: 1.15.1
       ts-results-es: 4.2.0
 
-  '@mtfm/docx-to-html@1.0.0':
+  '@mtfm/docx-to-html@1.1.0':
     dependencies:
-      '@mtfm/core': 1.0.0
-      '@mtfm/core-configs': 1.0.0
-      '@mtfm/core-models': 1.0.0
+      '@mtfm/core': 1.1.0
+      '@mtfm/core-configs': 1.1.0
+      '@mtfm/core-models': 1.1.0
       '@swiss-army-knife/models': 2.0.4
       cheerio: 1.0.0
+      deepmerge-ts: 7.1.0
       js-beautify: 1.15.1
       jsdom: 24.1.1
       ts-results-es: 4.2.0

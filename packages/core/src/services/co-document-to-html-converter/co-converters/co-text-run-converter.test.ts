@@ -1,10 +1,11 @@
-import { Config, CoText, CoTextRun } from "@mtfm/core-models";
+import { CoText, CoTextRun } from "@mtfm/core-models";
 import { describe, expect, it } from "@jest/globals";
+import { DocxToHtmlConfigDefault } from "@mtfm/core-configs";
 
 import { CoConverterRegistry } from "../co-converter-registry.js";
 import { CoTextRunConverter } from "./co-text-run-converter.js";
 
-const config = new Config();
+const config = DocxToHtmlConfigDefault;
 const registry = new CoConverterRegistry(config);
 
 describe(`${CoTextRunConverter.name}`, () => {

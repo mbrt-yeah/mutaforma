@@ -1,10 +1,11 @@
-import { Config, CoListItem, CoText, CoTextRun, StyleMapping } from "@mtfm/core-models";
+import { CoListItem, CoText, CoTextRun, StyleMapping } from "@mtfm/core-models";
 import { describe, expect, it } from "@jest/globals";
+import { DocxToHtmlConfigDefault } from "@mtfm/core-configs";
 
 import { CoConverterRegistry } from "../co-converter-registry.js";
 import { CoListItemConverter } from "./co-list-item-converter.js";
 
-const config = new Config();
+const config = DocxToHtmlConfigDefault;
 const registry = new CoConverterRegistry(config);
 
 describe(`${CoListItemConverter.name}`, () => {

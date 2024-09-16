@@ -1,10 +1,11 @@
-import { Config, CoHeading, CoText, CoTextRun, StyleMapping } from "@mtfm/core-models";
+import { CoHeading, CoText, CoTextRun, StyleMapping } from "@mtfm/core-models";
 import { describe, expect, it } from "@jest/globals";
+import { DocxToHtmlConfigDefault } from "@mtfm/core-configs";
 
 import { CoHeadingConverter } from "./co-heading-converter.js";
 import { CoConverterRegistry } from "../co-converter-registry.js";
 
-const config = new Config();
+const config = DocxToHtmlConfigDefault;
 const registry = new CoConverterRegistry(config);
 
 describe(`${CoHeadingConverter.name}`, () => {
