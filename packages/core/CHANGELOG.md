@@ -1,5 +1,11 @@
 # @mtfm/core
 
+## 1.2.0
+
+### Minor Changes
+
+- Adds support for nested lists
+
 ## 1.1.1
 
 ### Patch Changes
