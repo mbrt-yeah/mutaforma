@@ -1,6 +1,6 @@
+import { CoList, CoListItem, CoTreeNode } from "@mtfm/core-models";
 import { Ok, Result } from "ts-results-es";
 
-import { CoList, CoListItem, CoTreeNode } from "@mtfm/core-models";
 import { ICoListCreator } from "./i-co-list-creator.js";
 import { ICoListCreatorOpts } from "./i-co-list-creator-opts.js";
 
@@ -12,20 +12,13 @@ export class CoListCreator implements ICoListCreator {
     }
 
     public async execute(): Promise<Result<CoTreeNode, Error>> {
-        const wrapListItemsInListResult = await this.__wrapListItemsInList(this.input);
-
-        if (wrapListItemsInListResult.isErr())
-            return wrapListItemsInListResult;
-
-        const nestListsResult = await this.__nestLists(wrapListItemsInListResult.value);
-
-        if (nestListsResult.isErr())
-            return nestListsResult;
-
-        return this.__determineNumbering(nestListsResult.value);
+        this.input = this.__wrapListItemsInList(this.input);
+        this.input = this.__nestLists(this.input);
+        this.input = this.__determineNumbering(this.input);
+        return new Ok(this.input);
     }
 
-    private async __wrapListItemsInList(coTreeNode: CoTreeNode): Promise<Result<CoTreeNode, Error>> {
+    private __wrapListItemsInList(coTreeNode: CoTreeNode): CoTreeNode {
         let listItemsUnnested: CoListItem[] = [];
         const positions: number[] = [];
 
@@ -49,22 +42,95 @@ export class CoListCreator implements ICoListCreator {
         }
 
         coTreeNode.removeChildNodesAtManyPos(positions);
-        return new Ok(this.input);
+        return this.input;
     }
 
-    private async __nestLists(coTreeNode: CoTreeNode): Promise<Result<CoTreeNode, Error>> {
+    private __nestLists(coTreeNode: CoTreeNode): CoTreeNode {
         for (let i = 0; i < coTreeNode.childNodes.length; i++) {
             const childNode = coTreeNode.childNodes[i];
 
             if (childNode instanceof CoList) {
-                // TODO implement nesting logic
+                coTreeNode.childNodes[i] = this.__nestList(childNode, 0);
             }
         }
 
-        return new Ok(coTreeNode);
+        return coTreeNode;
     }
 
-    private async __determineNumbering(coTreeNode: CoTreeNode): Promise<Result<CoTreeNode, Error>> {
+    private __nestList(coList: CoList, indentationLevelCurr: number): CoList {
+
+        /**
+         * Find idx positions of all sublist items
+         */
+
+        const idxsSublists: number[][] = [];
+        let currentlyInSublist = false;
+        let idxsSublistCurrent: number[] = [];
+        
+        for (let i = 0; i < coList.childNodes.length; i++) {
+            const next = coList.childNodes[i+1] as CoListItem;
+
+            if (next && next.indentationLevel !== undefined) {
+                if (next.indentationLevel > indentationLevelCurr) {
+                    if (!currentlyInSublist)
+                        currentlyInSublist = true
+
+                    idxsSublistCurrent.push(i+1);
+                }
+                    
+                if (next.indentationLevel === indentationLevelCurr) {
+                    idxsSublists.push(idxsSublistCurrent);
+                    currentlyInSublist = false;
+                    idxsSublistCurrent = [];
+                }
+            }
+        }
+
+        if (currentlyInSublist)
+            idxsSublists.push(idxsSublistCurrent);
+
+        /**
+         * Wrap sublist items in CoList element
+         * and attach it to parent list
+         */
+
+        let idxsCoListToRemove: number[] = [];
+
+        for (const idxsSublist of idxsSublists) {
+            let coSubList = new CoList();
+
+            for (const idx of idxsSublist) {
+                if (coList.childNodes[idx])
+                    coSubList.addChildNodes(coList.childNodes[idx]);
+
+                if (idxsSublist.indexOf(idx) > 0)
+                    idxsCoListToRemove.push(idx);
+            }
+
+            if (idxsSublist[0])
+                coList.childNodes[idxsSublist[0]] = this.__nestList(coSubList, indentationLevelCurr + 1);
+        }
+
+        coList.removeChildNodesAtManyPos(idxsCoListToRemove);
+
+        idxsCoListToRemove = [];
+
+        for (let i = 0; i < coList.childNodes.length; i++) {
+            const curr = coList.childNodes[i];
+            const next = coList.childNodes[i+1] as CoListItem;
+
+            if (curr && next && next instanceof CoList) {
+                curr.addChildNodes(next);
+                idxsCoListToRemove.push(i+1);
+            }
+        }
+
+        coList.removeChildNodesAtManyPos(idxsCoListToRemove);
+
+        return coList;
+    }
+
+    private __determineNumbering(coTreeNode: CoTreeNode): CoTreeNode {
         for (const childNode of coTreeNode.childNodes) {
             if (childNode instanceof CoList) {
                 const numberingFormatCounts: { [numberingFormatName: string]: number } = {};
@@ -95,6 +161,6 @@ export class CoListCreator implements ICoListCreator {
             }
         }
 
-        return new Ok(coTreeNode);
+        return coTreeNode;
     }
 };
