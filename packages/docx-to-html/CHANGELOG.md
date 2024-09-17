@@ -1,5 +1,16 @@
 # @mtfm/docx-to-html
 
+## 1.2.0
+
+### Minor Changes
+
+- Adds support for nested lists
+
+### Patch Changes
+
+- Updated dependencies
+  - @mtfm/core@1.2.0
+
 ## 1.1.1
 
 ### Patch Changes
