@@ -1,5 +1,14 @@
 # @mtfm/docx-to-html
 
+## 1.2.1
+
+### Patch Changes
+
+- Updated dependencies
+  - @mtfm/core-models@2.0.0
+  - @mtfm/core@1.2.1
+  - @mtfm/core-configs@1.1.1
+
 ## 1.2.0
 
 ### Minor Changes
