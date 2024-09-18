@@ -1,5 +1,13 @@
 # @mtfm/docs-new
 
+## 1.1.1
+
+### Patch Changes
+
+- Updated dependencies
+  - @mtfm/core-models@2.0.0
+  - @mtfm/core-configs@1.1.1
+
 ## 1.1.0
 
 ### Minor Changes
