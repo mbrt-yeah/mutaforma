@@ -43,7 +43,6 @@ export const DocxToHtmlCmd = new Command()
 
         const converter = new DocxToHtmlConverter({
             config,
-            input: inputPath,
             outputPath,
         });
 
@@ -59,5 +58,5 @@ export const DocxToHtmlCmd = new Command()
         converter.on("savingOutputSuccess", () => spinnies.succeed("save", { text: `Document saved to: ${outputPath}` }));
         converter.on("savingOutputError", (error) => spinnies.fail("save", { text: `Saving document failed with error: ${error.message}` }));
 
-        await converter.execute();
+        await converter.execute(inputPath);
     });
