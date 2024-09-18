@@ -1,5 +1,11 @@
 # @mtfm/docx-to-html
 
+## 2.0.0
+
+### Major Changes
+
+- Rewrites the converter
+
 ## 1.2.1
 
 ### Patch Changes
