@@ -1,8 +1,8 @@
-import { IAsset } from "@mtfm/core-models";
-import { IStyle } from "../style/i-style.js";
+import { IAsset } from "../asset/i-asset.js";
 import { INumbering } from "../numbering/i-numbering.js";
+import { IStyle } from "../style/i-style.js";
 
-export interface IDocument {
+export interface IDoc {
     contents: string;
     endnotes: string;
     footnotes: string;

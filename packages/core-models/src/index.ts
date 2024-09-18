@@ -14,6 +14,7 @@ export * from "./content-objects/index.js";
 export * from "./conversion-description/index.js";
 export * from "./conversion-io-description/index.js";
 export * from "./conversion-whitelist/index.js";
+export * from "./doc/index.js";
 export * from "./document-converter-result/index.js";
 export * from "./document-converter/index.js";
 export * from "./docx-file/index.js";
@@ -21,7 +22,10 @@ export * from "./docx-numbering-lvl/index.js";
 export * from "./docx-numbering-schema/index.js";
 export * from "./docx-style/index.js";
 export * from "./element-definition/index.js";
+export * from "./numbering-level/index.js";
+export * from "./numbering/index.js";
 export * from "./style-mapping/index.js";
+export * from "./style/index.js";
 
 export * from "./a-element-converter-registry.js";
 export * from "./a-element-converter.js";

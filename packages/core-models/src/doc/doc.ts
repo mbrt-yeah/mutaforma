@@ -1,9 +1,9 @@
-import { IAsset } from "@mtfm/core-models";
-import { IDocument } from "./i-document.js";
+import { IAsset } from "../asset/i-asset.js";
+import { IDoc } from "./i-doc.js";
 import { INumbering } from "../numbering/i-numbering.js";
 import { IStyle } from "../style/i-style.js";
 
-export class Document implements IDocument {
+export class Doc implements IDoc {
     public contents: string;
     public endnotes: string;
     public footnotes: string;
