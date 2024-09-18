@@ -21,4 +21,30 @@ export class Doc implements IDoc {
         this.numberings = {};
         this.styles = {};
     }
+
+    public getNumberingFormat(numberingId: string | undefined, indentationLevel: string | undefined): string | undefined {
+        if (!numberingId || !indentationLevel)
+            return undefined;
+
+        const numberingSchema = this.numberings[numberingId];
+
+        if (!numberingSchema)
+            return undefined;
+
+        return numberingSchema.getNumberingFormatForLevel(indentationLevel);
+    }
+
+    public getImage(imageId: string | undefined): IAsset | undefined {
+        if (!imageId)
+            return undefined;
+
+        return this.images[imageId];
+    }
+
+    public getStyleByStyleId(styleId: string | undefined): IStyle | undefined {
+        if (!styleId)
+            return undefined;
+
+        return this.styles[styleId];
+    }
 };

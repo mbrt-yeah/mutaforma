@@ -10,4 +10,8 @@ export interface IDoc {
     metadata: Record<string, string>;
     numberings: Record<string, INumbering>;
     styles: Record<string, IStyle>;
+
+    getImage(imageId: string | undefined): IAsset | undefined
+    getNumberingFormat(numberingId: string | undefined, indentationLevel: string | undefined): string | undefined;
+    getStyleByStyleId(id: string | undefined): IStyle | undefined;
 };

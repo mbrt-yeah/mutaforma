@@ -1,6 +1,6 @@
 import { IAsset } from "../asset/i-asset.js"
 
-export interface IDocumentConverterResultProps {
+export interface IDocConverterResultProps {
     images: IAsset[];
     document: IAsset;
 };

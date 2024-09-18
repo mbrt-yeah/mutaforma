@@ -1,13 +1,13 @@
 import { Asset } from "../asset/asset.js";
 import { IAsset } from "../asset/i-asset.js";
-import { IDocumentConverterResult } from "./i-document-converter-result.js";
-import { IDocumentConverterResultOpts } from "./i-document-converter-result-opts.js";
+import { IDocConverterResult } from "./i-doc-converter-result.js";
+import { IDocConverterResultOpts } from "./i-doc-converter-result-opts.js";
 
-export class DocumentConverterResult implements IDocumentConverterResult {
+export class DocConverterResult implements IDocConverterResult {
     private __images: IAsset[];
     private __document: IAsset;
 
-    public constructor(opts: IDocumentConverterResultOpts = {}) {
+    public constructor(opts: IDocConverterResultOpts = {}) {
         this.__document = opts.document || new Asset();
         this.__images = opts.images || [];
     }
