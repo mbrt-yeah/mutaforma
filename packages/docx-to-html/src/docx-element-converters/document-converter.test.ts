@@ -1,20 +1,19 @@
-import { CoBody, CoDocument, DocxFile } from "@mtfm/core-models";
+import { CoBody, CoDocument, Doc } from "@mtfm/core-models";
 import { describe, expect, it } from "@jest/globals";
 import { DocxToHtmlConfigDefault } from "@mtfm/core-configs";
-import { Mock } from "ts-mockery";
 import * as cheerio from "cheerio";
 
 import { DocumentConverter } from "./document-converter.js";
 import { DocxElementConverterRegistry } from "../docx-element-converter-registry.js";
 
 const config = DocxToHtmlConfigDefault;
-const docxFile = Mock.of<DocxFile>();
-const registry = new DocxElementConverterRegistry(config, docxFile);
+const doc = new Doc();
+const registry = new DocxElementConverterRegistry(config, doc);
 
 describe(`${DocumentConverter.name}`, () => {
     describe("#cstr", () => {
         it(`should instantiate ${DocumentConverter.name}`, () => {
-            const instance = new DocumentConverter(config, docxFile, registry);
+            const instance = new DocumentConverter(config, doc, registry);
             expect(instance).not.toBeUndefined();
             expect(instance).not.toBeNull();
             expect(instance).toBeInstanceOf(DocumentConverter);
@@ -23,7 +22,7 @@ describe(`${DocumentConverter.name}`, () => {
     describe("#execute", () => {
         it(`should convert w:document element to ${CoDocument.name} node`, async () => {
             const $elem = cheerio.load(`<w:document></w:document>`, { xmlMode: true }, false);
-            const instance = new DocumentConverter(config, docxFile, registry);
+            const instance = new DocumentConverter(config, doc, registry);
             const executionResult = await instance.execute($elem);
 
             expect(executionResult.isOk()).toBe(true);
@@ -37,7 +36,7 @@ describe(`${DocumentConverter.name}`, () => {
         });
         it(`should convert w:document element to ${CoDocument.name} node containing one ${CoBody.name} node`, async () => {
             const $elem = cheerio.load(`<w:document><w:body></w:body></w:document>`, { xmlMode: true }, false);
-            const instance = new DocumentConverter(config, docxFile, registry);
+            const instance = new DocumentConverter(config, doc, registry);
             const executionResult = await instance.execute($elem);
 
             expect(executionResult.isOk()).toBe(true);

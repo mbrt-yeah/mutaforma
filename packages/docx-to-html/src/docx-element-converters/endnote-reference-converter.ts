@@ -1,5 +1,5 @@
 import { CheerioAPI } from "cheerio";
-import { CoNoteReference, IConfig, IDocxFile } from "@mtfm/core-models";
+import { CoNoteReference, IConfig, IDoc } from "@mtfm/core-models";
 import { Ok, Result } from "ts-results-es";
 
 import { ADocxElementConverter } from "./a-docx-element-converter.js";
@@ -9,10 +9,10 @@ export class EndnoteReferenceConverter extends ADocxElementConverter<CoNoteRefer
 
     public constructor(
         config: IConfig,
-        docxFile: IDocxFile,
+        doc: IDoc,
         elementConverterRegistry: DocxElementConverterRegistry
     ) {
-        super(config, docxFile, elementConverterRegistry);
+        super(config, doc, elementConverterRegistry);
     }
 
     public async execute($elem: CheerioAPI): Promise<Result<CoNoteReference, Error>> {

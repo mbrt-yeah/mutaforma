@@ -11,16 +11,13 @@ const outputPath = join(dirPath, "output");
 describe(`${DocxToHtmlConverter.name}`, () => {
     describe("#cstr", () => {
         it(`should instantiate ${DocxToHtmlConverter.name} successfully`, () => {
-            const instance = new DocxToHtmlConverter({
-                input: "",
-            });
+            const instance = new DocxToHtmlConverter();
             expect(instance).not.toBeUndefined();
             expect(instance).not.toBeNull();
             expect(instance).toBeInstanceOf(DocxToHtmlConverter);
         });
         it(`should instantiate ${DocxToHtmlConverter.name} with custom config successfully`, () => {
             const instance = new DocxToHtmlConverter({
-                input: "",
                 config: {
                     endnotesWrapper: {
                         enabled: false,
@@ -42,12 +39,11 @@ describe(`${DocxToHtmlConverter.name}`, () => {
     describe("#execute", () => {
         it(`should execute ${DocxToHtmlConverter.name} successfully and return valid HTML string instance`, async () => {
             const instance = new DocxToHtmlConverter({
-                input: join(inputPath, "inline-formatting.docx"),
                 outputPath,
                 config: DocxToHtmlConfigDefault
             });
 
-            const executeResult = await instance.execute();
+            const executeResult = await instance.execute(join(inputPath, "images.docx"));
             expect(executeResult).not.toBeUndefined();
             expect(executeResult).not.toBeNull();
             expect(executeResult.isErr()).toBe(false);

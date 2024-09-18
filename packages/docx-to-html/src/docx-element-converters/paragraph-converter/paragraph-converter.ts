@@ -1,7 +1,7 @@
 import { 
     CoParagraph,
     IConfig,
-    IDocxFile,
+    IDoc,
     IStyleMapping,
 } from "@mtfm/core-models";
 import { CheerioAPI } from "cheerio";
@@ -22,15 +22,15 @@ export class ParagraphConverter extends ADocxElementConverter<CoParagraph> {
      * Creates an instance of ParagraphConverter.
      *
      * @param {IConfig} config - The configuration settings for the conversion process.
-     * @param {IDocxFile} docxFile - The DOCX file to be converted.
+     * @param {IDoc} doc - The DOCX file to be converted.
      * @param {DocxElementConverterRegistry} elementConverterRegistry - The registry of element converters.
      */
     public constructor(
         config: IConfig,
-        docxFile: IDocxFile,
+        doc: IDoc,
         elementConverterRegistry: DocxElementConverterRegistry
     ) {
-        super(config, docxFile, elementConverterRegistry);
+        super(config, doc, elementConverterRegistry);
     }
 
     /**
@@ -40,12 +40,6 @@ export class ParagraphConverter extends ADocxElementConverter<CoParagraph> {
      *
      * @returns {Promise<Result<CoParagraph, Error>>} - A promise that resolves to a result containing the converted CoParagraph element,
      *          or rejects with an error if the conversion fails.
-     *
-     * It does this by first converting the child elements of the DOCX paragraph element. If the conversion of the child elements is successful,
-     * the method determines the type of paragraph (e.g., heading, normal, etc.) based on the style and indentation level of the paragraph. It then
-     * creates a new `CoParagraph` object, sets its child nodes to the converted child elements, and sets its mapping, numbering format, and
-     * indentation level based on the extracted information. Finally, a result containing the `CoParagraph` object is returned. If the conversion
-     * of the child elements fails, the error is propagated and returned.
      */
     public async execute($elem: CheerioAPI): Promise<Result<CoParagraph, Error>> {
         const createContentsResult = await this._convertContents($elem);
@@ -58,12 +52,12 @@ export class ParagraphConverter extends ADocxElementConverter<CoParagraph> {
         const indentationLevel = $root.find("w\\:pPr").find("w\\:numPr").find("w\\:ilvl").attr("w:val");
         const numberingId = $root.find("w\\:pPr").find("w\\:numPr").find("w\\:numId").attr("w:val");
         const styleId = $root.find("w\\:pPr").find("w\\:pStyle").attr("w:val");
-        const style = this.docxFile.getStyleByStyleId(styleId);
+        const style = this.doc.getStyleByStyleId(styleId);
 
         const para = determineParagraphSubType(styleId, indentationLevel);
         para.addChildNodes(createContentsResult.value);
         para.mapping = this.__getStyleMappingByName(style?.name);
-        para.numberingFormat = this.docxFile.getNumberingFormat(numberingId, indentationLevel);
+        para.numberingFormat = this.doc.getNumberingFormat(numberingId, indentationLevel);
 
         if (indentationLevel)
             para.indentationLevel = Number.parseInt(indentationLevel);

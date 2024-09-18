@@ -1,7 +1,7 @@
 import {
     CoBreak,
     IConfig,
-    IDocxFile
+    IDoc,
 } from "@mtfm/core-models";
 import { CheerioAPI } from "cheerio";
 import { Ok, Result } from "ts-results-es";
@@ -21,15 +21,15 @@ export class BreakConverter extends ADocxElementConverter<CoBreak> {
      * Creates an instance of BreakConverter.
      *
      * @param {IConfig} config - The configuration settings for the conversion process.
-     * @param {IDocxFile} docxFile - The DOCX file to be converted.
+     * @param {IDoc} doc - The DOCX file to be converted.
      * @param {DocxElementConverterRegistry} elementConverterRegistry - The registry of element converters.
      */
     public constructor(
         config: IConfig,
-        docxFile: IDocxFile,
+        doc: IDoc,
         elementConverterRegistry: DocxElementConverterRegistry
     ) {
-        super(config, docxFile, elementConverterRegistry);
+        super(config, doc, elementConverterRegistry);
     }
 
     /**

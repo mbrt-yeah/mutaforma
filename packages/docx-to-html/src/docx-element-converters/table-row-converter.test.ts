@@ -1,4 +1,4 @@
-import { CoTableCell, CoTableRow, DocxFile } from "@mtfm/core-models";
+import { CoTableCell, CoTableRow, Doc } from "@mtfm/core-models";
 import { describe, expect, it } from "@jest/globals";
 import { DocxToHtmlConfigDefault } from "@mtfm/core-configs";
 import * as cheerio from "cheerio";
@@ -7,13 +7,13 @@ import { DocxElementConverterRegistry } from "../docx-element-converter-registry
 import { TableRowConverter } from "./table-row-converter.js";
 
 const config = DocxToHtmlConfigDefault;
-const docxFile = new DocxFile();
-const registry = new DocxElementConverterRegistry(config, docxFile);
+const doc = new Doc();
+const registry = new DocxElementConverterRegistry(config, doc);
 
 describe(`${TableRowConverter.name}`, () => {
     describe("#cstr", () => {
         it(`should instantiate ${TableRowConverter.name}`, () => {
-            const instance = new TableRowConverter(config, docxFile, registry);
+            const instance = new TableRowConverter(config, doc, registry);
             expect(instance).not.toBeUndefined();
             expect(instance).not.toBeNull();
             expect(instance).toBeInstanceOf(TableRowConverter);
@@ -24,7 +24,7 @@ describe(`${TableRowConverter.name}`, () => {
         it(`should convert w:tc element to ${CoTableRow.name} node`, async () => {
             const xml = `<w:tr w:rsidR="00ED1CC5" w14:paraId="52E1E698" w14:textId="77777777" w:rsidTr="003B40FB"><w:tc><w:tcPr><w:tcW w:w="3624" w:type="dxa" /><w:gridSpan w:val="2" /><w:vMerge /></w:tcPr></w:tc><w:tc><w:tcPr><w:tcW w:w="3625" w:type="dxa" /><w:gridSpan w:val="2" /></w:tcPr></w:tc><w:tc><w:tcPr><w:tcW w:w="1813" w:type="dxa" /><w:vMerge /></w:tcPr></w:tc></w:tr>`;
             const $elem = cheerio.load(xml, { xmlMode: true }, false);
-            const instance = new TableRowConverter(config, docxFile, registry);
+            const instance = new TableRowConverter(config, doc, registry);
             const executionResult = await instance.execute($elem);
 
             expect(executionResult.isOk()).toBe(true);
