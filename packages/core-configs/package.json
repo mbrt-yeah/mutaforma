@@ -1,6 +1,6 @@
 {
     "name": "@mtfm/core-configs",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "description": "Default converter configurations for the Mutaforma universe.",
     "author": "mbrt-yeah",
     "license": "MIT",
@@ -47,7 +47,7 @@
         "typescript": "^5.5.4"
     },
     "dependencies": {
-        "@mtfm/core-models": "^1.1.0",
+        "@mtfm/core-models": "^2.0.0",
         "ts-results-es": "^4.2.0"
     }
 }
