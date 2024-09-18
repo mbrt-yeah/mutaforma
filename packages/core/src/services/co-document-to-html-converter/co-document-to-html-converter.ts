@@ -1,27 +1,33 @@
-import { ADocumentConverter, CoDocument, IConfig, IDocumentConverterOpts } from "@mtfm/core-models";
+import { CoDocument } from "@mtfm/core-models";
+import { html_beautify } from "js-beautify";
 import { Ok, Result } from "ts-results-es";
 
+import { ADocConverter } from "../doc-converter/a-doc-converter.js";
 import { CoConverterRegistry } from "./co-converter-registry.js";
+import { IDocConverterOpts } from "../doc-converter/i-doc-converter-opts.js";
 
-export class CoDocumentToHtmlConverter extends ADocumentConverter<CoDocument, string> {
-    public constructor(opts: IDocumentConverterOpts<CoDocument>) {
+export class CoDocumentToHtmlConverter extends ADocConverter<CoDocument, string> {
+    public constructor(opts: IDocConverterOpts) {
         super(opts);
     }
 
-    public async execute(): Promise<Result<string, Error>> {
-        return this.__executePass1(this.input, this.config);
-    }
+    public async execute(input: CoDocument): Promise<Result<string, Error>> {
+        const converterRegistry = new CoConverterRegistry(this.config);
+        const converter = converterRegistry.getConverter(input);
 
-    private async __executePass1(coDocument: CoDocument, config: IConfig): Promise<Result<string, Error>> {
-        if (!coDocument)
+        if (!converter)
             return new Ok("");
 
-        const coTreeNodeConverterRegistry = new CoConverterRegistry(config);
-        const coTreeNodeConverter = coTreeNodeConverterRegistry.getConverter(coDocument);
+        const converterResult = await converter.execute(input);
 
-        if (!coTreeNodeConverter)
-            return new Ok("");
+        if (converterResult.isErr())
+            return converterResult;
 
-        return await coTreeNodeConverter.execute(coDocument);
+        let html = converterResult.value;
+
+        if (this.config.outPrettyPrint.enabled)
+            html = html_beautify(html, this.config.outPrettyPrint.options);
+
+        return new Ok(html);
     }
 };

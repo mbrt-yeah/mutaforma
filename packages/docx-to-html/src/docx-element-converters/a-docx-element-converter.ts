@@ -1,4 +1,4 @@
-import { AElementConverter, IConfig, IDocxFile } from "@mtfm/core-models";
+import { AElementConverter, IConfig, IDoc } from "@mtfm/core-models";
 import { CheerioAPI } from "cheerio";
 import { Err, Ok, Result } from "ts-results-es";
 import * as cheerio from "cheerio";
@@ -14,31 +14,31 @@ import { DocxElementConverterRegistry } from "../docx-element-converter-registry
  * @template CoTreeNode - The type of the converted element.
  */
 export abstract class ADocxElementConverter<CoTreeNode> extends AElementConverter<CheerioAPI, CoTreeNode> {
-    protected __docxFile: IDocxFile;
+    protected __doc: IDoc;
 
     /**
      * Creates an instance of ADocxElementConverter.
      *
      * @param {IConfig} config - The configuration settings for the conversion process.
-     * @param {IDocxFile} docxFile - The DOCX file to be converted.
+     * @param {IDoc} doc - The DOCX file to be converted.
      * @param {DocxElementConverterRegistry} elementConverterRegistry - The registry of element converters.
      */
     public constructor(
         config: IConfig,
-        docxFile: IDocxFile,
+        doc: IDoc,
         elementConverterRegistry: DocxElementConverterRegistry
     ) {
         super(config, elementConverterRegistry);
-        this.__docxFile = docxFile;
+        this.__doc = doc;
     }
 
     /**
      * Gets the DOCX file associated with the converter.
      *
-     * @returns {IDocxFile} - The DOCX file associated with the converter.
+     * @returns {IDoc} - The DOCX file associated with the converter.
      */
-    public get docxFile(): IDocxFile {
-        return this.__docxFile;
+    public get doc(): IDoc {
+        return this.__doc;
     }
 
     /**

@@ -1,20 +1,19 @@
-import { CoText, CoTextRun, DocxFile } from "@mtfm/core-models";
+import { CoText, CoTextRun, Doc } from "@mtfm/core-models";
 import { describe, expect, it } from "@jest/globals";
 import { DocxToHtmlConfigDefault } from "@mtfm/core-configs";
-import { Mock } from "ts-mockery";
 import * as cheerio from "cheerio";
 
 import { DocxElementConverterRegistry } from "../docx-element-converter-registry.js";
 import { TextRunConverter } from "./text-run-converter.js";
 
 const config = DocxToHtmlConfigDefault;
-const docxFile = Mock.of<DocxFile>();
-const registry = new DocxElementConverterRegistry(config, docxFile);
+const doc = new Doc();
+const registry = new DocxElementConverterRegistry(config, doc);
 
 describe(`${TextRunConverter.name}`, () => {
     describe("#cstr", () => {
         it(`should instantiate ${TextRunConverter.name}`, () => {
-            const instance = new TextRunConverter(config, docxFile, registry);
+            const instance = new TextRunConverter(config, doc, registry);
             expect(instance).not.toBeUndefined();
             expect(instance).not.toBeNull();
             expect(instance).toBeInstanceOf(TextRunConverter);
@@ -23,7 +22,7 @@ describe(`${TextRunConverter.name}`, () => {
     describe("#execute", () => {
         it(`should convert w:r element to ${CoTextRun.name} node`, async () => {
             const $elem = cheerio.load(`<w:r></w:r>`, { xmlMode: true }, false);
-            const instance = new TextRunConverter(config, docxFile, registry);
+            const instance = new TextRunConverter(config, doc, registry);
             const executionResult = await instance.execute($elem);
 
             expect(executionResult.isOk()).toBe(true);
@@ -43,7 +42,7 @@ describe(`${TextRunConverter.name}`, () => {
         });
         it(`should convert w:r element to ${CoTextRun.name} node containing one ${CoText.name} node`, async () => {
             const $elem = cheerio.load(`<w:r><w:t>Hello World</w:t></w:r>`, { xmlMode: true }, false);
-            const instance = new TextRunConverter(config, docxFile, registry);
+            const instance = new TextRunConverter(config, doc, registry);
             const executionResult = await instance.execute($elem);
 
             expect(executionResult.isOk()).toBe(true);
@@ -68,7 +67,7 @@ describe(`${TextRunConverter.name}`, () => {
         });
         it(`should convert w:r element with bold text to ${CoTextRun.name} node with isBold set to true`, async () => {
             const $elem = cheerio.load(`<w:r w:rsidRPr="00AB1FD6"><w:rPr><w:b/><w:bCs/><w:lang w:val="it-IT"/></w:rPr><w:t>porttitor</w:t></w:r>`, { xmlMode: true }, false);
-            const instance = new TextRunConverter(config, docxFile, registry);
+            const instance = new TextRunConverter(config, doc, registry);
             const executionResult = await instance.execute($elem);
 
             expect(executionResult.isOk()).toBe(true);
@@ -89,7 +88,7 @@ describe(`${TextRunConverter.name}`, () => {
         });
         it(`should convert w:r element with italic text to ${CoTextRun.name} node with isItalic set to true`, async () => {
             const $elem = cheerio.load(`<w:r w:rsidRPr="00AB1FD6"><w:rPr><w:i/><w:iCs/><w:lang w:val="it-IT"/></w:rPr><w:t>porttitor</w:t></w:r>`, { xmlMode: true }, false);
-            const instance = new TextRunConverter(config, docxFile, registry);
+            const instance = new TextRunConverter(config, doc, registry);
             const executionResult = await instance.execute($elem);
 
             expect(executionResult.isOk()).toBe(true);
@@ -110,7 +109,7 @@ describe(`${TextRunConverter.name}`, () => {
         });
         it(`should convert w:r element with underlined text to ${CoTextRun.name} node with isUnderline set to true`, async () => {
             const $elem = cheerio.load(`<w:r w:rsidRPr="00AB1FD6"><w:rPr><w:u w:val="single"/><w:lang w:val="it-IT"/></w:rPr><w:t>porttitor</w:t></w:r>`, { xmlMode: true }, false);
-            const instance = new TextRunConverter(config, docxFile, registry);
+            const instance = new TextRunConverter(config, doc, registry);
             const executionResult = await instance.execute($elem);
 
             expect(executionResult.isOk()).toBe(true);
@@ -131,7 +130,7 @@ describe(`${TextRunConverter.name}`, () => {
         });
         it(`should convert w:r element with striked-through text to ${CoTextRun.name} node with isStrikethrough set to true`, async () => {
             const $elem = cheerio.load(`<w:r w:rsidRPr="00AB1FD6"><w:rPr><w:strike/><w:lang w:val="it-IT"/></w:rPr><w:t>porttitor</w:t></w:r>`, { xmlMode: true }, false);
-            const instance = new TextRunConverter(config, docxFile, registry);
+            const instance = new TextRunConverter(config, doc, registry);
             const executionResult = await instance.execute($elem);
 
             expect(executionResult.isOk()).toBe(true);
@@ -152,7 +151,7 @@ describe(`${TextRunConverter.name}`, () => {
         });
         it(`should convert w:r element with subscript text to ${CoTextRun.name} node with isSubscript set to true`, async () => {
             const $elem = cheerio.load(`<w:r w:rsidRPr="00AB1FD6"><w:rPr><w:vertAlign w:val="subscript"/><w:lang w:val="it-IT"/></w:rPr><w:t>porttitor</w:t></w:r>`, { xmlMode: true }, false);
-            const instance = new TextRunConverter(config, docxFile, registry);
+            const instance = new TextRunConverter(config, doc, registry);
             const executionResult = await instance.execute($elem);
 
             expect(executionResult.isOk()).toBe(true);
@@ -173,7 +172,7 @@ describe(`${TextRunConverter.name}`, () => {
         });
         it(`should convert w:r element with superscript text to ${CoTextRun.name} node with isSuperscript set to true`, async () => {
             const $elem = cheerio.load(`<w:r w:rsidRPr="00AB1FD6"><w:rPr><w:vertAlign w:val="superscript"/><w:lang w:val="it-IT"/></w:rPr><w:t>porttitor</w:t></w:r>`, { xmlMode: true }, false);
-            const instance = new TextRunConverter(config, docxFile, registry);
+            const instance = new TextRunConverter(config, doc, registry);
             const executionResult = await instance.execute($elem);
 
             expect(executionResult.isOk()).toBe(true);
@@ -194,7 +193,7 @@ describe(`${TextRunConverter.name}`, () => {
         });
         it(`should convert w:r element with bold, italic and underlined text to ${CoTextRun.name} node with isBold, isItalic and isUnderline set to true`, async () => {
             const $elem = cheerio.load(`<w:r w:rsidRPr="00AB1FD6"><w:rPr><w:b/><w:bCs/><w:i/><w:iCs/><w:u w:val="single"/><w:lang w:val="it-IT"/></w:rPr><w:t>porttitor</w:t></w:r>`, { xmlMode: true }, false);
-            const instance = new TextRunConverter(config, docxFile, registry);
+            const instance = new TextRunConverter(config, doc, registry);
             const executionResult = await instance.execute($elem);
 
             expect(executionResult.isOk()).toBe(true);

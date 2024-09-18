@@ -49,9 +49,9 @@
         "typescript": "^5.5.4"
     },
     "dependencies": {
-        "@mtfm/core": "^1.2.0",
+        "@mtfm/core": "workspace:^1.2.0",
         "@mtfm/core-configs": "^1.1.0",
-        "@mtfm/core-models": "^1.1.0",
+        "@mtfm/core-models": "workspace:^1.1.0",
         "@swiss-army-knife/models": "^2.0.4",
         "cheerio": "^1.0.0",
         "deepmerge-ts": "^7.1.0",

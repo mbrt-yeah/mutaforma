@@ -137,13 +137,7 @@
 <a name='L72'></a><a href='#L72'>72</a>
 <a name='L73'></a><a href='#L73'>73</a>
 <a name='L74'></a><a href='#L74'>74</a>
-<a name='L75'></a><a href='#L75'>75</a>
-<a name='L76'></a><a href='#L76'>76</a>
-<a name='L77'></a><a href='#L77'>77</a>
-<a name='L78'></a><a href='#L78'>78</a>
-<a name='L79'></a><a href='#L79'>79</a>
-<a name='L80'></a><a href='#L80'>80</a>
-<a name='L81'></a><a href='#L81'>81</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L75'></a><a href='#L75'>75</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -175,7 +169,7 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">17x</span>
+<span class="cline-any cline-yes">9x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -187,46 +181,40 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">17x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">17x</span>
+<span class="cline-any cline-yes">9x</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">17x</span>
+<span class="cline-any cline-yes">9x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">17x</span>
-<span class="cline-any cline-yes">17x</span>
-<span class="cline-any cline-yes">17x</span>
-<span class="cline-any cline-yes">17x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">9x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">17x</span>
-<span class="cline-any cline-yes">17x</span>
-<span class="cline-any cline-yes">17x</span>
-<span class="cline-any cline-yes">17x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">9x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">17x</span>
+<span class="cline-any cline-yes">9x</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">17x</span>
+<span class="cline-any cline-yes">9x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">17x</span>
-<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">36x</span>
+<span class="cline-any cline-yes">20x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { 
     CoParagraph,
     IConfig,
-    IDocxFile,
+    IDoc,
     IStyleMapping,
 } from "@mtfm/core-models";
 import { CheerioAPI } from "cheerio";
@@ -247,15 +235,15 @@ export class ParagraphConverter extends ADocxElementConverter&lt;CoParagraph&gt;
      * Creates an instance of ParagraphConverter.
      *
      * @param {IConfig} config - The configuration settings for the conversion process.
-     * @param {IDocxFile} docxFile - The DOCX file to be converted.
+     * @param {IDoc} doc - The DOCX file to be converted.
      * @param {DocxElementConverterRegistry} elementConverterRegistry - The registry of element converters.
      */
     public constructor(
         config: IConfig,
-        docxFile: IDocxFile,
+        doc: IDoc,
         elementConverterRegistry: DocxElementConverterRegistry
     ) {
-        super(config, docxFile, elementConverterRegistry);
+        super(config, doc, elementConverterRegistry);
     }
 &nbsp;
     /**
@@ -265,12 +253,6 @@ export class ParagraphConverter extends ADocxElementConverter&lt;CoParagraph&gt;
      *
      * @returns {Promise&lt;Result&lt;CoParagraph, Error&gt;&gt;} - A promise that resolves to a result containing the converted CoParagraph element,
      *          or rejects with an error if the conversion fails.
-     *
-     * It does this by first converting the child elements of the DOCX paragraph element. If the conversion of the child elements is successful,
-     * the method determines the type of paragraph (e.g., heading, normal, etc.) based on the style and indentation level of the paragraph. It then
-     * creates a new `CoParagraph` object, sets its child nodes to the converted child elements, and sets its mapping, numbering format, and
-     * indentation level based on the extracted information. Finally, a result containing the `CoParagraph` object is returned. If the conversion
-     * of the child elements fails, the error is propagated and returned.
      */
     public async execute($elem: CheerioAPI): Promise&lt;Result&lt;CoParagraph, Error&gt;&gt; {
         const createContentsResult = await this._convertContents($elem);
@@ -283,12 +265,12 @@ export class ParagraphConverter extends ADocxElementConverter&lt;CoParagraph&gt;
         const indentationLevel = $root.find("w\\:pPr").find("w\\:numPr").find("w\\:ilvl").attr("w:val");
         const numberingId = $root.find("w\\:pPr").find("w\\:numPr").find("w\\:numId").attr("w:val");
         const styleId = $root.find("w\\:pPr").find("w\\:pStyle").attr("w:val");
-        const style = this.docxFile.getStyleByStyleId(styleId);
+        const style = this.doc.getStyleByStyleId(styleId);
 &nbsp;
         const para = determineParagraphSubType(styleId, indentationLevel);
         para.addChildNodes(createContentsResult.value);
         para.mapping = this.__getStyleMappingByName(style?.name);
-        para.numberingFormat = this.docxFile.getNumberingFormat(numberingId, indentationLevel);
+        para.numberingFormat = this.doc.getNumberingFormat(numberingId, indentationLevel);
 &nbsp;
         <span class="missing-if-branch" title="if path not taken" >I</span>if (indentationLevel)
 <span class="cstat-no" title="statement not covered" >            para.indentationLevel = Number.parseInt(indentationLevel);</span>
@@ -310,7 +292,7 @@ export class ParagraphConverter extends ADocxElementConverter&lt;CoParagraph&gt;
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2024-09-17T11:38:02.679Z
+                at 2024-09-18T13:47:13.936Z
             </div>
         <script src="../../../prettify.js"></script>
         <script>

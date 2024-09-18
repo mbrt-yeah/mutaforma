@@ -1,7 +1,7 @@
 import {
     CoImage,
     IConfig,
-    IDocxFile
+    IDoc,
 } from "@mtfm/core-models";
 import { convertEmuToPixel } from "@mtfm/core";
 import { CheerioAPI } from "cheerio";
@@ -21,15 +21,15 @@ export class DrawingConverter extends ADocxElementConverter<CoImage> {
      * Creates an instance of DrawingConverter.
      *
      * @param {IConfig} config - The configuration settings for the conversion process.
-     * @param {IDocxFile} docxFile - The DOCX file to be converted.
+     * @param {IDoc} doc - The DOCX file to be converted.
      * @param {DocxElementConverterRegistry} elementConverterRegistry - The registry of element converters.
      */
     public constructor(
         config: IConfig,
-        docxFile: IDocxFile,
+        doc: IDoc,
         elementConverterRegistry: DocxElementConverterRegistry
     ) {
-        super(config, docxFile, elementConverterRegistry);
+        super(config, doc, elementConverterRegistry);
     }
 
     /**
@@ -52,7 +52,7 @@ export class DrawingConverter extends ADocxElementConverter<CoImage> {
         const widthPx = Math.round( convertEmuToPixel(Number.parseInt(widthEmu)) );
         const heigthPx = Math.round( convertEmuToPixel(Number.parseInt(heightEmu)) );
         const imageId = $aBlip.attr("r:embed") || $aBlip.attr("r:link") ||"";
-        const imageAsset = this.__docxFile.getImage(imageId);
+        const imageAsset = this.__doc.getImage(imageId);
         const imageName = imageAsset?.name || "";
         const imageDesc = $picCNvPr.attr("descr") || imageName;
 

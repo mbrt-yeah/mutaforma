@@ -1,20 +1,19 @@
-import { CoText, DocxFile } from "@mtfm/core-models";
+import { CoText, Doc } from "@mtfm/core-models";
 import { describe, expect, it } from "@jest/globals";
 import { DocxToHtmlConfigDefault } from "@mtfm/core-configs";
-import { Mock } from "ts-mockery";
 import * as cheerio from "cheerio";
 
 import { DocxElementConverterRegistry } from "../docx-element-converter-registry.js";
 import { TextConverter } from "./text-converter.js";
 
 const config = DocxToHtmlConfigDefault;
-const docxFile = Mock.of<DocxFile>();
-const registry = new DocxElementConverterRegistry(config, docxFile);
+const doc = new Doc();
+const registry = new DocxElementConverterRegistry(config, doc);
 
 describe(`${TextConverter.name}`, () => {
     describe("#cstr", () => {
         it(`should instantiate ${TextConverter.name}`, () => {
-            const instance = new TextConverter(config, docxFile, registry);
+            const instance = new TextConverter(config, doc, registry);
             expect(instance).not.toBeUndefined();
             expect(instance).not.toBeNull();
             expect(instance).toBeInstanceOf(TextConverter);
@@ -23,7 +22,7 @@ describe(`${TextConverter.name}`, () => {
     describe("#execute", () => {
         it(`should convert w:t element to ${CoText.name} node`, async () => {
             const $elem = cheerio.load(`<w:t>Hello World</w:t>`, { xmlMode: true }, false);
-            const instance = new TextConverter(config, docxFile, registry);
+            const instance = new TextConverter(config, doc, registry);
             const executionResult = await instance.execute($elem);
 
             expect(executionResult.isOk()).toBe(true);

@@ -1,5 +1,5 @@
 import { CheerioAPI } from "cheerio";
-import { CoBody, IConfig, IDocxFile } from "@mtfm/core-models";
+import { CoBody, IConfig, IDoc } from "@mtfm/core-models";
 import { CoListCreator } from "@mtfm/core";
 import { Result } from "ts-results-es";
 
@@ -17,15 +17,15 @@ export class BodyConverter extends ADocxElementConverter<CoBody> {
      * Creates an instance of BodyConverter.
      *
      * @param {IConfig} config - The configuration settings for the conversion process.
-     * @param {IDocxFile} docxFile - The DOCX file to be converted.
+     * @param {IDoc} doc - The DOCX file to be converted.
      * @param {DocxElementConverterRegistry} elementConverterRegistry - The registry of element converters.
      */
     public constructor(
         config: IConfig,
-        docxFile: IDocxFile,
+        doc: IDoc,
         elementConverterRegistry: DocxElementConverterRegistry
     ) {
-        super(config, docxFile, elementConverterRegistry);
+        super(config, doc, elementConverterRegistry);
     }
 
     /**

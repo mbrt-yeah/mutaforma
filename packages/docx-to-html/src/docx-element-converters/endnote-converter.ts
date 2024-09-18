@@ -1,6 +1,6 @@
 import { CheerioAPI } from "cheerio";
 import { CoListCreator } from "@mtfm/core";
-import { CoNote, IConfig, IDocxFile } from "@mtfm/core-models";
+import { CoNote, IConfig, IDoc } from "@mtfm/core-models";
 import { Ok, Result } from "ts-results-es";
 
 import { ADocxElementConverter } from "./a-docx-element-converter.js";
@@ -8,12 +8,12 @@ import { DocxElementConverterRegistry } from "../docx-element-converter-registry
 
 export class EndnoteConverter extends ADocxElementConverter<CoNote> {
 
-        public constructor(
+    public constructor(
         config: IConfig,
-        docxFile: IDocxFile,
+        doc: IDoc,
         elementConverterRegistry: DocxElementConverterRegistry
     ) {
-        super(config, docxFile, elementConverterRegistry);
+        super(config, doc, elementConverterRegistry);
     }
 
     public async execute($elem: CheerioAPI): Promise<Result<CoNote, Error>> {

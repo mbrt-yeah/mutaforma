@@ -1,4 +1,4 @@
-import { CoBody, CoParagraph, DocxFile } from "@mtfm/core-models";
+import { CoBody, CoParagraph, Doc } from "@mtfm/core-models";
 import { describe, expect, it } from "@jest/globals";
 import { DocxToHtmlConfigDefault } from "@mtfm/core-configs";
 import * as cheerio from "cheerio";
@@ -7,13 +7,13 @@ import { BodyConverter } from "./body-converter.js";
 import { DocxElementConverterRegistry } from "../docx-element-converter-registry.js";
 
 const config = DocxToHtmlConfigDefault;
-const docxFile = new DocxFile();
-const registry = new DocxElementConverterRegistry(config, docxFile);
+const doc = new Doc();
+const registry = new DocxElementConverterRegistry(config, doc);
 
 describe(`${BodyConverter.name}`, () => {
     describe("#cstr", () => {
         it(`should instantiate ${BodyConverter.name}`, () => {
-            const instance = new BodyConverter(config, docxFile, registry);
+            const instance = new BodyConverter(config, doc, registry);
             expect(instance).not.toBeUndefined();
             expect(instance).not.toBeNull();
             expect(instance).toBeInstanceOf(BodyConverter);
@@ -22,7 +22,7 @@ describe(`${BodyConverter.name}`, () => {
     describe("#execute", () => {
         it(`should convert w:body element to ${CoBody.name} node`, async () => {
             const $elem = cheerio.load(`<w:body></w:body>`, { xmlMode: true }, false);
-            const instance = new BodyConverter(config, docxFile, registry);
+            const instance = new BodyConverter(config, doc, registry);
             const executionResult = await instance.execute($elem);
 
             expect(executionResult.isOk()).toBe(true);
@@ -36,7 +36,7 @@ describe(`${BodyConverter.name}`, () => {
         });
         it(`should convert w:body element to ${CoBody.name} node containing one ${CoParagraph.name} node`, async () => {
             const $elem = cheerio.load(`<w:body><w:p></w:p></w:body>`, { xmlMode: true }, false);
-            const instance = new BodyConverter(config, docxFile, registry);
+            const instance = new BodyConverter(config, doc, registry);
             const executionResult = await instance.execute($elem);
 
             expect(executionResult.isOk()).toBe(true);
