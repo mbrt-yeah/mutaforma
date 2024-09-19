@@ -1,6 +1,6 @@
 {
     "name": "@mtfm/core",
-    "version": "1.2.1",
+    "version": "1.3.0",
     "description": "Shared utilities and services that are used across multiple packages of the Mutaforma universe.",
     "author": "mbrt-yeah",
     "license": "MIT",
@@ -53,8 +53,8 @@
     },
     "dependencies": {
         "@baileyherbert/events": "^1.0.1",
-        "@mtfm/core-configs": "^1.1.1",
-        "@mtfm/core-models": "workspace:^2.0.0",
+        "@mtfm/core-configs": "^1.2.0",
+        "@mtfm/core-models": "^2.1.0",
         "@swiss-army-knife/models": "^2.0.4",
         "@swiss-army-knife/utilities": "^3.3.2",
         "await-to-js": "3.0.0",
