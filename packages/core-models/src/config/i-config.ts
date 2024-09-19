@@ -1,5 +1,6 @@
 import { IConfigHtmlEntities } from "../config-html-entities/i-config-html-entities.js";
 import { IConfigInlineFormatting } from "../config-inline-formatting/i-config-inline-formatting.js";
+import { IConfigMetadata } from "../config-metadata/i-config-metadata.js";
 import { IConfigNoteList } from "../config-note-list/i-config-note-list.js";
 import { IConfigNoteListItem } from "../config-note-list-item/i-config-note-list-item.js";
 import { IConfigNoteNumbering } from "../config-note-numbering/i-config-note-numbering.js";
@@ -21,6 +22,7 @@ export interface IConfig {
     footnotesWrapper: IConfigNotesWrapper;
     inlineFormatting: IConfigInlineFormatting;
     mappings: IStyleMapping[];
+    metadata: IConfigMetadata;
     outDocExt: string;
     outDocFileName: string;
     outHtmlEntities: IConfigHtmlEntities;

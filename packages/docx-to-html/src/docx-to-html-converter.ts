@@ -59,7 +59,8 @@ export class DocxToHtmlConverter extends ADocConverter<string | Buffer, IDocConv
             return convertContentsResult;
         }
 
-        const coDocument = convertContentsResult.value;
+        let coDocument = convertContentsResult.value;
+        coDocument = this.__handleMetadata(coDocument, docLoaded, this.config);
 
         const convertEndnotesResult = await this.__convertNotes(docLoaded, registry, "w\\:endnote");
         
@@ -174,5 +175,53 @@ export class DocxToHtmlConverter extends ADocConverter<string | Buffer, IDocConv
             return new Err(error);
 
         return new Ok(result);
+    }
+
+    private __handleMetadata(coDocument: CoDocument, doc: IDoc, config: IConfig): CoDocument {
+        if (!config.metadata.enabled)
+            return coDocument;
+
+        if (config.metadata.mode === "custom") {
+            coDocument.title = config.metadata.title;
+            coDocument.addMetadata(config.metadata.custom); 
+        }
+
+        if (config.metadata.mode === "document") {
+            coDocument.title = doc.metadataCore["dc:title"] ?? "";
+            
+            for (const [key, value] of Object.entries(doc.metadataCore)) {
+                if (key === "dc:title")
+                    continue;
+
+                let keyFinal = key;
+
+                if (config.metadata.mappings && config.metadata.mappings[key])
+                    keyFinal = config.metadata.mappings[key];
+
+                coDocument.addMetadatum(keyFinal,value);
+            }
+        }
+
+        if (config.metadata.mode === "custom-and-document") {
+            coDocument.title = doc.metadataCore["dc:title"] ?? config.metadata.title ?? "";
+
+            const metadataDoc: Record<string, string> = {};
+
+            for (const [key, value] of Object.entries(doc.metadataCore)) {
+                if (key === "dc:title")
+                    continue;
+
+                let keyFinal = key;
+
+                if (config.metadata.mappings && config.metadata.mappings[key])
+                    keyFinal = config.metadata.mappings[key];
+
+                metadataDoc[keyFinal] = value;
+            }
+
+            coDocument.addMetadata(deepmerge(metadataDoc, config.metadata.custom));
+        }
+
+        return coDocument;
     }
 };

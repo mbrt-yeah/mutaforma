@@ -8,7 +8,7 @@ export class Doc implements IDoc {
     public endnotes: string;
     public footnotes: string;
     public images: Record<string, IAsset>;
-    public metadata: Record<string, string>;
+    public metadataCore: Record<string, string>;
     public numberings: Record<string, INumbering>;
     public styles: Record<string, IStyle>;
 
@@ -17,7 +17,7 @@ export class Doc implements IDoc {
         this.endnotes = "";
         this.footnotes = "";
         this.images = {};
-        this.metadata = {};
+        this.metadataCore = {};
         this.numberings = {};
         this.styles = {};
     }

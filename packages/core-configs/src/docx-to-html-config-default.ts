@@ -133,6 +133,19 @@ export const DocxToHtmlConfigDefault: IConfig = {
         },
     ],
 
+    metadata: {
+        enabled: true,
+        mode: "document",
+        charset: "utf-8",
+        title: "",
+        mappings: {
+            "dc:creator": "author",
+            "dc:description": "description",
+            "cp:keywords": "keywords",
+        },
+        custom: {},
+    },
+
     outDocExt: "html",
     outDocFileName: "document",
     outImgFolderName: "images",

@@ -43,7 +43,7 @@ describe(`${DocxToHtmlConverter.name}`, () => {
                 config: DocxToHtmlConfigDefault
             });
 
-            const executeResult = await instance.execute(join(inputPath, "images.docx"));
+            const executeResult = await instance.execute(join(inputPath, "metadata.docx"));
             expect(executeResult).not.toBeUndefined();
             expect(executeResult).not.toBeNull();
             expect(executeResult.isErr()).toBe(false);

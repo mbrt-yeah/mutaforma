@@ -7,7 +7,7 @@ export interface IDoc {
     endnotes: string;
     footnotes: string;
     images: Record<string, IAsset>;
-    metadata: Record<string, string>;
+    metadataCore: Record<string, string>;
     numberings: Record<string, INumbering>;
     styles: Record<string, IStyle>;
 

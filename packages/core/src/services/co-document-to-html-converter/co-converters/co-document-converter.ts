@@ -62,7 +62,15 @@ export class CoDocumentConverter extends ACoConverter<CoDocument> {
                 endnotesHtml = createElementFromDefinition(this.config.endnotesWrapper.element, endnotesHtml);
         }
 
-        return new Ok(`<!DOCTYPE html><html><body>${convertResult.value}${footnotesHtml}${endnotesHtml}</body></html>`);
+        let metaDataHtml = "";
+
+        if (input.title)
+            metaDataHtml += `<title>${input.title}</title>`;
+
+        for (const [key, value] of Object.entries(input.metadata))
+            metaDataHtml += `<meta name="${key}" content="${value}" />`;
+
+        return new Ok(`<!DOCTYPE html><html><head>${metaDataHtml}</head><body>${convertResult.value}${footnotesHtml}${endnotesHtml}</body></html>`);
     }
 
     private async __convertNotes(notes: ICoNote[]): Promise<Result<string, Error>> {
