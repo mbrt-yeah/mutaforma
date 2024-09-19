@@ -1,5 +1,18 @@
 # @mtfm/docx-to-html
 
+## 2.1.0
+
+### Minor Changes
+
+- Adds support for metadata handling
+
+### Patch Changes
+
+- Updated dependencies
+  - @mtfm/core@1.3.0
+  - @mtfm/core-configs@1.2.0
+  - @mtfm/core-models@2.1.0
+
 ## 2.0.0
 
 ### Major Changes
