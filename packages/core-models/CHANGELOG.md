@@ -1,5 +1,11 @@
 # @mtfm/core-models
 
+## 2.1.0
+
+### Minor Changes
+
+- Adds support for metadata handling
+
 ## 2.0.0
 
 ### Major Changes
