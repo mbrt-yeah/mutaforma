@@ -1,5 +1,16 @@
 # @mtfm/cli
 
+## 1.2.0
+
+### Minor Changes
+
+- Adds support for metadata handling
+
+### Patch Changes
+
+- Updated dependencies
+  - @mtfm/docx-to-html@2.1.0
+
 ## 1.1.2
 
 ### Patch Changes
