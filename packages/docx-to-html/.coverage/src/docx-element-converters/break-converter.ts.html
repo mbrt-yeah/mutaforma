@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">44.44% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>9/9</span>
+                <span class='fraction'>4/9</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">50% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>1/2</span>
+                <span class='fraction'>0/2</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>2/2</span>
+                <span class='fraction'>0/2</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">44.44% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>9/9</span>
+                <span class='fraction'>4/9</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line high'></div>
+    <div class='status-line low'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -143,7 +143,7 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -155,11 +155,11 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import {
     CoBreak,
@@ -187,12 +187,12 @@ export class BreakConverter extends ADocxElementConverter&lt;CoBreak&gt; {
      * @param {IDoc} doc - The DOCX file to be converted.
      * @param {DocxElementConverterRegistry} elementConverterRegistry - The registry of element converters.
      */
-    public constructor(
+<span class="fstat-no" title="function not covered" >    public constructor(</span>
         config: IConfig,
         doc: IDoc,
         elementConverterRegistry: DocxElementConverterRegistry
     ) {
-        super(config, doc, elementConverterRegistry);
+<span class="cstat-no" title="statement not covered" >        super(config, doc, elementConverterRegistry);</span>
     }
 &nbsp;
     /**
@@ -203,12 +203,12 @@ export class BreakConverter extends ADocxElementConverter&lt;CoBreak&gt; {
      * @returns {Promise&lt;Result&lt;CoBreak, Error&gt;&gt;} - A promise that resolves to a result containing the converted CoBreak element,
      *          or rejects with an error if the conversion fails.
      */
-    public async execute($elem: CheerioAPI): Promise&lt;Result&lt;CoBreak, Error&gt;&gt; {
-        const $root = $elem(":root", $elem.html());
-        const type = $root.attr("w:type");
+    public async <span class="fstat-no" title="function not covered" >execute(</span>$elem: CheerioAPI): Promise&lt;Result&lt;CoBreak, Error&gt;&gt; {
+        const $root = <span class="cstat-no" title="statement not covered" >$elem(":root", $elem.html());</span>
+        const type = <span class="cstat-no" title="statement not covered" >$root.attr("w:type");</span>
 &nbsp;
-        const coBreak = new CoBreak(type || <span class="branch-1 cbranch-no" title="branch not covered" >"")</span>;
-        return new Ok(coBreak);
+        const coBreak = <span class="cstat-no" title="statement not covered" >new CoBreak(type || "");</span>
+<span class="cstat-no" title="statement not covered" >        return new Ok(coBreak);</span>
     }
 };</pre></td></tr></table></pre>
 
@@ -217,7 +217,7 @@ export class BreakConverter extends ADocxElementConverter&lt;CoBreak&gt; {
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2024-09-18T13:47:13.936Z
+                at 2024-09-19T07:29:18.255Z
             </div>
         <script src="../../prettify.js"></script>
         <script>

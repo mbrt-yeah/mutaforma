@@ -4,15 +4,18 @@ import { Ok, Result } from "ts-results-es";
 import { DocContentHandlerDocxImages } from "./doc-content-handler-docx-images.js"; 
 import { DocContentHandlerDocxNumberings} from "./doc-content-handler-docx-numberings.js";
 import { DocContentHandlerDocxStyles } from "./doc-content-handler-docx-styles.js";
+import { DocxContentHandlerDocxMetadataCore } from "./doc-content-handler-docx-metadata-core.js";
 import { IDocContentHandler } from "../i-doc-content-handler.js";
 
 export class DocContentHandlerDocx implements IDocContentHandler {
     private __imagesHandler: DocContentHandlerDocxImages;
+    private __metadataCoreHandler: DocxContentHandlerDocxMetadataCore;
     private __numberingsHandler: DocContentHandlerDocxNumberings;
     private __stylesHandler: DocContentHandlerDocxStyles;
 
     public constructor() {
         this.__imagesHandler = new DocContentHandlerDocxImages();
+        this.__metadataCoreHandler = new DocxContentHandlerDocxMetadataCore();
         this.__numberingsHandler = new DocContentHandlerDocxNumberings();
         this.__stylesHandler = new DocContentHandlerDocxStyles();
     }
@@ -30,6 +33,15 @@ export class DocContentHandlerDocx implements IDocContentHandler {
                 return imagesHandlerResult;
 
             doc.images = imagesHandlerResult.value;
+        }
+
+        if (archive["docProps/core.xml"]) {
+            const metadataCoreHandlerResult = await this.__metadataCoreHandler.execute(archive["docProps/core.xml"]);
+
+            if (metadataCoreHandlerResult.isErr())
+                return metadataCoreHandlerResult;
+
+            doc.metadataCore = metadataCoreHandlerResult.value;
         }
 
         if (archive["word/numbering.xml"]) {

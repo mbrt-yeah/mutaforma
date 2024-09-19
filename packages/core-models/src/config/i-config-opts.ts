@@ -7,6 +7,7 @@ import { IConfigNotesHeadingOpts } from "../config-notes-heading/i-config-notes-
 import { IConfigNotesWrapperOpts } from "../config-notes-wrapper/i-config-notes-wrapper-opts.js";
 import { IConfigPrettyPrintOpts } from "../config-pretty-print/i-config-pretty-print-opts.js";
 import { IStyleMappingOpts } from "../style-mapping/i-style-mapping-opts.js";
+import { IConfigMetadataOpts } from "../config-metadata/i-config-metadata-opts.js";
 
 export interface IConfigOpts {
     endnotesHeading?: IConfigNotesHeadingOpts;
@@ -21,6 +22,7 @@ export interface IConfigOpts {
     footnotesWrapper?: IConfigNotesWrapperOpts;
     inlineFormatting?: IConfigInlineFormattingOpts;
     mappings?: IStyleMappingOpts[];
+    metadata?: IConfigMetadataOpts;
     outDocExt?: string;
     outDocFileName?: string;
     outHtmlEntities?: IConfigHtmlEntitiesOpts;
