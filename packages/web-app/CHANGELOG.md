@@ -1,5 +1,16 @@
 # @mtfm/web-app
 
+## 0.3.0
+
+### Minor Changes
+
+- Adds support for metadata handling
+
+### Patch Changes
+
+- Updated dependencies
+  - @mtfm/core-models@2.1.0
+
 ## 0.2.1
 
 ### Patch Changes
